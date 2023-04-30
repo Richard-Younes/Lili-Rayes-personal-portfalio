@@ -1,0 +1,854 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 3000px;
+	width: 100%;
+}
+body {
+	background-color: #fff0ed;
+	font-family: 'Barlow', sans-serif;
+	color: #db0047;
+	overflow-x: hidden;
+}
+main {
+	height: 3000px;
+}
+p {
+	font-weight: 700;
+}
+.container {
+	display: grid;
+	width: auto;
+	height: 12.5rem;
+	grid-template-columns: 3.75rem 3.75rem 3.75rem 3.75rem 3.75rem 1fr;
+	grid-template-rows: 6.25rem 1fr 1fr 1fr;
+}
+img {
+	width: 6.25rem;
+}
+
+.logo {
+	position: relative;
+	grid-column: -1;
+	width: 15.625rem;
+	height: 15.625rem;
+	top: -4.375rem;
+	margin-right: 1.875rem;
+}
+.logo-txt {
+	position: relative;
+
+	grid-column: -1;
+	grid-row: 2;
+	justify-self: center;
+	font-size: 1.25rem;
+	letter-spacing: 2.5px;
+	margin-right: 1.875rem;
+	margin-bottom: 1.25rem;
+	top: -0.9375rem;
+	color: #db0047;
+}
+
+a:link {
+	color: #db0047;
+	font-family: 'Barlow', sans-serif;
+	font-weight: bold;
+	font-size: 1.0625rem;
+	text-decoration: none;
+}
+
+.about:visited {
+	color: #db0047;
+}
+.about {
+	grid-column: -1;
+	grid-row: 3;
+	text-align: right;
+	margin-right: 3.125rem;
+	margin-bottom: 1.25rem;
+	color: #db0047;
+	z-index: 1;
+	position: relative;
+	top: -0.625rem;
+}
+.contact {
+	grid-column: -1;
+	grid-row: 4;
+	text-align: right;
+	margin-right: 3.125rem;
+	color: #e12c65;
+	position: relative;
+	top: -1.5625rem;
+}
+.contact:visited {
+	color: #e12c65;
+}
+
+.image-text {
+	position: absolute;
+	height: auto;
+	transform: rotate(90deg);
+	opacity: 0;
+	color: #f28531;
+}
+.cam {
+	position: relative;
+	top: -5px;
+}
+.box {
+	position: absolute;
+	left: 5px;
+}
+
+.box:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-28.svg');
+}
+.o:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-29.svg');
+}
+.cam:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-30.svg');
+}
+.arrow:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-31.svg');
+}
+.sheets:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-32.svg');
+}
+.o-container:hover .image-text {
+	animation: drop-down-o 0.2s ease-in-out forwards;
+}
+.cam-container:hover .image-text {
+	animation: drop-down 0.2s ease-in forwards;
+}
+.arrow-container:hover .image-text {
+	animation: drop-down 0.2s ease-in forwards;
+}
+.sheets-container:hover .image-text {
+	animation: drop-down 0.2s ease-in forwards;
+}
+.box-container:hover .image-text {
+	animation: drop-down 0.2s ease-in forwards;
+}
+
+.o-container:not(:hover) .image-text {
+	animation: rise-up-0 0.2s ease-in forwards;
+}
+.cam-container:not(:hover) .image-text {
+	animation: rise-up 0.2s ease-in forwards;
+}
+.arrow-container:not(:hover) .image-text {
+	animation: rise-up 0.2s ease-in forwards;
+}
+.sheets-container:not(:hover) .image-text {
+	animation: rise-up 0.2s ease-in forwards;
+}
+.box-container:not(:hover) .image-text {
+	animation: rise-up 0.2s ease-in forwards;
+}
+@keyframes drop-down {
+	0% {
+		top: 100px;
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 113px;
+		opacity: 1;
+	}
+}
+@keyframes drop-down-o {
+	0% {
+		top: 100px;
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 105px;
+		opacity: 1;
+	}
+}
+
+@keyframes rise-up {
+	0% {
+		top: 113px;
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 100px;
+		opacity: 0;
+	}
+}
+@keyframes rise-up-0 {
+	0% {
+		top: 105px;
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 100px;
+		opacity: 0;
+	}
+}
+.box-text {
+	left: 12px;
+}
+.o-text {
+	left: 70px;
+}
+.arrow-text {
+	left: 185px;
+}
+.sheets-text {
+	left: 250px;
+}
+.cam-text {
+	left: 118px;
+}
+
+.box-text {
+	left: 12px;
+}
+.o-text {
+	left: 70px;
+}
+.arrow-text {
+	left: 185px;
+}
+.sheets-text {
+	left: 250px;
+}
+.cam-text {
+	left: 118px;
+}
+/* change this text class and remove the image-text class from html to let the text stay and change the image in the html to the once colored orange */
+.o-text {
+	position: absolute;
+	height: auto;
+	transform: rotate(90deg);
+	opacity: 1;
+	color: #f28531;
+	top: 105px;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+footer {
+	position: relative;
+	bottom: 0px;
+}
+.footer {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 6fr 6fr 1fr 1fr 1fr 6fr 6fr;
+	grid-template-rows: 6rem 6rem;
+	justify-items: center;
+	align-items: center;
+	width: auto;
+}
+
+.footer-text {
+	position: relative;
+	grid-column: 1/-1;
+	grid-row: 1;
+	color: #f28531;
+	font-weight: 700;
+	align-self: flex-end;
+	bottom: -0.625rem;
+	border-bottom: 0.1875rem solid #f28531;
+	padding-bottom: 0.1875rem;
+	text-transform: lowercase;
+}
+.insta {
+	position: relative;
+	grid-row: 2;
+	grid-column: 3;
+	left: 2.5rem;
+	bottom: 0px;
+	width: 6.875rem;
+	height: 6.875rem;
+}
+
+.be {
+	grid-row: 2;
+	grid-column: 4;
+	width: 6.875rem;
+	height: 6.875rem;
+}
+
+.mail {
+	position: relative;
+	grid-row: 2;
+	grid-column: 5;
+	left: -2.5rem;
+	bottom: 0px;
+	width: 6.875rem;
+	height: 6.875rem;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.dots {
+	width: 0.75rem;
+	height: 0.75rem;
+	border-radius: 50%;
+	background-color: #db0047;
+	margin: 0 0.3125rem;
+	grid-row: 1;
+	grid-column: 1/-1;
+	position: relative;
+	align-self: flex-end;
+	bottom: -0.125rem;
+	text-transform: lowercase;
+}
+
+.left-dot {
+	left: -85px;
+}
+
+.right-dot {
+	left: 85px;
+}
+/*  The above css is the template for all pages on this website */
+
+/* Editing the first image with its animation */
+.div1 {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.lofi-logo {
+	width: 23.75rem;
+	height: 23.75rem;
+	margin: 0 auto;
+}
+
+.small-circle1 {
+	width: 1.5625rem;
+	height: 1.5625rem;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+	background-color: #db0047;
+	position: relative;
+	top: -395px;
+	left: -10px;
+}
+.small-circle2 {
+	width: 1.5625rem;
+	height: 1.5625rem;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+	background-color: #db0047;
+	position: relative;
+	top: -40px;
+	left: 370px;
+}
+
+.text-div {
+	width: 22.75rem;
+	text-align: start;
+	font-size: 22px;
+	position: relative;
+	top: -400px;
+	z-index: -1;
+}
+
+.span1 {
+	font-weight: 700;
+}
+
+.text1 {
+	font-weight: 300;
+}
+
+@keyframes img-up {
+	100% {
+		top: -150px;
+	}
+}
+
+.anime-div:hover .lofi-logo {
+	position: relative;
+	animation: img-up 0.1s ease-in forwards;
+}
+
+@keyframes circle-up1 {
+	0% {
+		top: -395px;
+		left: -10px;
+	}
+	100% {
+		top: -545px;
+		left: 370px;
+	}
+}
+
+@keyframes circle-down1 {
+	0% {
+		top: -545px;
+		left: 370px;
+	}
+	100% {
+		top: -395px;
+		left: -10px;
+	}
+}
+
+.anime-div:hover .small-circle1 {
+	position: relative;
+	animation: circle-up1 0.15s ease-in forwards;
+}
+
+.anime-div:not(:hover) .small-circle1 {
+	position: relative;
+	animation: circle-down1 0.15s ease-in forwards;
+}
+
+@keyframes circle-up2 {
+	0% {
+		top: -40px;
+		left: 370px;
+	}
+	100% {
+		top: -190px;
+		left: -10px;
+	}
+}
+
+@keyframes circle-down2 {
+	0% {
+		top: -190px;
+		left: -10px;
+	}
+	100% {
+		top: -40px;
+		left: 370px;
+	}
+}
+
+.anime-div:hover .small-circle2 {
+	position: relative;
+	animation: circle-up2 0.15s ease-in forwards;
+}
+
+.anime-div:not(:hover) .small-circle2 {
+	position: relative;
+	animation: circle-down2 0.15s ease-in forwards;
+}
+
+/* Text animation */
+
+.anime-div:hover .text-div {
+	animation: text-down 0.2s ease-out forwards;
+}
+
+@keyframes text-down {
+	0% {
+		top: -400px;
+	}
+	100% {
+		top: -180px;
+	}
+}
+
+/* In this part I will edit the next div which are teh 2 images after scrolling the page */
+.div2 {
+	display: flex;
+	position: relative;
+	top: -80px;
+	gap: 25px;
+}
+
+.house-style {
+	flex-grow: 1;
+	margin-left: 25px;
+	border: 2px solid rgba(242, 133, 49, 0.4);
+}
+
+.moodboard {
+	flex-grow: 1;
+	align-self: flex-end;
+	margin-right: 25px;
+	position: relative;
+	top: -10px;
+}
+
+.div2-text {
+	width: 100%;
+	display: flex;
+	gap: 25px;
+}
+.house-style-div {
+	display: inline-block;
+	width: 550px;
+	flex-grow: 1;
+	padding-left: 25px;
+}
+
+.moodboard-div {
+	display: inline-block;
+	width: 550px;
+	flex-grow: 1;
+	padding-right: 25px;
+}
+
+.house-style-text {
+	text-align: center;
+	font-size: 20px;
+	position: relative;
+	top: -60px;
+}
+
+.moodboard-text {
+	text-align: center;
+	font-size: 20px;
+	position: relative;
+	top: -60px;
+}
+
+/* This part is to edit div3 which is the Jazz images */
+.div3 {
+	display: flex;
+	gap: 30px;
+	margin-top: 50px;
+}
+
+.jazz1 {
+	border: 2px solid rgba(242, 133, 49, 0.4);
+	flex-grow: 1;
+	margin-left: 40px;
+}
+
+.jazz2 {
+	border: 2px solid rgba(242, 133, 49, 0.4);
+	flex-grow: 1;
+}
+
+.jazz3 {
+	border: 2px solid rgba(242, 133, 49, 0.4);
+	flex-grow: 1;
+	margin-right: 40px;
+}
+
+.div3-text {
+	font-size: 20px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+/* div 4 represents the Envelope and the div5 represents the Business cards */
+
+.div4 {
+	display: inline;
+}
+
+.envelope {
+	width: 500px;
+	border: 2px solid rgba(242, 133, 49, 0.4);
+	margin-top: 100px;
+	margin-left: 100px;
+	margin-right: 120px;
+}
+
+.div5 {
+	display: flex;
+	position: relative;
+	left: 700px;
+	top: -180px;
+}
+
+.cards1 {
+	width: 250px;
+	height: 170px;
+	border: 2px solid rgba(242, 133, 49, 0.4);
+	position: relative;
+	top: -80px;
+	left: 40px;
+}
+
+.cards2 {
+	width: 250px;
+	height: 170px;
+	border: 2px solid rgba(242, 133, 49, 0.4);
+	position: relative;
+	top: 90px;
+	right: 210px;
+}
+.cards3 {
+	width: 250px;
+	height: 170px;
+	border: 2px solid rgba(242, 133, 49, 0.4);
+	position: relative;
+	top: -80px;
+	right: 90px;
+}
+.cards4 {
+	width: 250px;
+	height: 170px;
+	border: 2px solid rgba(242, 133, 49, 0.4);
+	position: relative;
+	top: 90px;
+	right: 340px;
+}
+
+.envelope-text {
+	display: inline;
+	text-align: center;
+	position: relative;
+	top: -160px;
+	left: 320px;
+	font-size: 20px;
+}
+
+.business-text {
+	display: inline;
+	text-align: center;
+	position: relative;
+	top: -60px;
+	left: 900px;
+	font-size: 20px;
+}
+
+.letterhead {
+	width: 500px;
+	height: 650px;
+	border: 2px solid rgba(242, 133, 49, 0.4);
+	position: relative;
+	top: -100px;
+	left: 100px;
+}
+
+.letterhead-text {
+	position: relative;
+	left: 300px;
+	top: -80px;
+	font-size: 20px;
+}
+
+/* Circle with animations */
+
+.big-circle {
+	width: 550px;
+	height: 550px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+	position: relative;
+	top: -650px;
+	left: 800px;
+}
+
+.checkout {
+	font-size: 46px;
+	font-weight: 300;
+	position: relative;
+	left: 180px;
+	top: 80px;
+}
+
+.white-circle1 {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+	position: relative;
+	left: 30px;
+	top: 120px;
+}
+
+.red-circle1 {
+	width: 210px;
+	height: 210px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+	background-color: #db0047;
+	position: relative;
+	z-index: -1;
+	left: 26px;
+	top: -75px;
+}
+
+.white-circle2 {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+	background-color: white;
+	position: relative;
+	left: 295px;
+	top: -285px;
+}
+
+.red-circle2 {
+	width: 210px;
+	height: 210px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+	background-color: #db0047;
+	position: relative;
+	top: -480px;
+	left: 290px;
+	z-index: -1;
+}
+
+.outlaw-logo {
+	width: 197px;
+	height: 197px;
+	border-radius: 50%;
+}
+
+.lara-logo {
+	width: 197px;
+	height: 197px;
+}
+
+@keyframes white-circle-up1 {
+	0% {
+		top: 140px;
+	}
+	100% {
+		top: 120px;
+	}
+}
+
+@keyframes white-circle-down1 {
+	0% {
+		top: 120px;
+	}
+	100% {
+		top: 140px;
+	}
+}
+
+@keyframes white-circle-up2 {
+	0% {
+		top: -265px;
+	}
+	100% {
+		top: -285px;
+	}
+}
+
+@keyframes white-circle-down2 {
+	0% {
+		top: -285px;
+	}
+	100% {
+		top: -265px;
+	}
+}
+
+@keyframes red-circle-up1 {
+	0% {
+		top: -75px;
+	}
+	100% {
+		top: -110px;
+	}
+}
+
+@keyframes red-circle-down1 {
+	0% {
+		top: -110px;
+	}
+	100% {
+		top: -75px;
+	}
+}
+
+@keyframes red-circle-up2 {
+	0% {
+		top: -480px;
+	}
+	100% {
+		top: -515px;
+	}
+}
+
+@keyframes red-circle-down2 {
+	0% {
+		top: -515px;
+	}
+	100% {
+		top: -480px;
+	}
+}
+
+.animation-div1:hover .white-circle1 {
+	animation: white-circle-down1 0.2s ease-in forwards;
+}
+
+.animation-div1:not(:hover) .white-circle1 {
+	animation: white-circle-up1 0.2s ease-in forwards;
+}
+
+.animation-div2:hover .white-circle2 {
+	animation: white-circle-down2 0.2s ease-in forwards;
+}
+
+.animation-div2:not(:hover) .white-circle2 {
+	animation: white-circle-up2 0.2s ease-in forwards;
+}
+
+/* This part is for the red circes */
+.animation-div1:hover .red-circle1 {
+	animation: red-circle-up1 0.2s ease-in forwards;
+}
+
+.animation-div1:not(:hover) .red-circle1 {
+	animation: red-circle-down1 0.2s ease-in forwards;
+}
+
+.animation-div2:hover .red-circle2 {
+	animation: red-circle-up2 0.2s ease-in forwards;
+}
+
+.animation-div2:not(:hover) .red-circle2 {
+	animation: red-circle-down2 0.2s ease-in forwards;
+}

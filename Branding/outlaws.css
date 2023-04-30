@@ -1,0 +1,746 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+body {
+	background-color: #fff0ed;
+	font-family: 'Barlow', sans-serif;
+	color: #db0047;
+}
+main {
+	height: 4650px;
+}
+p {
+	font-weight: 700;
+}
+.container {
+	display: grid;
+	width: auto;
+	height: 200px;
+	grid-template-columns: 60px 60px 60px 60px 60px 1fr;
+	grid-template-rows: 100px 1fr 1fr 1fr;
+}
+img {
+	width: 100px;
+}
+
+.logo {
+	position: relative;
+	grid-column: -1;
+	width: 250px;
+	height: 250px;
+	top: -70px;
+	margin-right: 30px;
+}
+.logo-txt {
+	position: relative;
+
+	grid-column: -1;
+	grid-row: 2;
+	justify-self: center;
+	font-size: 20px;
+	letter-spacing: 2.5px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	top: -15px;
+	color: #db0047;
+}
+
+a:link {
+	color: #db0047;
+	font-family: 'Barlow', sans-serif;
+	font-weight: bold;
+	font-size: 17px;
+	text-decoration: none;
+}
+
+.about:visited {
+	color: #db0047;
+}
+.about {
+	grid-column: -1;
+	grid-row: 3;
+	text-align: right;
+	margin-right: 50px;
+	margin-bottom: 20px;
+	color: #db0047;
+	z-index: 1;
+	position: relative;
+	top: -10px;
+}
+.contact {
+	grid-column: -1;
+	grid-row: 4;
+	text-align: right;
+	margin-right: 50px;
+	color: #e12c65;
+	position: relative;
+	top: -25px;
+}
+.contact:visited {
+	color: #e12c65;
+}
+
+.image-text {
+	position: absolute;
+	height: auto;
+	transform: rotate(90deg);
+	opacity: 0;
+	color: #f28531;
+}
+.cam {
+	position: relative;
+	top: -5px;
+}
+.box {
+	position: absolute;
+	left: 5px;
+}
+
+.box:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-28.svg');
+}
+.o:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-29.svg');
+}
+.cam:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-30.svg');
+}
+.arrow:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-31.svg');
+}
+.sheets:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-32.svg');
+}
+.o-container:hover .image-text {
+	animation: drop-down-o 0.2s ease-in-out forwards;
+}
+.cam-container:hover .image-text {
+	animation: drop-down 0.2s ease-in forwards;
+}
+.arrow-container:hover .image-text {
+	animation: drop-down 0.2s ease-in forwards;
+}
+.sheets-container:hover .image-text {
+	animation: drop-down 0.2s ease-in forwards;
+}
+.box-container:hover .image-text {
+	animation: drop-down 0.2s ease-in forwards;
+}
+
+.o-container:not(:hover) .image-text {
+	animation: rise-up-0 0.2s ease-in forwards;
+}
+.cam-container:not(:hover) .image-text {
+	animation: rise-up 0.2s ease-in forwards;
+}
+.arrow-container:not(:hover) .image-text {
+	animation: rise-up 0.2s ease-in forwards;
+}
+.sheets-container:not(:hover) .image-text {
+	animation: rise-up 0.2s ease-in forwards;
+}
+.box-container:not(:hover) .image-text {
+	animation: rise-up 0.2s ease-in forwards;
+}
+@keyframes drop-down {
+	0% {
+		top: 100px;
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 113px;
+		opacity: 1;
+	}
+}
+@keyframes drop-down-o {
+	0% {
+		top: 100px;
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 105px;
+		opacity: 1;
+	}
+}
+
+@keyframes rise-up {
+	0% {
+		top: 113px;
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 100px;
+		opacity: 0;
+	}
+}
+@keyframes rise-up-0 {
+	0% {
+		top: 105px;
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 100px;
+		opacity: 0;
+	}
+}
+.box-text {
+	left: 12px;
+}
+.o-text {
+	left: 70px;
+}
+.arrow-text {
+	left: 185px;
+}
+.sheets-text {
+	left: 250px;
+}
+.cam-text {
+	left: 118px;
+}
+
+.box-text {
+	left: 12px;
+}
+.o-text {
+	left: 70px;
+}
+.arrow-text {
+	left: 185px;
+}
+.sheets-text {
+	left: 250px;
+}
+.cam-text {
+	left: 118px;
+}
+/* change this text class and remove the image-text class from html to let the text stay and change the image in the html to the once colored orange */
+.o-text {
+	position: absolute;
+	height: auto;
+	transform: rotate(90deg);
+	opacity: 1;
+	color: #f28531;
+	top: 105px;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+footer {
+	position: relative;
+	bottom: 0px;
+}
+.footer {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 6fr 6fr 1fr 1fr 1fr 6fr 6fr;
+	grid-template-rows: 6rem 6rem;
+	justify-items: center;
+	align-items: center;
+	width: auto;
+}
+
+.footer-text {
+	position: relative;
+	grid-column: 1/-1;
+	grid-row: 1;
+	color: #f28531;
+	font-weight: 700;
+	align-self: flex-end;
+	bottom: -10px;
+	border-bottom: 3px solid #f28531;
+	padding-bottom: 3px;
+	text-transform: lowercase;
+}
+.insta {
+	position: relative;
+	grid-row: 2;
+	grid-column: 3;
+	left: 40px;
+	bottom: 0px;
+	width: 110px;
+	height: 110px;
+}
+
+.be {
+	grid-row: 2;
+	grid-column: 4;
+	width: 110px;
+	height: 110px;
+}
+
+.mail {
+	position: relative;
+	grid-row: 2;
+	grid-column: 5;
+	left: -40px;
+	bottom: 0px;
+	width: 110px;
+	height: 110px;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.dots {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #db0047;
+	margin: 0 5px;
+	grid-row: 1;
+	grid-column: 1/-1;
+	position: relative;
+	align-self: flex-end;
+	bottom: -2px;
+	text-transform: lowercase;
+}
+
+.left-dot {
+	left: -85px;
+}
+
+.right-dot {
+	left: 85px;
+}
+/*  The above css is the template for all pages on this website */
+
+/* Here we are starting designing the first section */
+
+.section1 {
+	display: grid;
+	justify-content: center;
+	position: relative;
+	top: -100px;
+	height: 650px;
+}
+
+.outlaw-logo {
+	width: 300px;
+	height: 100px;
+	position: relative;
+	left: 450px;
+}
+
+.o-img {
+	width: 1300px;
+	height: 650px;
+	position: relative;
+	left: -30px;
+	top: -120px;
+}
+
+.two-girls-img {
+	width: 300px;
+	height: 600px;
+	position: relative;
+	top: -700px;
+	left: 850px;
+}
+
+.hors-la-loi {
+	width: 500px;
+	height: 35px;
+	position: relative;
+	top: -750px;
+	left: -115px;
+}
+
+/* section 2 */
+.section2 {
+	display: grid;
+	justify-content: center;
+}
+.big-circle {
+	width: 1200px;
+	height: 1200px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+	position: relative;
+	display: grid;
+	text-align: center;
+	grid-template-columns: 340px 340px 340px;
+	grid-template-rows: 140px 340px 340px 340px;
+	gap: 20px;
+	justify-content: center;
+}
+
+.section2-header {
+	position: relative;
+	font-size: 54px;
+	font-weight: 300;
+	grid-row: 1;
+	grid-column: 1/-1;
+	align-self: end;
+}
+.grid-img {
+	width: 100%;
+	height: 100%;
+	justify-self: center;
+	border: 2px solid #db0047;
+}
+.img1 {
+	grid-column: 1;
+	grid-row: 2;
+	justify-self: end;
+}
+.img2 {
+	grid-column: 2;
+	grid-row: 2;
+}
+.img3 {
+	grid-column: 3;
+	grid-row: 2;
+	justify-self: start;
+}
+.img4 {
+	grid-column: 1;
+	grid-row: 3;
+	justify-self: end;
+}
+.img5 {
+	grid-column: 2;
+	grid-row: 3;
+}
+.img6 {
+	grid-column: 3;
+	grid-row: 3;
+	justify-self: start;
+}
+.img7 {
+	grid-column: 1;
+	grid-row: 4;
+	justify-self: end;
+}
+.img8 {
+	grid-column: 2;
+	grid-row: 4;
+}
+.img9 {
+	grid-column: 3;
+	grid-row: 4;
+	justify-self: start;
+}
+
+/* Section 3 */
+
+.section3-div {
+	display: grid;
+	grid-template-rows: 180px 500px 500px;
+	grid-template-columns: 200px 1fr 1fr 1fr 1fr 1fr;
+	row-gap: 40px;
+}
+.child1 {
+	grid-row: 1;
+	grid-column: 1/-1;
+	font-size: 54px;
+	font-weight: 300;
+	justify-self: center;
+	align-self: end;
+}
+.child2 {
+	grid-row: 2;
+	grid-column: 1/-1;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: -20px;
+}
+.child3 {
+	grid-row: 3;
+	grid-column: 1;
+	width: 110%;
+	height: 110%;
+}
+.child4 {
+	grid-row: 3;
+	grid-column: 2;
+	width: 210%;
+	height: 110%;
+	position: relative;
+	left: -60px;
+}
+.child5 {
+	grid-row: 3;
+	grid-column: 3;
+	width: 220%;
+	height: 124%;
+	position: relative;
+	z-index: -1;
+	left: -110px;
+	top: -7%;
+}
+.child6 {
+	grid-row: 3;
+	grid-column: 4;
+	width: 170%;
+	height: 110%;
+	position: relative;
+	left: -140px;
+}
+.child7 {
+	grid-row: 3;
+	grid-column: 5;
+	width: 120%;
+	height: 110%;
+	position: relative;
+	left: -120px;
+	z-index: 2;
+}
+.child8 {
+	grid-row: 3;
+	grid-column: 6;
+	width: 140%;
+	height: 115%;
+	position: relative;
+	left: -160px;
+}
+
+/* Section 4 */
+.section4 {
+	position: relative;
+	top: -100px;
+	height: 1800px;
+	overflow: hidden;
+}
+
+.outlaw-box {
+	width: 1500px;
+	height: 1200px;
+	position: relative;
+	left: -250px;
+	top: 50px;
+	display: inline;
+}
+.outlaw-hors-la-loi {
+	width: 350px;
+	height: 200px;
+	position: relative;
+	left: 950px;
+	top: -1200px;
+}
+
+.outlaws-color-palette {
+	width: 400px;
+	height: 400px;
+	position: relative;
+	left: 550px;
+	top: -800px;
+}
+
+.outlaw-tag {
+	position: relative;
+	top: -232px;
+	left: -430px;
+	width: 300px;
+	height: 600px;
+}
+
+/* Circle of section 4 */
+
+.big-circle1 {
+	width: 550px;
+	height: 550px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+	position: relative;
+	top: -750px;
+	left: 800px;
+}
+
+.checkout {
+	font-size: 46px;
+	font-weight: 300;
+	position: relative;
+	left: 180px;
+	top: 50px;
+}
+
+.animation-div1 {
+	display: inline-block;
+	width: 197px;
+	height: 197px;
+	position: relative;
+	top: 150px;
+	left: 40px;
+}
+.animation-div2 {
+	display: inline-block;
+	width: 197px;
+	height: 197px;
+	position: relative;
+	top: 150px;
+	left: 100px;
+}
+.white-circle1 {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+	position: relative;
+	top: -40px;
+}
+
+.red-circle1 {
+	width: 210px;
+	height: 210px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+	background-color: #db0047;
+	position: relative;
+	z-index: -1;
+	top: -230px;
+	left: -4px;
+}
+
+.white-circle2 {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+	background-color: white;
+	position: relative;
+	top: -40px;
+}
+
+.red-circle2 {
+	width: 210px;
+	height: 210px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+	background-color: #db0047;
+	position: relative;
+	top: -230px;
+	left: -4px;
+	z-index: -1;
+}
+
+.lofi-logo1 {
+	width: 197px;
+	height: 197px;
+	border-radius: 50%;
+}
+
+.lara-logo1 {
+	width: 197px;
+	height: 197px;
+}
+
+@keyframes white-circle-up {
+	0% {
+		top: -20px;
+	}
+	100% {
+		top: -40px;
+	}
+}
+
+@keyframes white-circle-down {
+	0% {
+		top: -40px;
+	}
+	100% {
+		top: -20px;
+	}
+}
+
+@keyframes red-circle-up {
+	0% {
+		top: -230px;
+	}
+	100% {
+		top: -265px;
+	}
+}
+
+@keyframes red-circle-down {
+	0% {
+		top: -265px;
+	}
+	100% {
+		top: -230px;
+	}
+}
+
+.animation-div1:hover .white-circle1 {
+	animation: white-circle-down 0.2s ease-in forwards;
+}
+
+.animation-div1:not(:hover) .white-circle1 {
+	animation: white-circle-up 0.2s ease-in forwards;
+}
+
+.animation-div2:hover .white-circle2 {
+	animation: white-circle-down 0.2s ease-in forwards;
+}
+
+.animation-div2:not(:hover) .white-circle2 {
+	animation: white-circle-up 0.2s ease-in forwards;
+}
+
+/* This part is for the red circes */
+.animation-div1:hover .red-circle1 {
+	animation: red-circle-up 0.2s ease-in forwards;
+}
+
+.animation-div1:not(:hover) .red-circle1 {
+	animation: red-circle-down 0.2s ease-in forwards;
+}
+
+.animation-div2:hover .red-circle2 {
+	animation: red-circle-up 0.2s ease-in forwards;
+}
+
+.animation-div2:not(:hover) .red-circle2 {
+	animation: red-circle-down 0.2s ease-in forwards;
+}

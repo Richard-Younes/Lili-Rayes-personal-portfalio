@@ -1,0 +1,755 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	/* overflow-y: hidden; */
+}
+body {
+	background-color: #fff0ed;
+	font-family: 'Barlow', sans-serif;
+	color: #db0047;
+}
+main {
+	height: 350px;
+}
+p {
+	font-weight: 700;
+}
+.container {
+	display: grid;
+	width: auto;
+	height: 200px;
+	grid-template-columns: 60px 60px 60px 60px 60px 1fr;
+	grid-template-rows: 100px 1fr 1fr 1fr;
+}
+img {
+	width: 100px;
+}
+
+.logo {
+	position: relative;
+	grid-column: -1;
+	width: 250px;
+	height: 250px;
+	top: -70px;
+	margin-right: 30px;
+}
+.logo-txt {
+	position: relative;
+
+	grid-column: -1;
+	grid-row: 2;
+	justify-self: center;
+	font-size: 20px;
+	letter-spacing: 2.5px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	top: -15px;
+	color: #db0047;
+}
+
+a:link {
+	color: #db0047;
+	font-family: 'Barlow', sans-serif;
+	font-weight: bold;
+	font-size: 17px;
+	text-decoration: none;
+}
+
+.about:visited {
+	color: #db0047;
+}
+.about {
+	grid-column: -1;
+	grid-row: 3;
+	text-align: right;
+	margin-right: 50px;
+	margin-bottom: 20px;
+	color: #db0047;
+	z-index: 1;
+	position: relative;
+	top: -10px;
+}
+.contact {
+	grid-column: -1;
+	grid-row: 4;
+	text-align: right;
+	margin-right: 50px;
+	color: #e12c65;
+	position: relative;
+	top: -25px;
+}
+.contact:visited {
+	color: #e12c65;
+}
+
+.image-text {
+	position: absolute;
+	height: auto;
+	transform: rotate(90deg);
+	opacity: 0;
+	color: #f28531;
+}
+.cam {
+	position: relative;
+	top: -5px;
+}
+.box {
+	position: absolute;
+	left: 5px;
+}
+
+.box:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-28.svg');
+}
+.o:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-29.svg');
+}
+.cam:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-30.svg');
+}
+.arrow:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-31.svg');
+}
+.sheets:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-32.svg');
+}
+.o-container:hover .image-text {
+	animation: drop-down-o 0.2s ease-in-out forwards;
+}
+.cam-container:hover .image-text {
+	animation: drop-down 0.2s ease-in forwards;
+}
+.arrow-container:hover .image-text {
+	animation: drop-down 0.2s ease-in forwards;
+}
+.sheets-container:hover .image-text {
+	animation: drop-down 0.2s ease-in forwards;
+}
+.box-container:hover .image-text {
+	animation: drop-down 0.2s ease-in forwards;
+}
+
+.o-container:not(:hover) .image-text {
+	animation: rise-up-0 0.2s ease-in forwards;
+}
+.cam-container:not(:hover) .image-text {
+	animation: rise-up 0.2s ease-in forwards;
+}
+.arrow-container:not(:hover) .image-text {
+	animation: rise-up 0.2s ease-in forwards;
+}
+.sheets-container:not(:hover) .image-text {
+	animation: rise-up 0.2s ease-in forwards;
+}
+.box-container:not(:hover) .image-text {
+	animation: rise-up 0.2s ease-in forwards;
+}
+@keyframes drop-down {
+	0% {
+		top: 100px;
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 113px;
+		opacity: 1;
+	}
+}
+@keyframes drop-down-o {
+	0% {
+		top: 100px;
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 105px;
+		opacity: 1;
+	}
+}
+
+@keyframes rise-up {
+	0% {
+		top: 113px;
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 100px;
+		opacity: 0;
+	}
+}
+@keyframes rise-up-0 {
+	0% {
+		top: 105px;
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 100px;
+		opacity: 0;
+	}
+}
+.box-text {
+	left: 12px;
+}
+.o-text {
+	left: 70px;
+}
+.arrow-text {
+	left: 185px;
+}
+.sheets-text {
+	left: 250px;
+}
+.cam-text {
+	left: 118px;
+}
+
+.box-text {
+	left: 12px;
+}
+.o-text {
+	left: 70px;
+}
+.arrow-text {
+	left: 185px;
+}
+.sheets-text {
+	left: 250px;
+}
+.cam-text {
+	left: 118px;
+}
+/* change this text class and remove the image-text class from html to let the text stay and change the image in the html to the once colored orange */
+.o-text {
+	position: absolute;
+	height: auto;
+	transform: rotate(90deg);
+	opacity: 1;
+	color: #f28531;
+	top: 105px;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+footer {
+	position: relative;
+	bottom: 0px;
+}
+.footer {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 6fr 6fr 1fr 1fr 1fr 6fr 6fr;
+	grid-template-rows: 6rem 6rem;
+	justify-items: center;
+	align-items: center;
+	width: auto;
+}
+
+.footer-text {
+	position: relative;
+	grid-column: 1/-1;
+	grid-row: 1;
+	color: #f28531;
+	font-weight: 700;
+	align-self: flex-end;
+	bottom: -10px;
+	border-bottom: 3px solid #f28531;
+	padding-bottom: 3px;
+	text-transform: lowercase;
+}
+.insta {
+	position: relative;
+	grid-row: 2;
+	grid-column: 3;
+	left: 40px;
+	bottom: 0px;
+	width: 110px;
+	height: 110px;
+}
+
+.be {
+	grid-row: 2;
+	grid-column: 4;
+	width: 110px;
+	height: 110px;
+}
+
+.mail {
+	position: relative;
+	grid-row: 2;
+	grid-column: 5;
+	left: -40px;
+	bottom: 0px;
+	width: 110px;
+	height: 110px;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.dots {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #db0047;
+	margin: 0 5px;
+	grid-row: 1;
+	grid-column: 1/-1;
+	position: relative;
+	align-self: flex-end;
+	bottom: -2px;
+	text-transform: lowercase;
+}
+
+.left-dot {
+	left: -85px;
+}
+
+.right-dot {
+	left: 85px;
+}
+/*  The above css is the template for all pages on this website */
+
+/* This part will cover the css for the section 1 which containes the animated image and text */
+.section1 {
+	height: 500px;
+	display: grid;
+	text-align: center;
+	justify-content: center;
+	position: relative;
+	top: -100px;
+}
+.img-animation-div {
+	width: 1000px;
+}
+.animated-img1 {
+	width: 450px;
+	height: 400px;
+	position: relative;
+	left: 226px;
+}
+
+.animated-img2 {
+	width: 450px;
+	height: 400px;
+	position: relative;
+	right: 226px;
+	z-index: -1;
+}
+
+@keyframes move-left1 {
+	0% {
+		left: 226px;
+	}
+	100% {
+		left: 2px;
+	}
+}
+
+@keyframes move-right1 {
+	0% {
+		left: 2px;
+	}
+	100% {
+		left: 226px;
+	}
+}
+
+.img-animation-div:hover .animated-img1 {
+	animation: move-left1 0.2s ease-in forwards;
+}
+
+.img-animation-div:not(:hover) .animated-img1 {
+	animation: move-right1 0.2s ease-in forwards;
+}
+
+/* The second image animation */
+@keyframes move-left2 {
+	0% {
+		right: 2px;
+	}
+	100% {
+		right: 226px;
+	}
+}
+
+@keyframes move-right2 {
+	0% {
+		right: 226px;
+	}
+	100% {
+		right: 2px;
+	}
+}
+
+.img-animation-div:hover .animated-img2 {
+	animation: move-right2 0.2s ease-in forwards;
+}
+
+.img-animation-div:not(:hover) .animated-img2 {
+	animation: move-left2 0.2s ease-in forwards;
+}
+/* the small circles with their animations */
+.small-circle1 {
+	width: 1.5625rem;
+	height: 1.5625rem;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+	background-color: #db0047;
+	position: relative;
+	left: 260px;
+	top: 10px;
+	z-index: 1;
+}
+
+.small-circle2 {
+	width: 1.5625rem;
+	height: 1.5625rem;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+	background-color: #db0047;
+	position: relative;
+	left: 715px;
+	top: -15px;
+	z-index: 1;
+}
+
+@keyframes small-left1 {
+	0% {
+		left: 260px;
+	}
+	100% {
+		left: 36px;
+	}
+}
+
+@keyframes small-right1 {
+	0% {
+		left: 36px;
+	}
+	100% {
+		left: 260px;
+	}
+}
+
+@keyframes small-left2 {
+	0% {
+		left: 939px;
+	}
+	100% {
+		left: 715px;
+	}
+}
+
+@keyframes small-right2 {
+	0% {
+		left: 715px;
+	}
+	100% {
+		left: 939px;
+	}
+}
+
+.img-animation-div:hover .small-circle1 {
+	animation: small-left1 0.2s ease-in forwards;
+}
+.img-animation-div:not(:hover) .small-circle1 {
+	animation: small-right1 0.2s ease-in forwards;
+}
+.img-animation-div:hover .small-circle2 {
+	animation: small-right2 0.2s ease-in forwards;
+}
+.img-animation-div:not(:hover) .small-circle2 {
+	animation: small-left2 0.2s ease-in forwards;
+}
+
+.img-p-div {
+	width: 900px;
+	position: relative;
+	left: 50px;
+	text-align: justify;
+	opacity: 0;
+}
+
+.img-p {
+	font-weight: 300;
+	font-size: 20px;
+}
+
+@keyframes show {
+	100% {
+		opacity: 1;
+	}
+}
+
+.img-animation-div:hover .img-p-div {
+	animation: show 0.2s ease-in forwards;
+}
+
+/* This part is for section 2 */
+
+.section2 {
+	align-items: center;
+	text-align: center;
+	margin-top: 80px;
+	width: 100%;
+}
+
+.big-img {
+	height: 100%;
+	width: 100%;
+	margin-top: 25px;
+}
+
+/* section 3 */
+
+.section3 {
+	margin-top: 80px;
+	width: 100%;
+	text-align: center;
+}
+.grid-container {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 25px;
+}
+.img1 {
+	grid-row: 1;
+	grid-column: 1;
+	width: 100%;
+	height: 100%;
+}
+
+.img2 {
+	grid-row: 1;
+	grid-column: 2;
+	width: 100%;
+	height: 100%;
+}
+
+/* Circle animations */
+.section4 {
+	height: 600px;
+	width: 100%;
+	display: grid;
+	justify-content: center;
+}
+.animation-div1 {
+	display: inline-block;
+	width: 197px;
+	height: 197px;
+	position: relative;
+	top: 150px;
+	left: 40px;
+}
+.animation-div2 {
+	display: inline-block;
+	width: 197px;
+	height: 197px;
+	position: relative;
+	top: 150px;
+	left: 80px;
+}
+.big-circle {
+	width: 550px;
+	height: 550px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+	position: relative;
+	margin-top: 100px;
+}
+
+.checkout {
+	font-size: 46px;
+	font-weight: 300;
+	position: relative;
+	left: 180px;
+	top: 80px;
+}
+
+.white-circle1 {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+	position: relative;
+}
+
+.red-circle1 {
+	width: 210px;
+	height: 210px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+	background-color: #db0047;
+	position: relative;
+	z-index: -1;
+	top: -185px;
+	left: -5px;
+}
+
+.white-circle2 {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+	background-color: white;
+	position: relative;
+}
+
+.red-circle2 {
+	width: 210px;
+	height: 210px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+	background-color: #db0047;
+	position: relative;
+	z-index: -1;
+	top: -185px;
+	left: -5px;
+}
+
+.outlaw-logo {
+	width: 197px;
+	height: 197px;
+	border-radius: 50%;
+}
+
+.lofi-logo {
+	width: 197px;
+	height: 197px;
+	border-radius: 50%;
+}
+
+@keyframes white-circle-up1 {
+	0% {
+		top: 20px;
+	}
+	100% {
+		top: 0;
+	}
+}
+
+@keyframes white-circle-down1 {
+	0% {
+		top: 0;
+	}
+	100% {
+		top: 20px;
+	}
+}
+
+@keyframes white-circle-up2 {
+	0% {
+		top: 20px;
+	}
+	100% {
+		top: 0;
+	}
+}
+
+@keyframes white-circle-down2 {
+	0% {
+		top: 0px;
+	}
+	100% {
+		top: 20px;
+	}
+}
+
+@keyframes red-circle-up1 {
+	0% {
+		top: -185px;
+	}
+	100% {
+		top: -220px;
+	}
+}
+
+@keyframes red-circle-down1 {
+	0% {
+		top: -220px;
+	}
+	100% {
+		top: -185px;
+	}
+}
+
+.animation-div1:hover .white-circle1 {
+	animation: white-circle-down1 0.2s ease-in forwards;
+}
+
+.animation-div1:not(:hover) .white-circle1 {
+	animation: white-circle-up1 0.2s ease-in forwards;
+}
+
+.animation-div2:hover .white-circle2 {
+	animation: white-circle-down2 0.2s ease-in forwards;
+}
+
+.animation-div2:not(:hover) .white-circle2 {
+	animation: white-circle-up2 0.2s ease-in forwards;
+}
+
+/* This part is for the red circes */
+.animation-div1:hover .red-circle1 {
+	animation: red-circle-up1 0.2s ease-in forwards;
+}
+
+.animation-div1:not(:hover) .red-circle1 {
+	animation: red-circle-down1 0.2s ease-in forwards;
+}
+
+.animation-div2:hover .red-circle2 {
+	animation: red-circle-up1 0.2s ease-in forwards;
+}
+
+.animation-div2:not(:hover) .red-circle2 {
+	animation: red-circle-down1 0.2s ease-in forwards;
+}
