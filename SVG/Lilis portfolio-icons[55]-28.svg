@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="119.782pt" height="120.071pt" viewBox="0 0 119.782 120.071">
+<defs>
+<clipPath id="clip_27">
+<path transform="matrix(1,0,0,-1,0,120.071)" d="M0 120.071H119.782V0H0Z"/>
+</clipPath>
+</defs>
+<g id="layer_1" data-name="Layer 1">
+<g clip-path="url(#clip_27)">
+<path transform="matrix(1,0,0,-1,62.3094,37.1969)" stroke-width="3" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#f28531" d="M0 0 9.884-10.348C9.964-10.443 10.019-10.558 10.044-10.68L13.476-35.756C13.592-36.332 13.218-36.893 12.642-37.009 12.265-37.084 11.877-36.951 11.626-36.659L2.473-29.045C2.382-28.94 2.322-28.812 2.3-28.674L-1.316-.598C-1.381-.189-1.103 .195-.693 .26-.433 .302-.169 .203 0 0Z"/>
+<path transform="matrix(1,0,0,-1,53.1824,42.7994)" d="M0 0 8.251-1.328 9.548-11.515 1.052-10.24C.508-10.151 .101-9.692 .079-9.142L-.604-.553C-.649-.288-.472-.037-.208 .009-.139 .021-.067 .018 0 0" fill="#f28531"/>
+<path transform="matrix(1,0,0,-1,53.1824,42.7994)" stroke-width="3" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#f28531" d="M0 0 8.251-1.328 9.548-11.515 1.052-10.24C.508-10.151 .101-9.692 .079-9.142L-.604-.553C-.649-.288-.472-.037-.208 .009-.139 .021-.067 .018 0 0Z"/>
+<path transform="matrix(1,0,0,-1,53.723,71.3199)" stroke-width="3" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#f28531" d="M0 0-.75 27.95C-.786 28.164-.99 28.307-1.204 28.27-1.277 28.257-1.346 28.224-1.401 28.174L-9.385 20.864C-9.66 20.614-9.791 20.242-9.734 19.875L-9.006-8.295C-8.935-8.764-8.497-9.085-8.028-9.014-7.861-8.988-7.704-8.914-7.579-8.799L0 0Z"/>
+<path transform="matrix(1,0,0,-1,74.9363,73.5348)" stroke-width="3" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#f28531" d="M0 0-21.213 2.215-28.971-5.812C-29.464-6.263-29.709-6.528-29.153-6.78L-9.758-9.597C-9.413-9.646-9.065-9.535-8.813-9.294L.175-.701C.34-.542 .346-.278 .187-.112 .136-.059 .071-.02 0 0Z"/>
+<path transform="matrix(1,0,0,-1,54.2059,54.050897)" d="M0 0 8.309-1.335 10.028-12.475 15.963-17.493 0-16.62Z" fill="#f28531"/>
+<path transform="matrix(1,0,0,-1,54.2059,54.050897)" stroke-width="1" stroke-linecap="butt" stroke-miterlimit="4" stroke-linejoin="miter" fill="none" stroke="#f28531" d="M0 0 8.309-1.335 10.028-12.475 15.963-17.493 0-16.62V0Z"/>
+</g>
+</g>
+</svg>

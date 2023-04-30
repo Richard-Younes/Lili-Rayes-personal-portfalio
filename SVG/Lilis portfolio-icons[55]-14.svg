@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="119.782pt" height="120.071pt" viewBox="0 0 119.782 120.071">
+<defs>
+<clipPath id="clip_13">
+<path transform="matrix(1,0,0,-1,0,120.071)" d="M0 120.071H119.782V0H0Z"/>
+</clipPath>
+</defs>
+<g id="layer_1" data-name="Layer 1">
+<g clip-path="url(#clip_13)">
+<path transform="matrix(1,0,0,-1,55.0456,37.9814)" d="M0 0C-2.792-.9 .27-7.383-4.952-9-10.174-10.617-21.113-14.579-21.069-16.023-21.034-17.206 3.261-24.258 5.602-24.258 7.943-24.258 26.383-17.558 27.553-14.758 28.723-11.958 30.975-7.465 28.003-6.474 25.031-5.483 3.39 1.1 0 0" fill="#db0047"/>
+<path transform="matrix(1,0,0,-1,40.1887,60.0365)" stroke-width="3" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#db0047" d="M0 0C-1.256-.338-5.34-2.45-4.572-3.651-3.942-4.636 19.696-12.568 22.817-12.059 25.938-11.55 44.63-2.187 45.617-1.677"/>
+<path transform="matrix(1,0,0,-1,40.1887,70.1313)" stroke-width="3" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#db0047" d="M0 0C-1.256-.338-5.34-2.45-4.572-3.65-3.942-4.635 19.696-12.567 22.817-12.058 25.938-11.549 44.63-2.186 45.617-1.676"/>
+</g>
+</g>
+</svg>

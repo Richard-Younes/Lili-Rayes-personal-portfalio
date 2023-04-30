@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="119.782pt" height="120.071pt" viewBox="0 0 119.782 120.071">
+<defs>
+<clipPath id="clip_12">
+<path transform="matrix(1,0,0,-1,0,120.071)" d="M0 120.071H119.782V0H0Z"/>
+</clipPath>
+</defs>
+<g id="layer_1" data-name="Layer 1">
+<g clip-path="url(#clip_12)">
+<path transform="matrix(1,0,0,-1,44.4842,67.2397)" d="M0 0C-2.533 1.231-3.398 4.001-1.732 5.444L26.315 29.814C28.735 31.883 33.556 29.514 33.398 26.352L31.442-10.76C31.333-12.962 28.625-13.974 26.092-12.742L17.559-7.156 14.352-13.707C13.285-15.895 10.646-16.803 8.458-15.736 6.271-14.669 5.362-12.03 6.43-9.842L9.667-3.242Z" fill="#db0047"/>
+</g>
+</g>
+</svg>

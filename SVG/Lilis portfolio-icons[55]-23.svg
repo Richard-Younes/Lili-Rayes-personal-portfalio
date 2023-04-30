@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="339.293pt" height="340.113pt" viewBox="0 0 339.293 340.113">
+<defs>
+<clipPath id="clip_22">
+<path transform="matrix(1,0,0,-1,0,340.113)" d="M0 340.113H339.293V0H0Z"/>
+</clipPath>
+</defs>
+<g id="layer_1" data-name="Layer 1">
+<g clip-path="url(#clip_22)">
+<path transform="matrix(1,0,0,-1,155.8496,77.10422)" d="M0 0C-9.817-3.765 .949-30.878-17.416-37.656-35.782-44.434-74.25-60.99-74.098-67.029-73.973-71.977 11.466-101.47 19.702-101.47 27.939-101.47 92.783-73.43 96.902-61.757 101.021-50.084 108.937-31.257 98.485-27.112 88.034-22.967 11.921 4.574 0 0" fill="#f28531"/>
+<path transform="matrix(1,0,0,-1,91.7861,168.20381)" stroke-width="13" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#f28531" d="M0 0C-4.776-1.513-20.3-10.956-17.383-16.323-14.983-20.723 74.893-56.195 86.76-53.916 98.627-51.637 169.699-9.775 173.466-7.495"/>
+<path transform="matrix(1,0,0,-1,91.7861,209.50022)" stroke-width="13" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#f28531" d="M0 0C-4.776-1.512-20.3-10.956-17.383-16.322-14.983-20.722 74.893-56.193 86.76-53.915 98.627-51.637 169.699-9.774 173.466-7.494"/>
+</g>
+</g>
+</svg>
