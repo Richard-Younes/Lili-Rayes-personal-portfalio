@@ -1,0 +1,99 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff0ed;
+	font-family: 'Barlow', sans-serif;
+	font-weight: light;
+	font-size: 180px;
+	color: #db0047;
+	text-transform: uppercase;
+	line-height: 1;
+	overflow: hidden;
+}
+
+p {
+	display: inline;
+	position: relative;
+}
+.container {
+	width: 1366px;
+	height: 768px;
+	margin-left: 100px;
+	margin-right: 245px;
+	position: absolute;
+}
+.svg {
+	width: 220px;
+	height: 220px;
+	filter: drop-shadow(10px 3px 3px #00000029);
+	vertical-align: bottom;
+	position: absolute;
+}
+.cam-svg {
+	left: 65px;
+	top: -15px;
+}
+.cam-svg:hover {
+	filter: drop-shadow(0px 0px 0px #00000029);
+}
+
+.p {
+	padding-right: 110px;
+}
+
+.rtf {
+	padding-right: 100px;
+}
+.o-svg {
+	left: 520px;
+	top: -10px;
+	position: absolute;
+	z-index: 1;
+}
+.o-svg:hover {
+	filter: drop-shadow(0px 0px 0px #00000029);
+}
+.box-svg {
+	left: 800px;
+	top: -20px;
+}
+.box-svg:hover {
+	filter: drop-shadow(0px 0px 0px #00000029);
+}
+
+.lilia-svg {
+	width: 620px;
+	height: 620px;
+	top: -30px;
+	position: absolute;
+
+	filter: drop-shadow(0px 0px 0px #00000029);
+}
+
+.gr {
+	padding-right: 70px;
+}
+
+.arrow-svg {
+	left: 300px;
+	top: 350px;
+}
+.arrow-svg:hover {
+	filter: drop-shadow(0px 0px 0px #00000029);
+}
+.d {
+	padding-right: 115px;
+}
+
+.shelve-svg {
+	left: 80px;
+	top: 530px;
+}
+
+.shelve-svg:hover {
+	filter: drop-shadow(0px 0px 0px #00000029);
+}
