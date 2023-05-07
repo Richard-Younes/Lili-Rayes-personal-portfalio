@@ -7,7 +7,6 @@
 html,
 body {
 	height: 100%;
-	overflow-y: hidden;
 }
 body {
 	background-color: #fff0ed;
@@ -15,7 +14,7 @@ body {
 	color: #db0047;
 }
 main {
-	height: 350px;
+	height: 45%;
 }
 p {
 	font-weight: 700;
@@ -130,35 +129,35 @@ a:link {
 	content: url('../SVG/Lilis\ portfolio-icons[55]-32.svg');
 }
 .o-container:hover .image-text {
-	animation: drop-down-o 0.2s ease-in-out forwards;
+	animation: drop-down-o 0.3s ease-in forwards;
 }
 .cam-container:hover .image-text {
-	animation: drop-down 0.2s ease-in forwards;
+	animation: drop-down 0.3s ease-in forwards;
 }
 .arrow-container:hover .image-text {
-	animation: drop-down 0.2s ease-in forwards;
+	animation: drop-down 0.3s ease-in forwards;
 }
 .sheets-container:hover .image-text {
-	animation: drop-down 0.2s ease-in forwards;
+	animation: drop-down 0.3s ease-in forwards;
 }
 .box-container:hover .image-text {
-	animation: drop-down 0.2s ease-in forwards;
+	animation: drop-down 0.3s ease-in forwards;
 }
 
 .o-container:not(:hover) .image-text {
-	animation: rise-up 0.2s ease-in forwards;
+	animation: rise-up-o 0.3s ease-out forwards;
 }
 .cam-container:not(:hover) .image-text {
-	animation: rise-up 0.2s ease-in forwards;
+	animation: rise-up 0.3s ease-out forwards;
 }
 .arrow-container:not(:hover) .image-text {
-	animation: rise-up 0.2s ease-in forwards;
+	animation: rise-up 0.3s ease-out forwards;
 }
 .sheets-container:not(:hover) .image-text {
-	animation: rise-up 0.2s ease-in forwards;
+	animation: rise-up 0.3s ease-out forwards;
 }
 .box-container:not(:hover) .image-text {
-	animation: rise-up 0.2s ease-in forwards;
+	animation: rise-up 0.3s ease-out forwards;
 }
 @keyframes drop-down {
 	0% {
@@ -199,9 +198,28 @@ a:link {
 	}
 }
 
+@keyframes rise-up-o {
+	0% {
+		top: 105px;
+		opacity: 1;
+	}
+	10% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		top: 100px;
+		opacity: 0;
+	}
+}
 @keyframes rise-up {
 	0% {
-		top: 120px;
+		top: 110px;
 		opacity: 1;
 	}
 	40% {
