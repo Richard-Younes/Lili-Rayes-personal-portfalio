@@ -6,8 +6,7 @@
 
 html,
 body {
-	min-height: 100vh;
-	/* overflow-y: hidden; */
+	height: 100%;
 }
 body {
 	background-color: #fff0ed;
@@ -15,7 +14,7 @@ body {
 	color: #db0047;
 }
 main {
-	height: 1500px;
+	height: 1420px;
 }
 p {
 	font-weight: 700;
@@ -340,202 +339,75 @@ footer {
 .right-dot {
 	left: 80px;
 }
-/*  The above css is the template for all pages on this website */
 
 /* Section 1 */
 
 .section1 {
 	display: grid;
+	grid-template-rows: 100%;
 	grid-template-columns: 1fr 250px;
-	grid-template-rows: 1fr;
+	position: relative;
+	top: -7%;
 	overflow-x: hidden;
-	position: relative;
-	top: -100px;
 }
-.section1-div1 {
-	grid-column: 1/2;
-	justify-self: flex-end;
-	display: grid;
-	justify-content: center;
-	justify-items: center;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 40px 1fr;
-}
-.first-h2 {
-	font-size: 22px;
-	font-weight: 500;
-	font-style: italic;
+
+.infographic-poster {
 	grid-row: 1/2;
-	grid-column: 1/-1;
 	justify-self: center;
-	margin-left: 30%;
+	margin-left: 200px;
+	height: 1200px;
 }
-
-.main-img {
-	width: 500px;
-	height: 550px;
-	border: 1px #db0047 solid;
-	margin-left: 125%;
-	grid-row: 2/3;
-}
-
-.half-circle {
-	width: 550px;
-	height: 550px;
-	border-radius: 50%;
-	position: relative;
-	z-index: -1;
-	background-color: #f28531;
-	opacity: 34%;
-	margin-left: 10%;
-	grid-row: 2/3;
-}
-.section1-text-div {
-	position: relative;
-	width: 175px;
-	grid-row: 2/3;
-	align-self: center;
-	margin-right: 210%;
-	margin-bottom: 20%;
-}
-
-/* Section 2 */
-.section2 {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 1fr;
-	justify-items: center;
-}
-
-.sec2-circl1 {
-	width: 250px;
-	height: 250px;
-	border-radius: 50%;
-	border: 2px #db0047 solid;
-	background-color: #db0047;
-	display: grid;
-	justify-content: center;
-	justify-items: center;
-	grid-row: 1/2;
-	grid-column: 1/2;
-}
-
-.sec2-circl2 {
-	width: 250px;
-	height: 250px;
-	border-radius: 50%;
-	border: 2px #db0047 solid;
-	background-color: #db0047;
-	display: grid;
-	justify-content: center;
-	justify-items: center;
-	grid-row: 1/2;
-	grid-column: 2/3;
-}
-
-.sec2-circl3 {
-	width: 250px;
-	height: 250px;
-	border-radius: 50%;
-	border: 2px #db0047 solid;
-	background-color: #db0047;
-	display: grid;
-	justify-content: center;
-	justify-items: center;
-	grid-row: 1/2;
-	grid-column: 3/4;
-}
-
-.sec2-head {
-	position: relative;
-	top: -110%;
-	font-size: 22px;
-}
-
-.sect2-text {
-	position: relative;
-	top: -190%;
-	font-weight: 500;
-	font-size: 22px;
-	font-style: italic;
-}
-
-.sect2-img {
-	width: 170px;
-	height: 120px;
-	border: 1px #db0047 solid;
-	position: relative;
-	grid-row: 1/2;
-}
-
-/* images for the first column */
-.img11 {
-	z-index: 3;
-	top: -30%;
-	grid-column: 1/2;
-}
-.img12 {
-	z-index: 2;
-	top: -15%;
-	grid-column: 1/2;
-}
-.img13 {
-	z-index: 1;
-	top: 0;
-	grid-column: 1/2;
-}
-.img14 {
-	z-index: 0;
-	top: 15%;
-	grid-column: 1/2;
-}
-
-/* Images for the second column */
-.img21 {
-	z-index: 3;
-	top: -30%;
-	grid-column: 2/3;
-}
-.img22 {
-	z-index: 2;
-	top: -15%;
-	grid-column: 2/3;
-}
-.img23 {
-	z-index: 1;
-	top: 0;
-	grid-column: 2/3;
-}
-.img24 {
-	z-index: 0;
-	top: 15%;
-	grid-column: 2/3;
-}
-
-/* Images for the Third column */
-.img31 {
-	z-index: 3;
-	top: -30%;
-	grid-column: 3/4;
-}
-.img32 {
-	z-index: 2;
-	top: -15%;
-	grid-column: 3/4;
-}
-.img33 {
-	z-index: 1;
-	top: 0;
-	grid-column: 3/4;
-}
-
-/* Animations */
-/* Editing the links */
 .link-div {
-	grid-column: 2/3;
+	grid-row: 1/2;
 	justify-self: flex-end;
 	margin-top: 100%;
 }
+
+.infographic-img {
+	width: 600px;
+	height: 900px;
+	border: 1px #db0047 solid;
+}
+
+.info-circle {
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	border: 2px solid #f28531;
+	position: relative;
+	left: 8%;
+	top: -19%;
+	z-index: -1;
+	display: grid;
+	align-items: end;
+	justify-items: center;
+}
+
+.info-text {
+	margin-bottom: 20%;
+	color: #f28531;
+	font-weight: 500;
+	font-size: 18px;
+}
+span {
+	position: relative;
+}
+.info-text-line1 {
+	position: relative;
+	top: 82%;
+	color: #f28531;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 500;
+}
+.info-text-line3 {
+	left: 5%;
+}
+.info-text-line5 {
+	left: 10%;
+}
+
+/* Editing the links */
 .circle-link-img {
 	width: 160px;
 	height: 65px;
@@ -565,7 +437,7 @@ footer {
 	top: -25px;
 	right: -10px;
 	z-index: -1;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 @keyframes circle-right {
