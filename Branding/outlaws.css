@@ -129,35 +129,35 @@ a:link {
 	content: url('../SVG/Lilis\ portfolio-icons[55]-32.svg');
 }
 .o-container:hover .image-text {
-	animation: drop-down-o 0.2s ease-in-out forwards;
+	animation: drop-down-o 0.3s ease-in forwards;
 }
 .cam-container:hover .image-text {
-	animation: drop-down 0.2s ease-in forwards;
+	animation: drop-down 0.3s ease-in forwards;
 }
 .arrow-container:hover .image-text {
-	animation: drop-down 0.2s ease-in forwards;
+	animation: drop-down 0.3s ease-in forwards;
 }
 .sheets-container:hover .image-text {
-	animation: drop-down 0.2s ease-in forwards;
+	animation: drop-down 0.3s ease-in forwards;
 }
 .box-container:hover .image-text {
-	animation: drop-down 0.2s ease-in forwards;
+	animation: drop-down 0.3s ease-in forwards;
 }
 
 .o-container:not(:hover) .image-text {
-	animation: rise-up-0 0.2s ease-in forwards;
+	animation: rise-up-o 0.3s ease-out forwards;
 }
 .cam-container:not(:hover) .image-text {
-	animation: rise-up 0.2s ease-in forwards;
+	animation: rise-up 0.3s ease-out forwards;
 }
 .arrow-container:not(:hover) .image-text {
-	animation: rise-up 0.2s ease-in forwards;
+	animation: rise-up 0.3s ease-out forwards;
 }
 .sheets-container:not(:hover) .image-text {
-	animation: rise-up 0.2s ease-in forwards;
+	animation: rise-up 0.3s ease-out forwards;
 }
 .box-container:not(:hover) .image-text {
-	animation: rise-up 0.2s ease-in forwards;
+	animation: rise-up 0.3s ease-out forwards;
 }
 @keyframes drop-down {
 	0% {
@@ -198,27 +198,30 @@ a:link {
 	}
 }
 
-@keyframes rise-up {
-	0% {
-		top: 113px;
-		opacity: 1;
-	}
-	40% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		top: 100px;
-		opacity: 0;
-	}
-}
-@keyframes rise-up-0 {
+@keyframes rise-up-o {
 	0% {
 		top: 105px;
 		opacity: 1;
 	}
+	10% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		top: 100px;
+		opacity: 0;
+	}
+}
+@keyframes rise-up {
+	0% {
+		top: 110px;
+		opacity: 1;
+	}
 	40% {
 		opacity: 1;
 	}
@@ -230,36 +233,18 @@ a:link {
 		opacity: 0;
 	}
 }
-.box-text {
-	left: 12px;
-}
-.o-text {
-	left: 70px;
-}
-.arrow-text {
-	left: 185px;
-}
-.sheets-text {
-	left: 250px;
-}
-.cam-text {
-	left: 118px;
-}
 
 .box-text {
-	left: 12px;
+	left: 10px;
 }
 .o-text {
 	left: 70px;
 }
 .arrow-text {
-	left: 185px;
+	left: 182px;
 }
 .sheets-text {
 	left: 250px;
-}
-.cam-text {
-	left: 118px;
 }
 /* change this text class and remove the image-text class from html to let the text stay and change the image in the html to the once colored orange */
 .o-text {
