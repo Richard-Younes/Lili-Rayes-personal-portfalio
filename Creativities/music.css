@@ -161,7 +161,7 @@ a:link {
 }
 @keyframes drop-down {
 	0% {
-		top: 100px;
+		top: 6.5rem;
 		opacity: 0;
 	}
 	10% {
@@ -174,13 +174,31 @@ a:link {
 		opacity: 1;
 	}
 	100% {
-		top: 113px;
+		top: 7.5rem;
 		opacity: 1;
 	}
 }
+
+@keyframes rise-up {
+	0% {
+		top: 7.5rem;
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 6.25rem;
+		opacity: 0;
+	}
+}
+
 @keyframes drop-down-o {
 	0% {
-		top: 100px;
+		top: 6.5rem;
 		opacity: 0;
 	}
 	10% {
@@ -193,58 +211,45 @@ a:link {
 		opacity: 1;
 	}
 	100% {
-		top: 105px;
+		top: 7rem;
 		opacity: 1;
 	}
 }
 
 @keyframes rise-up-o {
 	0% {
-		top: 105px;
-		opacity: 1;
-	}
-	10% {
+		top: 7rem;
 		opacity: 1;
 	}
 	40% {
 		opacity: 1;
 	}
 	50% {
-		opacity: 0;
+		opacity: 1;
 	}
 	100% {
-		top: 100px;
+		top: 6.25rem;
 		opacity: 0;
 	}
 }
-@keyframes rise-up {
-	0% {
-		top: 110px;
-		opacity: 1;
-	}
-	40% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		top: 100px;
-		opacity: 0;
-	}
+.logos-text {
+	font-size: 1.25rem;
 }
 
 .box-text {
-	left: 10px;
+	left: 0.1rem;
 }
 .o-text {
-	left: 70px;
+	left: 4rem;
 }
 .arrow-text {
-	left: 182px;
+	left: 11rem;
 }
 .sheets-text {
-	left: 250px;
+	left: 15rem;
+}
+.cam-text {
+	left: 6.8rem;
 }
 
 /* change this text class and remove the image-text class from html to let the text stay and change the image in the html to the once colored orange */

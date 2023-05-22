@@ -8,7 +8,7 @@ body {
 	background-color: #fff0ed;
 	font-family: 'Barlow', sans-serif;
 	font-weight: light;
-	font-size: 180px;
+	font-size: 11.25rem;
 	color: #db0047;
 	text-transform: uppercase;
 	line-height: 1;
@@ -20,80 +20,80 @@ p {
 	position: relative;
 }
 .container {
-	width: 1366px;
-	height: 768px;
-	margin-left: 100px;
-	margin-right: 245px;
+	width: 85.375rem;
+	height: 48.0rem;
+	margin-left: 6.25rem;
+	margin-right: 15.3125rem;
 	position: absolute;
 }
 .svg {
-	width: 220px;
-	height: 220px;
-	filter: drop-shadow(10px 3px 3px #00000029);
+	width: 13.75rem;
+	height: 13.75rem;
+	filter: drop-shadow(0.625rem 0.1875rem 0.1875rem #00000029);
 	vertical-align: bottom;
 	position: absolute;
 }
 .cam-svg {
-	left: 65px;
-	top: -15px;
+	left: 4.0625rem;
+	top: -0.9375rem;
 }
 .cam-svg:hover {
-	filter: drop-shadow(0px 0px 0px #00000029);
+	filter: drop-shadow(0.0rem 0.0rem 0.0rem #00000029);
 }
 
 .p {
-	padding-right: 110px;
+	padding-right: 6.875rem;
 }
 
 .rtf {
-	padding-right: 100px;
+	padding-right: 6.25rem;
 }
 .o-svg {
-	left: 520px;
-	top: -10px;
+	left: 32.5rem;
+	top: -0.625rem;
 	position: absolute;
 	z-index: 1;
 }
 .o-svg:hover {
-	filter: drop-shadow(0px 0px 0px #00000029);
+	filter: drop-shadow(0.0rem 0.0rem 0.0rem #00000029);
 }
 .box-svg {
-	left: 800px;
-	top: -20px;
+	left: 50.0rem;
+	top: -1.25rem;
 }
 .box-svg:hover {
-	filter: drop-shadow(0px 0px 0px #00000029);
+	filter: drop-shadow(0.0rem 0.0rem 0.0rem #00000029);
 }
 
 .lilia-svg {
-	width: 620px;
-	height: 620px;
-	top: -30px;
+	width: 38.75rem;
+	height: 38.75rem;
+	top: -1.875rem;
 	position: absolute;
 
-	filter: drop-shadow(0px 0px 0px #00000029);
+	filter: drop-shadow(0.0rem 0.0rem 0.0rem #00000029);
 }
 
 .gr {
-	padding-right: 70px;
+	padding-right: 4.375rem;
 }
 
 .arrow-svg {
-	left: 300px;
-	top: 350px;
+	left: 18.75rem;
+	top: 21.875rem;
 }
 .arrow-svg:hover {
-	filter: drop-shadow(0px 0px 0px #00000029);
+	filter: drop-shadow(0.0rem 0.0rem 0.0rem #00000029);
 }
 .d {
-	padding-right: 115px;
+	padding-right: 7.1875rem;
 }
 
 .shelve-svg {
-	left: 80px;
-	top: 530px;
+	left: 5.0rem;
+	top: 33.125rem;
 }
 
 .shelve-svg:hover {
-	filter: drop-shadow(0px 0px 0px #00000029);
+	filter: drop-shadow(0.0rem 0.0rem 0.0rem #00000029);
 }

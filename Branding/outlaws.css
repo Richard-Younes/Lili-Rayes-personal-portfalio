@@ -14,7 +14,7 @@ body {
 	color: #db0047;
 }
 main {
-	height: 4650px;
+	height: 290.625rem;
 }
 p {
 	font-weight: 700;
@@ -22,21 +22,21 @@ p {
 .container {
 	display: grid;
 	width: auto;
-	height: 200px;
-	grid-template-columns: 60px 60px 60px 60px 60px 1fr;
-	grid-template-rows: 100px 1fr 1fr 1fr;
+	height: 12.5rem;
+	grid-template-columns: 3.75rem 3.75rem 3.75rem 3.75rem 3.75rem 1fr;
+	grid-template-rows: 6.25rem 1fr 1fr 1fr;
 }
 img {
-	width: 100px;
+	width: 6.25rem;
 }
 
 .logo {
 	position: relative;
 	grid-column: -1;
-	width: 250px;
-	height: 250px;
-	top: -70px;
-	margin-right: 30px;
+	width: 15.625rem;
+	height: 15.625rem;
+	top: -4.375rem;
+	margin-right: 1.875rem;
 }
 .logo-txt {
 	position: relative;
@@ -44,11 +44,11 @@ img {
 	grid-column: -1;
 	grid-row: 2;
 	justify-self: center;
-	font-size: 20px;
-	letter-spacing: 2.5px;
-	margin-right: 30px;
-	margin-bottom: 20px;
-	top: -15px;
+	font-size: 1.25rem;
+	letter-spacing: 0.3125rem;
+	margin-right: 1.875rem;
+	margin-bottom: 1.25rem;
+	top: -0.9375rem;
 	color: #db0047;
 }
 
@@ -56,7 +56,7 @@ a:link {
 	color: #db0047;
 	font-family: 'Barlow', sans-serif;
 	font-weight: bold;
-	font-size: 17px;
+	font-size: 1.0625rem;
 	text-decoration: none;
 }
 
@@ -67,21 +67,21 @@ a:link {
 	grid-column: -1;
 	grid-row: 3;
 	text-align: right;
-	margin-right: 50px;
-	margin-bottom: 20px;
+	margin-right: 3.125rem;
+	margin-bottom: 1.25rem;
 	color: #db0047;
 	z-index: 1;
 	position: relative;
-	top: -10px;
+	top: -0.625rem;
 }
 .contact {
 	grid-column: -1;
 	grid-row: 4;
 	text-align: right;
-	margin-right: 50px;
+	margin-right: 3.125rem;
 	color: #e12c65;
 	position: relative;
-	top: -25px;
+	top: -1.5625rem;
 }
 .contact:visited {
 	color: #e12c65;
@@ -96,11 +96,11 @@ a:link {
 }
 .cam {
 	position: relative;
-	top: -5px;
+	top: -0.3125rem;
 }
 .box {
 	position: absolute;
-	left: 5px;
+	left: 0.3125rem;
 }
 
 .box:hover {
@@ -161,7 +161,7 @@ a:link {
 }
 @keyframes drop-down {
 	0% {
-		top: 100px;
+		top: 6.5rem;
 		opacity: 0;
 	}
 	10% {
@@ -174,13 +174,31 @@ a:link {
 		opacity: 1;
 	}
 	100% {
-		top: 113px;
+		top: 7.5rem;
 		opacity: 1;
 	}
 }
+
+@keyframes rise-up {
+	0% {
+		top: 7.5rem;
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 6.25rem;
+		opacity: 0;
+	}
+}
+
 @keyframes drop-down-o {
 	0% {
-		top: 100px;
+		top: 6.5rem;
 		opacity: 0;
 	}
 	10% {
@@ -193,58 +211,45 @@ a:link {
 		opacity: 1;
 	}
 	100% {
-		top: 105px;
+		top: 7rem;
 		opacity: 1;
 	}
 }
 
 @keyframes rise-up-o {
 	0% {
-		top: 105px;
-		opacity: 1;
-	}
-	10% {
+		top: 7rem;
 		opacity: 1;
 	}
 	40% {
 		opacity: 1;
 	}
 	50% {
-		opacity: 0;
+		opacity: 1;
 	}
 	100% {
-		top: 100px;
+		top: 6.25rem;
 		opacity: 0;
 	}
 }
-@keyframes rise-up {
-	0% {
-		top: 110px;
-		opacity: 1;
-	}
-	40% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		top: 100px;
-		opacity: 0;
-	}
+.logos-text {
+	font-size: 1.25rem;
 }
 
 .box-text {
-	left: 10px;
+	left: 0.1rem;
 }
 .o-text {
-	left: 70px;
+	left: 4rem;
 }
 .arrow-text {
-	left: 182px;
+	left: 11rem;
 }
 .sheets-text {
-	left: 250px;
+	left: 15rem;
+}
+.cam-text {
+	left: 6.8rem;
 }
 /* change this text class and remove the image-text class from html to let the text stay and change the image in the html to the once colored orange */
 .o-text {
@@ -253,7 +258,7 @@ a:link {
 	transform: rotate(90deg);
 	opacity: 1;
 	color: #f28531;
-	top: 105px;
+	top: 6.8rem;
 }
 
 .logo:hover {
@@ -262,7 +267,7 @@ a:link {
 
 footer {
 	position: relative;
-	bottom: 0px;
+	bottom: 0rem;
 }
 .footer {
 	display: grid;
@@ -281,36 +286,36 @@ footer {
 	color: #f28531;
 	font-weight: 700;
 	align-self: flex-end;
-	bottom: -10px;
-	border-bottom: 3px solid #f28531;
-	padding-bottom: 3px;
+	bottom: -0.625rem;
+	border-bottom: 0.1875rem solid #f28531;
+	padding-bottom: 0.1875rem;
 	text-transform: lowercase;
 }
 .insta {
 	position: relative;
 	grid-row: 2;
 	grid-column: 3;
-	left: 40px;
-	bottom: 0px;
-	width: 110px;
-	height: 110px;
+	left: 2.5rem;
+	bottom: 0rem;
+	width: 6.875rem;
+	height: 6.875rem;
 }
 
 .be {
 	grid-row: 2;
 	grid-column: 4;
-	width: 110px;
-	height: 110px;
+	width: 6.875rem;
+	height: 6.875rem;
 }
 
 .mail {
 	position: relative;
 	grid-row: 2;
 	grid-column: 5;
-	left: -40px;
-	bottom: 0px;
-	width: 110px;
-	height: 110px;
+	left: -2.5rem;
+	bottom: 0rem;
+	width: 6.875rem;
+	height: 6.875rem;
 }
 
 .uppercase {
@@ -318,25 +323,25 @@ footer {
 }
 
 .dots {
-	width: 12px;
-	height: 12px;
+	width: 0.75rem;
+	height: 0.75rem;
 	border-radius: 50%;
 	background-color: #db0047;
-	margin: 0 5px;
+	margin: 0 0.3125rem;
 	grid-row: 1;
 	grid-column: 1/-1;
 	position: relative;
 	align-self: flex-end;
-	bottom: -2px;
+	bottom: -0.125rem;
 	text-transform: lowercase;
 }
 
 .left-dot {
-	left: -85px;
+	left: -5.3125rem;
 }
 
 .right-dot {
-	left: 85px;
+	left: 5.3125rem;
 }
 /*  The above css is the template for all pages on this website */
 
@@ -346,39 +351,40 @@ footer {
 	display: grid;
 	justify-content: center;
 	position: relative;
-	top: -100px;
-	height: 650px;
+	top: -6.25rem;
+	height: 40.625rem;
+	z-index: -1;
 }
 
 .outlaw-logo {
-	width: 300px;
-	height: 100px;
+	width: 18.75rem;
+	height: 6.25rem;
 	position: relative;
-	left: 450px;
+	left: 28.125rem;
 }
 
 .o-img {
-	width: 1300px;
-	height: 650px;
+	width: 81.25rem;
+	height: 40.625rem;
 	position: relative;
-	left: -30px;
-	top: -120px;
+	left: -1.875rem;
+	top: -7.5rem;
 }
 
 .two-girls-img {
-	width: 300px;
-	height: 600px;
+	width: 18.75rem;
+	height: 37.5rem;
 	position: relative;
-	top: -700px;
-	left: 850px;
+	top: -43.75rem;
+	left: 53.125rem;
 }
 
 .hors-la-loi {
-	width: 500px;
-	height: 35px;
+	width: 31.25rem;
+	height: 2.1875rem;
 	position: relative;
-	top: -750px;
-	left: -115px;
+	top: -46.875rem;
+	left: -7.1875rem;
 }
 
 /* section 2 */
@@ -387,22 +393,22 @@ footer {
 	justify-content: center;
 }
 .big-circle {
-	width: 1200px;
-	height: 1200px;
+	width: 75rem;
+	height: 75rem;
 	border-radius: 50%;
-	border: 2px solid #db0047;
+	border: 0.125rem solid #db0047;
 	position: relative;
 	display: grid;
 	text-align: center;
-	grid-template-columns: 340px 340px 340px;
-	grid-template-rows: 140px 340px 340px 340px;
-	gap: 20px;
+	grid-template-columns: 21.25rem 21.25rem 21.25rem;
+	grid-template-rows: 8.75rem 21.25rem 21.25rem 21.25rem;
+	gap: 1.25rem;
 	justify-content: center;
 }
 
 .section2-header {
 	position: relative;
-	font-size: 54px;
+	font-size: 3.375rem;
 	font-weight: 300;
 	grid-row: 1;
 	grid-column: 1/-1;
@@ -412,7 +418,7 @@ footer {
 	width: 100%;
 	height: 100%;
 	justify-self: center;
-	border: 2px solid #db0047;
+	border: 0.125rem solid #db0047;
 }
 .img1 {
 	grid-column: 1;
@@ -461,14 +467,14 @@ footer {
 
 .section3-div {
 	display: grid;
-	grid-template-rows: 180px 500px 500px;
-	grid-template-columns: 200px 1fr 1fr 1fr 1fr 1fr;
-	row-gap: 40px;
+	grid-template-rows: 11.25rem 31.25rem 31.25rem;
+	grid-template-columns: 12.5rem 1fr 1fr 1fr 1fr 1fr;
+	row-gap: 2.5rem;
 }
 .child1 {
 	grid-row: 1;
 	grid-column: 1/-1;
-	font-size: 54px;
+	font-size: 3.375rem;
 	font-weight: 300;
 	justify-self: center;
 	align-self: end;
@@ -479,7 +485,7 @@ footer {
 	width: 100%;
 	height: 100%;
 	position: relative;
-	top: -20px;
+	top: -1.25rem;
 }
 .child3 {
 	grid-row: 3;
@@ -493,7 +499,7 @@ footer {
 	width: 210%;
 	height: 110%;
 	position: relative;
-	left: -60px;
+	left: -3.75rem;
 }
 .child5 {
 	grid-row: 3;
@@ -502,7 +508,7 @@ footer {
 	height: 124%;
 	position: relative;
 	z-index: -1;
-	left: -110px;
+	left: -6.875rem;
 	top: -7%;
 }
 .child6 {
@@ -511,7 +517,7 @@ footer {
 	width: 170%;
 	height: 110%;
 	position: relative;
-	left: -140px;
+	left: -8.75rem;
 }
 .child7 {
 	grid-row: 3;
@@ -519,7 +525,7 @@ footer {
 	width: 120%;
 	height: 110%;
 	position: relative;
-	left: -120px;
+	left: -7.5rem;
 	z-index: 2;
 }
 .child8 {
@@ -528,172 +534,172 @@ footer {
 	width: 140%;
 	height: 115%;
 	position: relative;
-	left: -160px;
+	left: -10rem;
 }
 
 /* Section 4 */
 .section4 {
 	position: relative;
-	top: -100px;
-	height: 1800px;
+	top: -6.25rem;
+	height: 112.5rem;
 	overflow: hidden;
 }
 
 .outlaw-box {
-	width: 1500px;
-	height: 1200px;
+	width: 93.75rem;
+	height: 75rem;
 	position: relative;
-	left: -250px;
-	top: 50px;
+	left: -15.625rem;
+	top: 3.125rem;
 	display: inline;
 }
 .outlaw-hors-la-loi {
-	width: 350px;
-	height: 200px;
+	width: 21.875rem;
+	height: 12.5rem;
 	position: relative;
-	left: 950px;
-	top: -1200px;
+	left: 59.375rem;
+	top: -75rem;
 }
 
 .outlaws-color-palette {
-	width: 400px;
-	height: 400px;
+	width: 25rem;
+	height: 25rem;
 	position: relative;
-	left: 550px;
-	top: -800px;
+	left: 34.375rem;
+	top: -50rem;
 }
 
 .outlaw-tag {
 	position: relative;
-	top: -232px;
-	left: -430px;
-	width: 300px;
-	height: 600px;
+	top: -14.5rem;
+	left: -26.875rem;
+	width: 18.75rem;
+	height: 37.5rem;
 }
 
 /* Circle of section 4 */
 
 .big-circle1 {
-	width: 550px;
-	height: 550px;
+	width: 34.375rem;
+	height: 34.375rem;
 	border-radius: 50%;
-	border: 2px solid #db0047;
+	border: 0.125rem solid #db0047;
 	position: relative;
-	top: -750px;
-	left: 800px;
+	top: -46.875rem;
+	left: 50rem;
 }
 
 .checkout {
-	font-size: 46px;
+	font-size: 2.875rem;
 	font-weight: 300;
 	position: relative;
-	left: 180px;
-	top: 50px;
+	left: 11.25rem;
+	top: 3.125rem;
 }
 
 .animation-div1 {
 	display: inline-block;
-	width: 197px;
-	height: 197px;
+	width: 12.3125rem;
+	height: 12.3125rem;
 	position: relative;
-	top: 150px;
-	left: 40px;
+	top: 9.375rem;
+	left: 2.5rem;
 }
 .animation-div2 {
 	display: inline-block;
-	width: 197px;
-	height: 197px;
+	width: 12.3125rem;
+	height: 12.3125rem;
 	position: relative;
-	top: 150px;
-	left: 100px;
+	top: 9.375rem;
+	left: 6.25rem;
 }
 .white-circle1 {
-	width: 200px;
-	height: 200px;
+	width: 12.5rem;
+	height: 12.5rem;
 	border-radius: 50%;
-	border: 2px solid #db0047;
+	border: 0.125rem solid #db0047;
 	position: relative;
-	top: -40px;
+	top: -2.5rem;
 }
 
 .red-circle1 {
-	width: 210px;
-	height: 210px;
+	width: 13.125rem;
+	height: 13.125rem;
 	border-radius: 50%;
-	border: 2px solid #db0047;
+	border: 0.125rem solid #db0047;
 	background-color: #db0047;
 	position: relative;
 	z-index: -1;
-	top: -230px;
-	left: -4px;
+	top: -14.375rem;
+	left: -0.25rem;
 }
 
 .white-circle2 {
-	width: 200px;
-	height: 200px;
+	width: 12.5rem;
+	height: 12.5rem;
 	border-radius: 50%;
-	border: 2px solid #db0047;
+	border: 0.125rem solid #db0047;
 	background-color: white;
 	position: relative;
-	top: -40px;
+	top: -2.5rem;
 }
 
 .red-circle2 {
-	width: 210px;
-	height: 210px;
+	width: 13.125rem;
+	height: 13.125rem;
 	border-radius: 50%;
-	border: 2px solid #db0047;
+	border: 0.125rem solid #db0047;
 	background-color: #db0047;
 	position: relative;
-	top: -230px;
-	left: -4px;
+	top: -14.375rem;
+	left: -0.25rem;
 	z-index: -1;
 }
 
 .lofi-logo1 {
-	width: 197px;
-	height: 197px;
+	width: 12.3125rem;
+	height: 12.3125rem;
 	border-radius: 50%;
 }
 
 .lara-logo1 {
-	width: 197px;
-	height: 197px;
+	width: 12.3125rem;
+	height: 12.3125rem;
 }
 
 @keyframes white-circle-up {
 	0% {
-		top: -20px;
+		top: -1.25rem;
 	}
 	100% {
-		top: -40px;
+		top: -2.5rem;
 	}
 }
 
 @keyframes white-circle-down {
 	0% {
-		top: -40px;
+		top: -2.5rem;
 	}
 	100% {
-		top: -20px;
+		top: -1.25rem;
 	}
 }
 
 @keyframes red-circle-up {
 	0% {
-		top: -230px;
+		top: -14.375rem;
 	}
 	100% {
-		top: -265px;
+		top: -16.5625rem;
 	}
 }
 
 @keyframes red-circle-down {
 	0% {
-		top: -265px;
+		top: -16.5625rem;
 	}
 	100% {
-		top: -230px;
+		top: -14.375rem;
 	}
 }
 

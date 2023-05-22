@@ -15,7 +15,7 @@ body {
 	color: #db0047;
 }
 main {
-	height: 350px;
+	height: 21.875rem;
 }
 p {
 	font-weight: 700;
@@ -23,21 +23,21 @@ p {
 .container {
 	display: grid;
 	width: auto;
-	height: 200px;
-	grid-template-columns: 60px 60px 60px 60px 60px 1fr;
-	grid-template-rows: 100px 1fr 1fr 1fr;
+	height: 12.5rem;
+	grid-template-columns: 3.75rem 3.75rem 3.75rem 3.75rem 3.75rem 1fr;
+	grid-template-rows: 6.25rem 1fr 1fr 1fr;
 }
 img {
-	width: 100px;
+	width: 6.25rem;
 }
 
 .logo {
 	position: relative;
 	grid-column: -1;
-	width: 250px;
-	height: 250px;
-	top: -70px;
-	margin-right: 30px;
+	width: 15.625rem;
+	height: 15.625rem;
+	top: -4.375rem;
+	margin-right: 1.875rem;
 }
 .logo-txt {
 	position: relative;
@@ -45,11 +45,11 @@ img {
 	grid-column: -1;
 	grid-row: 2;
 	justify-self: center;
-	font-size: 20px;
-	letter-spacing: 2.5px;
-	margin-right: 30px;
-	margin-bottom: 20px;
-	top: -15px;
+	font-size: 1.25rem;
+	letter-spacing: 0.3125rem;
+	margin-right: 1.875rem;
+	margin-bottom: 1.25rem;
+	top: -0.9375rem;
 	color: #db0047;
 }
 
@@ -57,7 +57,7 @@ a:link {
 	color: #db0047;
 	font-family: 'Barlow', sans-serif;
 	font-weight: bold;
-	font-size: 17px;
+	font-size: 1.0625rem;
 	text-decoration: none;
 }
 
@@ -68,21 +68,21 @@ a:link {
 	grid-column: -1;
 	grid-row: 3;
 	text-align: right;
-	margin-right: 50px;
-	margin-bottom: 20px;
+	margin-right: 3.125rem;
+	margin-bottom: 1.25rem;
 	color: #db0047;
 	z-index: 1;
 	position: relative;
-	top: -10px;
+	top: -0.625rem;
 }
 .contact {
 	grid-column: -1;
 	grid-row: 4;
 	text-align: right;
-	margin-right: 50px;
+	margin-right: 3.125rem;
 	color: #f28531;
 	position: relative;
-	top: -25px;
+	top: -1.5625rem;
 }
 .contact:visited {
 	color: #f28531;
@@ -100,11 +100,11 @@ a:link {
 }
 .cam {
 	position: relative;
-	top: -5px;
+	top: -0.3125rem;
 }
 .box {
 	position: absolute;
-	left: 5px;
+	left: 0.3125rem;
 }
 
 .box:hover {
@@ -165,7 +165,7 @@ a:link {
 }
 @keyframes drop-down {
 	0% {
-		top: 100px;
+		top: 6.5rem;
 		opacity: 0;
 	}
 	10% {
@@ -178,13 +178,31 @@ a:link {
 		opacity: 1;
 	}
 	100% {
-		top: 113px;
+		top: 7.5rem;
 		opacity: 1;
 	}
 }
+
+@keyframes rise-up {
+	0% {
+		top: 7.5rem;
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 6.25rem;
+		opacity: 0;
+	}
+}
+
 @keyframes drop-down-o {
 	0% {
-		top: 100px;
+		top: 6.5rem;
 		opacity: 0;
 	}
 	10% {
@@ -197,60 +215,46 @@ a:link {
 		opacity: 1;
 	}
 	100% {
-		top: 105px;
+		top: 7rem;
 		opacity: 1;
 	}
 }
 
 @keyframes rise-up-o {
 	0% {
-		top: 105px;
-		opacity: 1;
-	}
-	10% {
+		top: 7rem;
 		opacity: 1;
 	}
 	40% {
 		opacity: 1;
 	}
 	50% {
-		opacity: 0;
+		opacity: 1;
 	}
 	100% {
-		top: 100px;
+		top: 6.25rem;
 		opacity: 0;
 	}
 }
-@keyframes rise-up {
-	0% {
-		top: 110px;
-		opacity: 1;
-	}
-	40% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		top: 100px;
-		opacity: 0;
-	}
+.logos-text {
+	font-size: 1.25rem;
 }
 
 .box-text {
-	left: 10px;
+	left: 0.1rem;
 }
 .o-text {
-	left: 70px;
+	left: 4rem;
 }
 .arrow-text {
-	left: 182px;
+	left: 11rem;
 }
 .sheets-text {
-	left: 250px;
+	left: 15rem;
 }
-
+.cam-text {
+	left: 6.8rem;
+}
 /* change this text class and remove the image-text class from html to let the text stay and change the image in the html to the once colored orange */
 .sheets-text {
 	position: absolute;
@@ -258,7 +262,7 @@ a:link {
 	transform: rotate(90deg);
 	opacity: 1;
 	color: #f28531;
-	top: 110px;
+	top: 6.875rem;
 }
 
 .logo:hover {
@@ -267,7 +271,7 @@ a:link {
 
 footer {
 	position: relative;
-	bottom: 0px;
+	bottom: 0rem;
 }
 .footer {
 	display: grid;
@@ -286,36 +290,36 @@ footer {
 	color: #f28531;
 	font-weight: 700;
 	align-self: flex-end;
-	bottom: -10px;
-	border-bottom: 3px solid #f28531;
-	padding-bottom: 3px;
+	bottom: -0.625rem;
+	border-bottom: 0.1875rem solid #f28531;
+	padding-bottom: 0.1875rem;
 	text-transform: lowercase;
 }
 .insta {
 	position: relative;
 	grid-row: 2;
 	grid-column: 3;
-	left: 40px;
-	bottom: 0px;
-	width: 110px;
-	height: 110px;
+	left: 2.5rem;
+	bottom: 0rem;
+	width: 6.875rem;
+	height: 6.875rem;
 }
 
 .be {
 	grid-row: 2;
 	grid-column: 4;
-	width: 110px;
-	height: 110px;
+	width: 6.875rem;
+	height: 6.875rem;
 }
 
 .mail {
 	position: relative;
 	grid-row: 2;
 	grid-column: 5;
-	left: -40px;
-	bottom: 0px;
-	width: 110px;
-	height: 110px;
+	left: -2.5rem;
+	bottom: 0rem;
+	width: 6.875rem;
+	height: 6.875rem;
 }
 
 .uppercase {
@@ -323,25 +327,25 @@ footer {
 }
 
 .dots {
-	width: 12px;
-	height: 12px;
+	width: 0.75rem;
+	height: 0.75rem;
 	border-radius: 50%;
 	background-color: #db0047;
-	margin: 0 5px;
+	margin: 0 0.3125rem;
 	grid-row: 1;
 	grid-column: 1/-1;
 	position: relative;
 	align-self: flex-end;
-	bottom: -2px;
+	bottom: -0.125rem;
 	text-transform: lowercase;
 }
 
 .left-dot {
-	left: -80px;
+	left: -5rem;
 }
 
 .right-dot {
-	left: 80px;
+	left: 5rem;
 }
 /*  The above css is the template for all pages on this website */
 
@@ -357,7 +361,7 @@ main {
 	grid-column: 2/3;
 	line-height: 2;
 	position: relative;
-	top: -100px;
+	top: -6.25rem;
 }
 .section3 {
 	grid-column: 3/4;
@@ -368,28 +372,28 @@ main {
 label {
 	color: #f28531;
 	font-weight: 700;
-	font-size: 20px;
+	font-size: 1.25rem;
 }
 
 #name {
 	width: 70%;
-	height: 45px;
+	height: 2.8125rem;
 	background-color: #fff0ed;
-	border-radius: 17px;
-	border: 1px #db0047 solid;
+	border-radius: 1.0625rem;
+	border: 0.0625rem #db0047 solid;
 }
 
 #email {
 	width: 70%;
-	height: 45px;
+	height: 2.8125rem;
 	background-color: #fff0ed;
-	border-radius: 17px;
-	border: 1px #db0047 solid;
+	border-radius: 1.0625rem;
+	border: 0.0625rem #db0047 solid;
 }
 #message {
 	background-color: #fff0ed;
-	border-radius: 25px;
-	border: 1px #db0047 solid;
+	border-radius: 1.5625rem;
+	border: 0.0625rem #db0047 solid;
 }
 
 form {
@@ -397,7 +401,7 @@ form {
 	left: 10%;
 }
 h1 {
-	font-size: 36px;
+	font-size: 2.25rem;
 	color: #f28531;
 	position: relative;
 	left: 10%;
@@ -414,24 +418,24 @@ h1 {
 	background-image: linear-gradient(to bottom, #db0047, #db0047);
 	-webkit-border-radius: 15;
 	-moz-border-radius: 15;
-	border-radius: 15px;
+	border-radius: 0.9375rem;
 	color: #ffff;
-	font-size: 20px;
-	padding: 12px 18px 12px 18px;
+	font-size: 1.25rem;
+	padding: 0.75rem 1.125rem 0.75rem 1.125rem;
 	text-decoration: none;
-	border-width: 1px;
+	border-width: 0.0625rem;
 }
 
 /* Section 1 */
 
 .section1 {
 	position: relative;
-	top: -100px;
+	top: -6.25rem;
 }
 h2 {
 	color: #db0047;
 	font-weight: 300;
-	font-size: 70px;
+	font-size: 4.375rem;
 	align-self: center;
 	position: relative;
 	left: 25%;
@@ -441,7 +445,7 @@ h2 {
 
 .section3 {
 	display: grid;
-	grid-template-rows: 100px 100px 100px 100px;
+	grid-template-rows: 6.25rem 6.25rem 6.25rem 6.25rem;
 }
 
 /* This grid class is for all the <a> elements at the right */
@@ -450,34 +454,34 @@ h2 {
 }
 
 .grid-img {
-	width: 60px;
-	height: 60px;
-	margin-right: 50px;
+	width: 3.75rem;
+	height: 3.75rem;
+	margin-right: 3.125rem;
 }
 
 .grid-cam {
 	position: relative;
-	left: 55px;
+	left: 3.4375rem;
 }
 
 .grid-mail {
-	width: 60px;
-	height: 50px;
+	width: 3.75rem;
+	height: 3.125rem;
 	position: relative;
-	left: 120px;
+	left: 7.5rem;
 }
 .grid-phone {
 	position: relative;
-	left: 50px;
+	left: 3.125rem;
 }
 
 .grid-text {
 	color: #db0047;
 	position: relative;
-	top: -40px;
-	left: 50px;
+	top: -2.5rem;
+	left: 3.125rem;
 	opacity: 0;
-	font-size: 24px;
+	font-size: 1.5rem;
 }
 
 @keyframes cam-left {
@@ -485,21 +489,21 @@ h2 {
 		opacity: 0;
 	}
 	80% {
-		left: -70px;
+		left: -4.375rem;
 		opacity: 1;
 	}
 	100% {
-		left: -120px;
+		left: -7.5rem;
 		opacity: 1;
 	}
 }
 @keyframes cam-right {
 	0% {
-		left: -120px;
+		left: -7.5rem;
 		opacity: 1;
 	}
 	20% {
-		left: -70px;
+		left: -4.375rem;
 		opacity: 1;
 	}
 	30% {
@@ -521,21 +525,21 @@ h2 {
 		opacity: 0;
 	}
 	80% {
-		left: -70px;
+		left: -4.375rem;
 		opacity: 1;
 	}
 	100% {
-		left: -100px;
+		left: -6.25rem;
 		opacity: 1;
 	}
 }
 @keyframes be-right {
 	0% {
-		left: -100px;
+		left: -6.25rem;
 		opacity: 1;
 	}
 	20% {
-		left: -70px;
+		left: -4.375rem;
 		opacity: 1;
 	}
 	30% {
@@ -557,19 +561,19 @@ h2 {
 
 @keyframes section1-down {
 	0% {
-		top: -100px;
+		top: -6.25rem;
 	}
 	40% {
-		top: -100px;
+		top: -6.25rem;
 	}
 	50% {
-		top: 50px;
+		top: 3.125rem;
 	}
 	90% {
-		top: 50px;
+		top: 3.125rem;
 	}
 	100% {
-		top: 200px;
+		top: 12.5rem;
 	}
 }
 @keyframes colorchange {
@@ -591,4 +595,39 @@ h2 {
 }
 h2 {
 	animation: colorchange 1s ease-in-out infinite;
+}
+
+/* Media queries for responsiveness */
+
+/* Below 1056px */
+@media (max-width: 66rem) {
+	html {
+		font-size: 14px;
+	}
+}
+
+/* Below 912px */
+@media (max-width: 57rem) {
+	html {
+		font-size: 12px;
+	}
+}
+
+/* Below 832px */
+@media (max-width: 52rem) {
+	html {
+		font-size: 10px;
+	}
+	#message {
+		width: 12.5rem;
+		height: 12.5rem;
+	}
+}
+
+/* Below 600px */
+@media (max-width: 37.5rem) {
+	#message {
+		width: 9.375rem;
+		height: 9.375rem;
+	}
 }

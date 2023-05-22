@@ -6,7 +6,7 @@
 
 html,
 body {
-	height: 3000px;
+	height: 187.5rem;
 	width: 100%;
 }
 body {
@@ -16,7 +16,7 @@ body {
 	overflow-x: hidden;
 }
 main {
-	height: 3000px;
+	height: 187.5rem;
 }
 p {
 	font-weight: 700;
@@ -47,7 +47,7 @@ img {
 	grid-row: 2;
 	justify-self: center;
 	font-size: 1.25rem;
-	letter-spacing: 2.5px;
+	letter-spacing: 0.3125rem;
 	margin-right: 1.875rem;
 	margin-bottom: 1.25rem;
 	top: -0.9375rem;
@@ -98,11 +98,11 @@ a:link {
 }
 .cam {
 	position: relative;
-	top: -5px;
+	top: -0.3125rem;
 }
 .box {
 	position: absolute;
-	left: 5px;
+	left: 0.3125rem;
 }
 
 .box:hover {
@@ -163,7 +163,7 @@ a:link {
 }
 @keyframes drop-down {
 	0% {
-		top: 100px;
+		top: 6.5rem;
 		opacity: 0;
 	}
 	10% {
@@ -176,13 +176,31 @@ a:link {
 		opacity: 1;
 	}
 	100% {
-		top: 113px;
+		top: 7.5rem;
 		opacity: 1;
 	}
 }
+
+@keyframes rise-up {
+	0% {
+		top: 7.5rem;
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 6.25rem;
+		opacity: 0;
+	}
+}
+
 @keyframes drop-down-o {
 	0% {
-		top: 100px;
+		top: 6.5rem;
 		opacity: 0;
 	}
 	10% {
@@ -195,58 +213,45 @@ a:link {
 		opacity: 1;
 	}
 	100% {
-		top: 105px;
+		top: 7rem;
 		opacity: 1;
 	}
 }
 
 @keyframes rise-up-o {
 	0% {
-		top: 105px;
-		opacity: 1;
-	}
-	10% {
+		top: 7rem;
 		opacity: 1;
 	}
 	40% {
 		opacity: 1;
 	}
 	50% {
-		opacity: 0;
+		opacity: 1;
 	}
 	100% {
-		top: 100px;
+		top: 6.25rem;
 		opacity: 0;
 	}
 }
-@keyframes rise-up {
-	0% {
-		top: 110px;
-		opacity: 1;
-	}
-	40% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		top: 100px;
-		opacity: 0;
-	}
+.logos-text {
+	font-size: 1.25rem;
 }
 
 .box-text {
-	left: 10px;
+	left: 0.1rem;
 }
 .o-text {
-	left: 70px;
+	left: 4rem;
 }
 .arrow-text {
-	left: 182px;
+	left: 11rem;
 }
 .sheets-text {
-	left: 250px;
+	left: 15rem;
+}
+.cam-text {
+	left: 6.8rem;
 }
 /* change this text class and remove the image-text class from html to let the text stay and change the image in the html to the once colored orange */
 .o-text {
@@ -255,7 +260,7 @@ a:link {
 	transform: rotate(90deg);
 	opacity: 1;
 	color: #f28531;
-	top: 105px;
+	top: 6.8rem;
 }
 
 .logo:hover {
@@ -264,7 +269,7 @@ a:link {
 
 footer {
 	position: relative;
-	bottom: 0px;
+	bottom: 0rem;
 }
 .footer {
 	display: grid;
@@ -293,7 +298,7 @@ footer {
 	grid-row: 2;
 	grid-column: 3;
 	left: 2.5rem;
-	bottom: 0px;
+	bottom: 0rem;
 	width: 6.875rem;
 	height: 6.875rem;
 }
@@ -310,7 +315,7 @@ footer {
 	grid-row: 2;
 	grid-column: 5;
 	left: -2.5rem;
-	bottom: 0px;
+	bottom: 0rem;
 	width: 6.875rem;
 	height: 6.875rem;
 }
@@ -334,11 +339,11 @@ footer {
 }
 
 .left-dot {
-	left: -85px;
+	left: -5.3125rem;
 }
 
 .right-dot {
-	left: 85px;
+	left: 5.3125rem;
 }
 /*  The above css is the template for all pages on this website */
 
@@ -359,29 +364,29 @@ footer {
 	width: 1.5625rem;
 	height: 1.5625rem;
 	border-radius: 50%;
-	border: 2px solid #db0047;
+	border: 0.125rem solid #db0047;
 	background-color: #db0047;
 	position: relative;
-	top: -395px;
-	left: -10px;
+	top: -24.6875rem;
+	left: -0.625rem;
 }
 .small-circle2 {
 	width: 1.5625rem;
 	height: 1.5625rem;
 	border-radius: 50%;
-	border: 2px solid #db0047;
+	border: 0.125rem solid #db0047;
 	background-color: #db0047;
 	position: relative;
-	top: -40px;
-	left: 370px;
+	top: -2.5rem;
+	left: 23.125rem;
 }
 
 .text-div {
 	width: 22.75rem;
 	text-align: start;
-	font-size: 22px;
+	font-size: 1.375rem;
 	position: relative;
-	top: -400px;
+	top: -25rem;
 	z-index: -1;
 }
 
@@ -395,7 +400,7 @@ footer {
 
 @keyframes img-up {
 	100% {
-		top: -150px;
+		top: -9.375rem;
 	}
 }
 
@@ -406,23 +411,23 @@ footer {
 
 @keyframes circle-up1 {
 	0% {
-		top: -395px;
-		left: -10px;
+		top: -24.6875rem;
+		left: -0.625rem;
 	}
 	100% {
-		top: -545px;
-		left: 370px;
+		top: -34.0625rem;
+		left: 23.125rem;
 	}
 }
 
 @keyframes circle-down1 {
 	0% {
-		top: -545px;
-		left: 370px;
+		top: -34.0625rem;
+		left: 23.125rem;
 	}
 	100% {
-		top: -395px;
-		left: -10px;
+		top: -24.6875rem;
+		left: -0.625rem;
 	}
 }
 
@@ -438,23 +443,23 @@ footer {
 
 @keyframes circle-up2 {
 	0% {
-		top: -40px;
-		left: 370px;
+		top: -2.5rem;
+		left: 23.125rem;
 	}
 	100% {
-		top: -190px;
-		left: -10px;
+		top: -11.875rem;
+		left: -0.625rem;
 	}
 }
 
 @keyframes circle-down2 {
 	0% {
-		top: -190px;
-		left: -10px;
+		top: -11.875rem;
+		left: -0.625rem;
 	}
 	100% {
-		top: -40px;
-		left: 370px;
+		top: -2.5rem;
+		left: 23.125rem;
 	}
 }
 
@@ -476,10 +481,10 @@ footer {
 
 @keyframes text-down {
 	0% {
-		top: -400px;
+		top: -25rem;
 	}
 	100% {
-		top: -180px;
+		top: -11.25rem;
 	}
 }
 
@@ -487,85 +492,85 @@ footer {
 .div2 {
 	display: flex;
 	position: relative;
-	top: -80px;
-	gap: 25px;
+	top: -5rem;
+	gap: 1.5625rem;
 }
 
 .house-style {
 	flex-grow: 1;
-	margin-left: 25px;
-	border: 2px solid rgba(242, 133, 49, 0.4);
+	margin-left: 1.5625rem;
+	border: 0.125rem solid rgba(242, 133, 49, 0.4);
 }
 
 .moodboard {
 	flex-grow: 1;
 	align-self: flex-end;
-	margin-right: 25px;
+	margin-right: 1.5625rem;
 	position: relative;
-	top: -10px;
+	top: -0.625rem;
 }
 
 .div2-text {
 	width: 100%;
 	display: flex;
-	gap: 25px;
+	gap: 1.5625rem;
 }
 .house-style-div {
 	display: inline-block;
-	width: 550px;
+	width: 34.375rem;
 	flex-grow: 1;
-	padding-left: 25px;
+	padding-left: 1.5625rem;
 }
 
 .moodboard-div {
 	display: inline-block;
-	width: 550px;
+	width: 34.375rem;
 	flex-grow: 1;
-	padding-right: 25px;
+	padding-right: 1.5625rem;
 }
 
 .house-style-text {
 	text-align: center;
-	font-size: 20px;
+	font-size: 1.25rem;
 	position: relative;
-	top: -60px;
+	top: -3.75rem;
 }
 
 .moodboard-text {
 	text-align: center;
-	font-size: 20px;
+	font-size: 1.25rem;
 	position: relative;
-	top: -60px;
+	top: -3.75rem;
 }
 
 /* This part is to edit div3 which is the Jazz images */
 .div3 {
 	display: flex;
-	gap: 30px;
-	margin-top: 50px;
+	gap: 1.875rem;
+	margin-top: 3.125rem;
 }
 
 .jazz1 {
-	border: 2px solid rgba(242, 133, 49, 0.4);
+	border: 0.125rem solid rgba(242, 133, 49, 0.4);
 	flex-grow: 1;
-	margin-left: 40px;
+	margin-left: 2.5rem;
 }
 
 .jazz2 {
-	border: 2px solid rgba(242, 133, 49, 0.4);
+	border: 0.125rem solid rgba(242, 133, 49, 0.4);
 	flex-grow: 1;
 }
 
 .jazz3 {
-	border: 2px solid rgba(242, 133, 49, 0.4);
+	border: 0.125rem solid rgba(242, 133, 49, 0.4);
 	flex-grow: 1;
-	margin-right: 40px;
+	margin-right: 2.5rem;
 }
 
 .div3-text {
-	font-size: 20px;
+	font-size: 1.25rem;
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 1.875rem;
 }
 
 /* div 4 represents the Envelope and the div5 represents the Business cards */
@@ -575,233 +580,233 @@ footer {
 }
 
 .envelope {
-	width: 500px;
-	border: 2px solid rgba(242, 133, 49, 0.4);
-	margin-top: 100px;
-	margin-left: 100px;
-	margin-right: 120px;
+	width: 31.25rem;
+	border: 0.125rem solid rgba(242, 133, 49, 0.4);
+	margin-top: 6.25rem;
+	margin-left: 6.25rem;
+	margin-right: 7.5rem;
 }
 
 .div5 {
 	display: flex;
 	position: relative;
-	left: 700px;
-	top: -180px;
+	left: 43.75rem;
+	top: -11.25rem;
 }
 
 .cards1 {
-	width: 250px;
-	height: 170px;
-	border: 2px solid rgba(242, 133, 49, 0.4);
+	width: 15.625rem;
+	height: 10.625rem;
+	border: 0.125rem solid rgba(242, 133, 49, 0.4);
 	position: relative;
-	top: -80px;
-	left: 40px;
+	top: -5rem;
+	left: 2.5rem;
 }
 
 .cards2 {
-	width: 250px;
-	height: 170px;
-	border: 2px solid rgba(242, 133, 49, 0.4);
+	width: 15.625rem;
+	height: 10.625rem;
+	border: 0.125rem solid rgba(242, 133, 49, 0.4);
 	position: relative;
-	top: 90px;
-	right: 210px;
+	top: 5.625rem;
+	right: 13.125rem;
 }
 .cards3 {
-	width: 250px;
-	height: 170px;
-	border: 2px solid rgba(242, 133, 49, 0.4);
+	width: 15.625rem;
+	height: 10.625rem;
+	border: 0.125rem solid rgba(242, 133, 49, 0.4);
 	position: relative;
-	top: -80px;
-	right: 90px;
+	top: -5rem;
+	right: 5.625rem;
 }
 .cards4 {
-	width: 250px;
-	height: 170px;
-	border: 2px solid rgba(242, 133, 49, 0.4);
+	width: 15.625rem;
+	height: 10.625rem;
+	border: 0.125rem solid rgba(242, 133, 49, 0.4);
 	position: relative;
-	top: 90px;
-	right: 340px;
+	top: 5.625rem;
+	right: 21.25rem;
 }
 
 .envelope-text {
 	display: inline;
 	text-align: center;
 	position: relative;
-	top: -160px;
-	left: 320px;
-	font-size: 20px;
+	top: -10rem;
+	left: 20rem;
+	font-size: 1.25rem;
 }
 
 .business-text {
 	display: inline;
 	text-align: center;
 	position: relative;
-	top: -60px;
-	left: 900px;
-	font-size: 20px;
+	top: -3.75rem;
+	left: 56.25rem;
+	font-size: 1.25rem;
 }
 
 .letterhead {
-	width: 500px;
-	height: 650px;
-	border: 2px solid rgba(242, 133, 49, 0.4);
+	width: 31.25rem;
+	height: 40.625rem;
+	border: 0.125rem solid rgba(242, 133, 49, 0.4);
 	position: relative;
-	top: -100px;
-	left: 100px;
+	top: -6.25rem;
+	left: 6.25rem;
 }
 
 .letterhead-text {
 	position: relative;
-	left: 300px;
-	top: -80px;
-	font-size: 20px;
+	left: 18.75rem;
+	top: -5rem;
+	font-size: 1.25rem;
 }
 
 /* Circle with animations */
 
 .big-circle {
-	width: 550px;
-	height: 550px;
+	width: 34.375rem;
+	height: 34.375rem;
 	border-radius: 50%;
-	border: 2px solid #db0047;
+	border: 0.125rem solid #db0047;
 	position: relative;
-	top: -650px;
-	left: 800px;
+	top: -40.625rem;
+	left: 50rem;
 }
 
 .checkout {
-	font-size: 46px;
+	font-size: 2.875rem;
 	font-weight: 300;
 	position: relative;
-	left: 180px;
-	top: 80px;
+	left: 11.25rem;
+	top: 5rem;
 }
 
 .white-circle1 {
-	width: 200px;
-	height: 200px;
+	width: 12.5rem;
+	height: 12.5rem;
 	border-radius: 50%;
-	border: 2px solid #db0047;
+	border: 0.125rem solid #db0047;
 	position: relative;
-	left: 30px;
-	top: 120px;
+	left: 1.875rem;
+	top: 7.5rem;
 }
 
 .red-circle1 {
-	width: 210px;
-	height: 210px;
+	width: 13.125rem;
+	height: 13.125rem;
 	border-radius: 50%;
-	border: 2px solid #db0047;
+	border: 0.125rem solid #db0047;
 	background-color: #db0047;
 	position: relative;
 	z-index: -1;
-	left: 26px;
-	top: -75px;
+	left: 1.625rem;
+	top: -4.6875rem;
 }
 
 .white-circle2 {
-	width: 200px;
-	height: 200px;
+	width: 12.5rem;
+	height: 12.5rem;
 	border-radius: 50%;
-	border: 2px solid #db0047;
+	border: 0.125rem solid #db0047;
 	background-color: white;
 	position: relative;
-	left: 295px;
-	top: -285px;
+	left: 18.4375rem;
+	top: -17.8125rem;
 }
 
 .red-circle2 {
-	width: 210px;
-	height: 210px;
+	width: 13.125rem;
+	height: 13.125rem;
 	border-radius: 50%;
-	border: 2px solid #db0047;
+	border: 0.125rem solid #db0047;
 	background-color: #db0047;
 	position: relative;
-	top: -480px;
-	left: 290px;
+	top: -30rem;
+	left: 18.125rem;
 	z-index: -1;
 }
 
 .outlaw-logo {
-	width: 197px;
-	height: 197px;
+	width: 12.3125rem;
+	height: 12.3125rem;
 	border-radius: 50%;
 }
 
 .lara-logo {
-	width: 197px;
-	height: 197px;
+	width: 12.3125rem;
+	height: 12.3125rem;
 }
 
 @keyframes white-circle-up1 {
 	0% {
-		top: 140px;
+		top: 8.75rem;
 	}
 	100% {
-		top: 120px;
+		top: 7.5rem;
 	}
 }
 
 @keyframes white-circle-down1 {
 	0% {
-		top: 120px;
+		top: 7.5rem;
 	}
 	100% {
-		top: 140px;
+		top: 8.75rem;
 	}
 }
 
 @keyframes white-circle-up2 {
 	0% {
-		top: -265px;
+		top: -16.5625rem;
 	}
 	100% {
-		top: -285px;
+		top: -17.8125rem;
 	}
 }
 
 @keyframes white-circle-down2 {
 	0% {
-		top: -285px;
+		top: -17.8125rem;
 	}
 	100% {
-		top: -265px;
+		top: -16.5625rem;
 	}
 }
 
 @keyframes red-circle-up1 {
 	0% {
-		top: -75px;
+		top: -4.6875rem;
 	}
 	100% {
-		top: -110px;
+		top: -6.875rem;
 	}
 }
 
 @keyframes red-circle-down1 {
 	0% {
-		top: -110px;
+		top: -6.875rem;
 	}
 	100% {
-		top: -75px;
+		top: -4.6875rem;
 	}
 }
 
 @keyframes red-circle-up2 {
 	0% {
-		top: -480px;
+		top: -30rem;
 	}
 	100% {
-		top: -515px;
+		top: -32.1875rem;
 	}
 }
 
 @keyframes red-circle-down2 {
 	0% {
-		top: -515px;
+		top: -32.1875rem;
 	}
 	100% {
-		top: -480px;
+		top: -30rem;
 	}
 }
 
