@@ -512,11 +512,17 @@ h1 {
 	html {
 		font-size: 12px;
 	}
+	.perfume {
+		height: 60rem;
+	}
 }
 
 /* BELOW 640px */
 @media (max-width: 40em) {
 	html {
 		font-size: 10px;
+	}
+	.perfume {
+		height: 50rem;
 	}
 }

@@ -349,8 +349,10 @@ footer {
 /* Big container is a flexbox */
 
 .container1 {
+	/*Changed*/
 	display: flex;
 	gap: 20%;
+	justify-content: center;
 }
 
 /* first div */
@@ -371,7 +373,8 @@ footer {
 	/* display: none; */
 }
 .animation-conatiner1 {
-	margin-left: 5%;
+	/*Changed*/
+	margin-left: -3%;
 
 	width: 29.6875rem;
 	height: 21.875rem;
@@ -588,7 +591,7 @@ footer {
 		font-size: 15px;
 	}
 	.container1 {
-		gap: 10%;
+		gap: 15%;
 	}
 }
 
@@ -598,7 +601,7 @@ footer {
 		font-size: 14px;
 	}
 	.container1 {
-		gap: 10%;
+		gap: 15%;
 	}
 }
 
@@ -622,6 +625,6 @@ footer {
 		font-size: 8px;
 	}
 	.container1 {
-		gap: 5%;
+		gap: 10%;
 	}
 }
