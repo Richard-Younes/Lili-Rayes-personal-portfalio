@@ -12,9 +12,10 @@ body {
 	background-color: #fff0ed;
 	font-family: 'Barlow', sans-serif;
 	color: #db0047;
+	overflow-x: hidden;
 }
 main {
-	height: 1420px;
+	height: 140rem;
 }
 p {
 	font-weight: 700;
@@ -22,21 +23,21 @@ p {
 .container {
 	display: grid;
 	width: auto;
-	height: 200px;
-	grid-template-columns: 60px 60px 60px 60px 60px 1fr;
-	grid-template-rows: 100px 1fr 1fr 1fr;
+	height: 12.5rem;
+	grid-template-columns: 3.75rem 3.75rem 3.75rem 3.75rem 3.75rem 1fr;
+	grid-template-rows: 6.25rem 1fr 1fr 1fr;
 }
 img {
-	width: 100px;
+	width: 6.25rem;
 }
 
 .logo {
 	position: relative;
 	grid-column: -1;
-	width: 250px;
-	height: 250px;
-	top: -70px;
-	margin-right: 30px;
+	width: 15.625rem;
+	height: 15.625rem;
+	top: -4.375rem;
+	margin-right: 1.875rem;
 }
 .logo-txt {
 	position: relative;
@@ -44,11 +45,11 @@ img {
 	grid-column: -1;
 	grid-row: 2;
 	justify-self: center;
-	font-size: 20px;
-	letter-spacing: 2.5px;
-	margin-right: 30px;
-	margin-bottom: 20px;
-	top: -15px;
+	font-size: 1.25rem;
+	letter-spacing: 0.3125rem;
+	margin-right: 1.875rem;
+	margin-bottom: 1.25rem;
+	top: -0.9375rem;
 	color: #db0047;
 }
 
@@ -56,7 +57,7 @@ a:link {
 	color: #db0047;
 	font-family: 'Barlow', sans-serif;
 	font-weight: bold;
-	font-size: 17px;
+	font-size: 1.0625rem;
 	text-decoration: none;
 }
 
@@ -67,21 +68,22 @@ a:link {
 	grid-column: -1;
 	grid-row: 3;
 	text-align: right;
-	margin-right: 50px;
-	margin-bottom: 20px;
+	margin-right: 3.125rem;
+	margin-bottom: 1.25rem;
 	color: #db0047;
 	z-index: 1;
 	position: relative;
-	top: -10px;
+	top: -0.625rem;
 }
 .contact {
 	grid-column: -1;
 	grid-row: 4;
 	text-align: right;
-	margin-right: 50px;
+	margin-right: 3.125rem;
 	color: #e12c65;
 	position: relative;
-	top: -25px;
+	top: -1.5625rem;
+	z-index: 1;
 }
 .contact:visited {
 	color: #e12c65;
@@ -96,13 +98,28 @@ a:link {
 }
 .cam {
 	position: relative;
-	top: -5px;
+	top: -0.3125rem;
+	z-index: 2;
 }
 .box {
 	position: absolute;
-	left: 5px;
+	left: 0.3125rem;
+	z-index: 2;
 }
+.sheets {
+	position: relative;
 
+	z-index: 2;
+}
+.o {
+	position: relative;
+
+	z-index: 2 !important;
+}
+.arrow {
+	position: relative;
+	z-index: 2;
+}
 .box:hover {
 	cursor: pointer;
 
@@ -259,7 +276,7 @@ a:link {
 	transform: rotate(90deg);
 	opacity: 1;
 	color: #f28531;
-	top: 110px;
+	top: 7.5rem;
 }
 
 .logo:hover {
@@ -268,7 +285,7 @@ a:link {
 
 footer {
 	position: relative;
-	bottom: 0px;
+	bottom: 0rem;
 }
 .footer {
 	display: grid;
@@ -287,36 +304,36 @@ footer {
 	color: #f28531;
 	font-weight: 700;
 	align-self: flex-end;
-	bottom: -10px;
-	border-bottom: 3px solid #f28531;
-	padding-bottom: 3px;
+	bottom: -0.625rem;
+	border-bottom: 0.1875rem solid #f28531;
+	padding-bottom: 0.1875rem;
 	text-transform: lowercase;
 }
 .insta {
 	position: relative;
 	grid-row: 2;
 	grid-column: 3;
-	left: 40px;
-	bottom: 0px;
-	width: 110px;
-	height: 110px;
+	left: 2.5rem;
+	bottom: 0rem;
+	width: 6.875rem;
+	height: 6.875rem;
 }
 
 .be {
 	grid-row: 2;
 	grid-column: 4;
-	width: 110px;
-	height: 110px;
+	width: 6.875rem;
+	height: 6.875rem;
 }
 
 .mail {
 	position: relative;
 	grid-row: 2;
 	grid-column: 5;
-	left: -40px;
-	bottom: 0px;
-	width: 110px;
-	height: 110px;
+	left: -2.5rem;
+	bottom: 0rem;
+	width: 6.875rem;
+	height: 6.875rem;
 }
 
 .uppercase {
@@ -324,43 +341,43 @@ footer {
 }
 
 .dots {
-	width: 12px;
-	height: 12px;
+	width: 0.75rem;
+	height: 0.75rem;
 	border-radius: 50%;
 	background-color: #db0047;
-	margin: 0 5px;
+	margin: 0 0.3125rem;
 	grid-row: 1;
 	grid-column: 1/-1;
 	position: relative;
 	align-self: flex-end;
-	bottom: -2px;
+	bottom: -0.125rem;
 	text-transform: lowercase;
 }
 
 .left-dot {
-	left: -80px;
+	left: -5rem;
 }
 
 .right-dot {
-	left: 80px;
+	left: 5rem;
 }
 
 /* Section 1 */
 
 .section1 {
 	display: grid;
-	grid-template-rows: 100%;
-	grid-template-columns: 1fr 250px;
+	grid-template-rows: 550px 460px 690px 690px;
+	grid-template-columns: 1fr 15.625rem;
 	position: relative;
 	top: -7%;
-	overflow-x: hidden;
 }
 
 .infographic-poster {
 	grid-row: 1/2;
 	justify-self: center;
-	margin-left: 200px;
-	height: 1200px;
+	margin-left: 12.5rem;
+	height: 100%;
+	display: grid;
 }
 .link-div {
 	grid-row: 1/2;
@@ -369,16 +386,16 @@ footer {
 }
 
 .infographic-img {
-	width: 600px;
-	height: 900px;
-	border: 1px #db0047 solid;
+	width: 37.5rem;
+	height: 56.25rem;
+	border: 0.0625rem #db0047 solid;
 }
 
 .info-circle {
-	width: 500px;
-	height: 500px;
+	width: 31.25rem;
+	height: 31.25rem;
 	border-radius: 50%;
-	border: 2px solid #f28531;
+	border: 0.125rem solid #f28531;
 	position: relative;
 	left: 8%;
 	top: -19%;
@@ -392,7 +409,7 @@ footer {
 	margin-bottom: 20%;
 	color: #f28531;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 1.125rem;
 }
 span {
 	position: relative;
@@ -401,7 +418,7 @@ span {
 	position: relative;
 	top: 82%;
 	color: #f28531;
-	font-size: 18px;
+	font-size: 1.125rem;
 	font-style: italic;
 	font-weight: 500;
 }
@@ -414,16 +431,16 @@ span {
 
 /* Editing the links */
 .circle-link-img {
-	width: 160px;
-	height: 65px;
+	width: 10rem;
+	height: 4.0625rem;
 	position: relative;
-	right: -10px;
+	right: -0.625rem;
 }
 
 .div-circle-link {
-	width: 100px;
-	height: 100px;
-	border: 2px #db0047 solid;
+	width: 6.25rem;
+	height: 6.25rem;
+	border: 0.125rem #db0047 solid;
 	border-radius: 50%;
 	position: relative;
 	background-color: #fff0ed;
@@ -432,17 +449,17 @@ span {
 	right: 25%;
 }
 .circle-link {
-	height: 130px;
+	height: 8.125rem;
 }
 .circle-link:hover {
 	cursor: pointer;
 }
 .link-div-text {
 	position: relative;
-	top: -25px;
-	right: -10px;
+	top: -1.5625rem;
+	right: -0.625rem;
 	z-index: -1;
-	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 @keyframes circle-right {
@@ -450,12 +467,12 @@ span {
 		right: 25%;
 	}
 	100% {
-		right: -100%;
+		right: -110%;
 	}
 }
 @keyframes circle-left {
 	0% {
-		right: -100%;
+		right: -110%;
 	}
 	100% {
 		right: 25%;
@@ -472,18 +489,18 @@ span {
 /* The Image animation */
 @keyframes image-link-right {
 	0% {
-		right: 0px;
+		right: -0.4rem;
 	}
 	100% {
-		right: -10px;
+		right: -0.625rem;
 	}
 }
 @keyframes image-link-left {
 	0% {
-		right: -10px;
+		right: -0.625rem;
 	}
 	100% {
-		right: 0px;
+		right: -0.4rem;
 	}
 }
 .circle-link:hover .circle-link-img {
@@ -496,22 +513,22 @@ span {
 /* The text animation */
 @keyframes link-text-down {
 	0% {
-		top: -25px;
-		right: -10px;
+		top: -1.5625rem;
+		right: -0.625rem;
 	}
 	100% {
-		top: 0px;
-		right: 0px;
+		top: 0rem;
+		right: -0.4rem;
 	}
 }
 @keyframes link-text-up {
 	0% {
-		top: 0px;
-		right: 0px;
+		top: 0rem;
+		right: -0.4rem;
 	}
 	100% {
-		top: -25px;
-		right: -10px;
+		top: -1.5625rem;
+		right: -0.625rem;
 	}
 }
 .circle-link:hover .link-div-text {
@@ -519,4 +536,418 @@ span {
 }
 .circle-link:not(:hover) .link-div-text {
 	animation: link-text-up 0.2s ease-in forwards;
+}
+
+/* Editing the first part of the section which is the 2 circles and 3 images animation */
+
+.infographic-poster {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	position: relative;
+	top: -100px;
+	z-index: 1;
+}
+
+.circle1 {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+	position: relative;
+	grid-row: 1/2;
+	grid-column: 3/4;
+	z-index: 1;
+}
+
+.circle2 {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+	grid-row: 3/4;
+	grid-column: 2/3;
+	position: relative;
+	top: -100px;
+	z-index: 1;
+}
+
+.poster-img {
+	width: 230px;
+	height: 230px;
+	position: relative;
+	top: -120px;
+	left: 160px;
+}
+
+.img1 {
+	grid-row: 2/3;
+	grid-column: 1/2;
+	left: 180px;
+	opacity: 0;
+}
+.img2 {
+	grid-row: 2/3;
+	grid-column: 2/3;
+}
+.img3 {
+	grid-row: 2/3;
+	grid-column: 3/4;
+	left: 140px;
+	opacity: 0;
+}
+
+@keyframes image {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes image-gone {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+.infographic-poster:hover .img1 {
+	animation: image 0.25s linear forwards;
+}
+.infographic-poster:hover .img3 {
+	animation: image 0.25s linear forwards;
+}
+.infographic-poster:not(:hover) .img1 {
+	animation: image-gone 0.2s linear forwards;
+}
+.infographic-poster:not(:hover) .img3 {
+	animation: image-gone 0.2s linear forwards;
+}
+
+@keyframes circle1-animation {
+	0% {
+		top: 0;
+	}
+	100% {
+		border-color: #f28531;
+		transform: translateX(80%) translateY(220%);
+	}
+}
+@keyframes circle1-animation-reverse {
+	0% {
+		border-color: #f28531;
+		transform: translateX(80%) translateY(220%);
+	}
+	100% {
+		transform: translateX(0%) translateY(0%);
+		border-color: #db0047;
+	}
+}
+.infographic-poster:hover .circle1 {
+	animation: circle1-animation 0.2s linear forwards;
+}
+.infographic-poster:not(:hover) .circle1 {
+	animation: circle1-animation-reverse 0.2s linear forwards;
+}
+
+@keyframes circle2-animation {
+	0% {
+		top: -100px;
+	}
+	100% {
+		border-color: #f28531;
+		transform: translateX(15%) translateY(-30%);
+	}
+}
+@keyframes circle2-animation-reverse {
+	0% {
+		border-color: #f28531;
+		transform: translateX(15%) translateY(-30%);
+	}
+	100% {
+		border-color: #db0047;
+		top: -100px;
+	}
+}
+.infographic-poster:hover .circle2 {
+	animation: circle2-animation 0.2s linear forwards;
+}
+.infographic-poster:not(:hover) .circle2 {
+	animation: circle2-animation-reverse 0.2s linear forwards;
+}
+
+.circle2-text {
+	opacity: 0;
+	color: #f28531;
+	font-weight: 300;
+	font-size: 40px;
+	position: absolute;
+	top: 80%;
+}
+
+@keyframes text-animation {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: 25%;
+		opacity: 1;
+	}
+}
+@keyframes text-animation-reverse {
+	0% {
+		left: 25%;
+		opacity: 1;
+	}
+	100% {
+		left: 0;
+		opacity: 0;
+	}
+}
+.infographic-poster:hover .circle2-text {
+	animation: text-animation 0.2s linear forwards;
+}
+.infographic-poster:not(:hover) .circle2-text {
+	animation: text-animation-reverse 0.2s linear forwards;
+}
+
+/* Editing the second part where there is new images with some animations and some half circles */
+.part2 {
+	grid-row: 2/3;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 230px;
+	width: 690px;
+	justify-self: end;
+	z-index: 1;
+}
+
+.part2-img1 {
+	width: 690px;
+	height: 230px;
+	z-index: 1;
+	justify-self: flex-end;
+	grid-row: 1/2;
+}
+
+.part2-img11 {
+	width: 230px;
+	height: 230px;
+	grid-row: 2/3;
+	justify-self: flex-end;
+	position: relative;
+	left: -230px;
+	opacity: 0;
+}
+
+.part2:hover .part2-img11 {
+	animation: image 0.25s linear forwards;
+}
+.part2:not(:hover) .part2-img11 {
+	animation: image-gone 0.2s linear forwards;
+}
+
+.half-circle1 {
+	position: absolute;
+	top: 200px;
+	width: 750px;
+	height: 800px;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.inside-circle1 {
+	width: 900px;
+	height: 900px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+}
+
+.half1 {
+	right: 150px;
+	top: 600px;
+	transform: rotate(180deg);
+}
+
+.half-circle2 {
+	position: absolute;
+	top: 200px;
+	width: 800px;
+	height: 850px;
+	overflow: hidden;
+	z-index: -1;
+}
+.inside-circle2 {
+	width: 950px;
+	height: 950px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+}
+
+.half2 {
+	right: 110px;
+	top: 600px;
+	transform: rotate(186deg);
+}
+
+.half-circle3 {
+	position: absolute;
+	top: 200px;
+	width: 850px;
+	height: 920px;
+	overflow: hidden;
+	z-index: -1;
+}
+.inside-circle3 {
+	width: 1000px;
+	height: 1000px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+}
+.half3 {
+	right: 70px;
+	top: 580px;
+	transform: rotate(185deg);
+}
+
+/* Editing part 3 */
+.part3 {
+	grid-row: 3/4;
+	position: relative;
+	left: 200px;
+	display: grid;
+	grid-template-columns: 230px 230px 460px;
+	grid-template-rows: 690px;
+	height: 690px;
+}
+
+.part3-img1 {
+	width: 230px;
+	height: 690px;
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+
+.part3-img2 {
+	width: 230px;
+	height: 230px;
+	grid-column: 2/3;
+	grid-row: 1/2;
+	align-self: center;
+}
+.part3-img3 {
+	width: 460px;
+	height: 230px;
+	grid-column: 3/4;
+	grid-row: 1/2;
+	align-self: center;
+	opacity: 0;
+}
+
+.part3:hover .part3-img3 {
+	animation: image 0.25s linear forwards;
+}
+.part3:not(:hover) .part3-img3 {
+	animation: image-gone 0.2s linear forwards;
+}
+
+/* Editing part4  */
+.part4 {
+	grid-row: 4/5;
+	grid-column: 1/2;
+	position: relative;
+	left: 350px;
+	display: grid;
+	grid-template-rows: 230px 230px 230px;
+	grid-template-columns: 1fr;
+}
+
+.top {
+	width: 230px;
+	height: 230px;
+	grid-row: 1/2;
+	position: relative;
+	left: 690px;
+}
+
+.mid {
+	width: 920px;
+	height: 230px;
+	grid-row: 2/3;
+}
+.bot-img {
+	width: 230px;
+	height: 230px;
+	grid-row: 3/4;
+	position: relative;
+	left: 690px;
+}
+
+/* the last 3 half circles */
+.half-circle4 {
+	position: absolute;
+	top: 1400px;
+	left: 300px;
+	width: 450px;
+	height: 600px;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.inside-circle4 {
+	width: 800px;
+	height: 800px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+}
+
+.half4 {
+	transform: rotate(92deg);
+}
+
+/* half circle 5 */
+.half-circle5 {
+	position: absolute;
+	top: 1436px;
+	left: 350px;
+	width: 550px;
+	height: 700px;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.inside-circle5 {
+	width: 900px;
+	height: 900px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+}
+
+.half5 {
+	transform: rotate(110deg);
+}
+
+/* half circle 6 */
+.half-circle6 {
+	position: absolute;
+	top: 1490px;
+	left: 450px;
+	width: 590px;
+	height: 590px;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.inside-circle6 {
+	width: 900px;
+	height: 900px;
+	border-radius: 50%;
+	border: 2px solid #db0047;
+}
+
+.half6 {
+	transform: rotate(100deg);
 }

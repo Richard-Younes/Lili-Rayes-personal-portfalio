@@ -6,7 +6,8 @@
 
 html,
 body {
-	height: 100%;
+	height: fit-content;
+	overflow: hidden;
 }
 body {
 	background-color: #fff0ed;
@@ -14,7 +15,7 @@ body {
 	color: #db0047;
 }
 main {
-	height: 45%;
+	height: 100%;
 }
 p {
 	font-weight: 700;
@@ -22,21 +23,21 @@ p {
 .container {
 	display: grid;
 	width: auto;
-	height: 200px;
-	grid-template-columns: 60px 60px 60px 60px 60px 1fr;
-	grid-template-rows: 100px 1fr 1fr 1fr;
+	height: 12.5rem;
+	grid-template-columns: 3.75rem 3.75rem 3.75rem 3.75rem 3.75rem 1fr;
+	grid-template-rows: 6.25rem 1fr 1fr 1fr;
 }
 img {
-	width: 100px;
+	width: 6.25rem;
 }
 
 .logo {
 	position: relative;
 	grid-column: -1;
-	width: 250px;
-	height: 250px;
-	top: -70px;
-	margin-right: 30px;
+	width: 15.625rem;
+	height: 15.625rem;
+	top: -4.375rem;
+	margin-right: 1.875rem;
 }
 .logo-txt {
 	position: relative;
@@ -44,11 +45,11 @@ img {
 	grid-column: -1;
 	grid-row: 2;
 	justify-self: center;
-	font-size: 20px;
-	letter-spacing: 2.5px;
-	margin-right: 30px;
-	margin-bottom: 20px;
-	top: -15px;
+	font-size: 1.25rem;
+	letter-spacing: 0.3125rem;
+	margin-right: 1.875rem;
+	margin-bottom: 1.25rem;
+	top: -0.9375rem;
 	color: #db0047;
 }
 
@@ -56,7 +57,7 @@ a:link {
 	color: #db0047;
 	font-family: 'Barlow', sans-serif;
 	font-weight: bold;
-	font-size: 17px;
+	font-size: 1.0625rem;
 	text-decoration: none;
 }
 
@@ -67,21 +68,21 @@ a:link {
 	grid-column: -1;
 	grid-row: 3;
 	text-align: right;
-	margin-right: 50px;
-	margin-bottom: 20px;
+	margin-right: 3.125rem;
+	margin-bottom: 1.25rem;
 	color: #db0047;
 	z-index: 1;
 	position: relative;
-	top: -10px;
+	top: -0.625rem;
 }
 .contact {
 	grid-column: -1;
 	grid-row: 4;
 	text-align: right;
-	margin-right: 50px;
+	margin-right: 3.125rem;
 	color: #e12c65;
 	position: relative;
-	top: -25px;
+	top: -1.5625rem;
 }
 .contact:visited {
 	color: #e12c65;
@@ -96,11 +97,11 @@ a:link {
 }
 .cam {
 	position: relative;
-	top: -5px;
+	top: -0.3125rem;
 }
 .box {
 	position: absolute;
-	left: 5px;
+	left: 0.3125rem;
 }
 
 .box:hover {
@@ -258,7 +259,7 @@ a:link {
 	transform: rotate(90deg);
 	opacity: 1;
 	color: #f28531;
-	top: 110px;
+	top: 7.5rem;
 }
 
 .logo:hover {
@@ -267,7 +268,7 @@ a:link {
 
 footer {
 	position: relative;
-	bottom: 0px;
+	bottom: 0rem;
 }
 .footer {
 	display: grid;
@@ -286,36 +287,36 @@ footer {
 	color: #f28531;
 	font-weight: 700;
 	align-self: flex-end;
-	bottom: -10px;
-	border-bottom: 3px solid #f28531;
-	padding-bottom: 3px;
+	bottom: -0.625rem;
+	border-bottom: 0.1875rem solid #f28531;
+	padding-bottom: 0.1875rem;
 	text-transform: lowercase;
 }
 .insta {
 	position: relative;
 	grid-row: 2;
 	grid-column: 3;
-	left: 40px;
-	bottom: 0px;
-	width: 110px;
-	height: 110px;
+	left: 2.5rem;
+	bottom: 0rem;
+	width: 6.875rem;
+	height: 6.875rem;
 }
 
 .be {
 	grid-row: 2;
 	grid-column: 4;
-	width: 110px;
-	height: 110px;
+	width: 6.875rem;
+	height: 6.875rem;
 }
 
 .mail {
 	position: relative;
 	grid-row: 2;
 	grid-column: 5;
-	left: -40px;
-	bottom: 0px;
-	width: 110px;
-	height: 110px;
+	left: -2.5rem;
+	bottom: 0rem;
+	width: 6.875rem;
+	height: 6.875rem;
 }
 
 .uppercase {
@@ -323,59 +324,60 @@ footer {
 }
 
 .dots {
-	width: 12px;
-	height: 12px;
+	width: 0.75rem;
+	height: 0.75rem;
 	border-radius: 50%;
 	background-color: #db0047;
-	margin: 0 5px;
+	margin: 0 0.3125rem;
 	grid-row: 1;
 	grid-column: 1/-1;
 	position: relative;
 	align-self: flex-end;
-	bottom: -2px;
+	bottom: -0.125rem;
 	text-transform: lowercase;
 }
 
 .left-dot {
-	left: -80px;
+	left: -5rem;
 }
 
 .right-dot {
-	left: 80px;
+	left: 5rem;
 }
 /*  The above css is the template for all pages on this website */
 
 .section1 {
 	display: grid;
 	width: 95%;
+	height: 360px;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
 	position: relative;
-	top: 100px;
+	top: 6.25rem;
 	left: 2.5%;
 	justify-items: center;
 }
 
 .circle1 {
-	width: 240px;
-	height: 240px;
+	width: 15rem;
+	height: 15rem;
 	border-radius: 50%;
-	border: 2px solid #db0047;
+	border: 0.125rem solid #db0047;
 	position: relative;
 }
 .flex-text {
 	position: relative;
-	top: -50px;
-	font-size: 14px;
+	top: -3.125rem;
+	font-size: 0.875rem;
 	color: #fff0ed;
 }
 
 .img1 {
-	width: 240px;
-	height: 160px;
-	border: 2px #db0047 solid;
+	width: 15rem;
+	height: 10rem;
+	border: 0.125rem #db0047 solid;
 	position: relative;
-	top: -280px;
+	top: -17.5rem;
 }
 
 .grid {

@@ -14,7 +14,7 @@ body {
 	color: #db0047;
 }
 main {
-	height: 1420px;
+	height: 88.75rem;
 }
 p {
 	font-weight: 700;
@@ -22,21 +22,21 @@ p {
 .container {
 	display: grid;
 	width: auto;
-	height: 200px;
-	grid-template-columns: 60px 60px 60px 60px 60px 1fr;
-	grid-template-rows: 100px 1fr 1fr 1fr;
+	height: 12.5rem;
+	grid-template-columns: 3.75rem 3.75rem 3.75rem 3.75rem 3.75rem 1fr;
+	grid-template-rows: 6.25rem 1fr 1fr 1fr;
 }
 img {
-	width: 100px;
+	width: 6.25rem;
 }
 
 .logo {
 	position: relative;
 	grid-column: -1;
-	width: 250px;
-	height: 250px;
-	top: -70px;
-	margin-right: 30px;
+	width: 15.625rem;
+	height: 15.625rem;
+	top: -4.375rem;
+	margin-right: 1.875rem;
 }
 .logo-txt {
 	position: relative;
@@ -44,11 +44,11 @@ img {
 	grid-column: -1;
 	grid-row: 2;
 	justify-self: center;
-	font-size: 20px;
-	letter-spacing: 2.5px;
-	margin-right: 30px;
-	margin-bottom: 20px;
-	top: -15px;
+	font-size: 1.25rem;
+	letter-spacing: 0.3125rem;
+	margin-right: 1.875rem;
+	margin-bottom: 1.25rem;
+	top: -0.9375rem;
 	color: #db0047;
 }
 
@@ -56,7 +56,7 @@ a:link {
 	color: #db0047;
 	font-family: 'Barlow', sans-serif;
 	font-weight: bold;
-	font-size: 17px;
+	font-size: 1.0625rem;
 	text-decoration: none;
 }
 
@@ -67,21 +67,22 @@ a:link {
 	grid-column: -1;
 	grid-row: 3;
 	text-align: right;
-	margin-right: 50px;
-	margin-bottom: 20px;
+	margin-right: 3.125rem;
+	margin-bottom: 1.25rem;
 	color: #db0047;
 	z-index: 1;
 	position: relative;
-	top: -10px;
+	top: -0.625rem;
 }
 .contact {
 	grid-column: -1;
 	grid-row: 4;
 	text-align: right;
-	margin-right: 50px;
+	margin-right: 3.125rem;
 	color: #e12c65;
 	position: relative;
-	top: -25px;
+	top: -1.5625rem;
+	z-index: 1;
 }
 .contact:visited {
 	color: #e12c65;
@@ -96,11 +97,11 @@ a:link {
 }
 .cam {
 	position: relative;
-	top: -5px;
+	top: -0.3125rem;
 }
 .box {
 	position: absolute;
-	left: 5px;
+	left: 0.3125rem;
 }
 
 .box:hover {
@@ -259,7 +260,7 @@ a:link {
 	transform: rotate(90deg);
 	opacity: 1;
 	color: #f28531;
-	top: 110px;
+	top: 7.5rem;
 }
 
 .logo:hover {
@@ -268,7 +269,7 @@ a:link {
 
 footer {
 	position: relative;
-	bottom: 0px;
+	bottom: 0rem;
 }
 .footer {
 	display: grid;
@@ -287,36 +288,36 @@ footer {
 	color: #f28531;
 	font-weight: 700;
 	align-self: flex-end;
-	bottom: -10px;
-	border-bottom: 3px solid #f28531;
-	padding-bottom: 3px;
+	bottom: -0.625rem;
+	border-bottom: 0.1875rem solid #f28531;
+	padding-bottom: 0.1875rem;
 	text-transform: lowercase;
 }
 .insta {
 	position: relative;
 	grid-row: 2;
 	grid-column: 3;
-	left: 40px;
-	bottom: 0px;
-	width: 110px;
-	height: 110px;
+	left: 2.5rem;
+	bottom: 0rem;
+	width: 6.875rem;
+	height: 6.875rem;
 }
 
 .be {
 	grid-row: 2;
 	grid-column: 4;
-	width: 110px;
-	height: 110px;
+	width: 6.875rem;
+	height: 6.875rem;
 }
 
 .mail {
 	position: relative;
 	grid-row: 2;
 	grid-column: 5;
-	left: -40px;
-	bottom: 0px;
-	width: 110px;
-	height: 110px;
+	left: -2.5rem;
+	bottom: 0rem;
+	width: 6.875rem;
+	height: 6.875rem;
 }
 
 .uppercase {
@@ -324,25 +325,25 @@ footer {
 }
 
 .dots {
-	width: 12px;
-	height: 12px;
+	width: 0.75rem;
+	height: 0.75rem;
 	border-radius: 50%;
 	background-color: #db0047;
-	margin: 0 5px;
+	margin: 0 0.3125rem;
 	grid-row: 1;
 	grid-column: 1/-1;
 	position: relative;
 	align-self: flex-end;
-	bottom: -2px;
+	bottom: -0.125rem;
 	text-transform: lowercase;
 }
 
 .left-dot {
-	left: -80px;
+	left: -5rem;
 }
 
 .right-dot {
-	left: 80px;
+	left: 5rem;
 }
 
 /* Section 1 */
@@ -350,7 +351,7 @@ footer {
 .section1 {
 	display: grid;
 	grid-template-rows: 100%;
-	grid-template-columns: 1fr 250px;
+	grid-template-columns: 1fr 15.625rem;
 	position: relative;
 	top: -7%;
 	overflow-x: hidden;
@@ -359,8 +360,8 @@ footer {
 .infographic-poster {
 	grid-row: 1/2;
 	justify-self: center;
-	margin-left: 200px;
-	height: 1200px;
+	margin-left: 12.5rem;
+	height: 75rem;
 }
 .link-div {
 	grid-row: 1/2;
@@ -369,16 +370,16 @@ footer {
 }
 
 .infographic-img {
-	width: 600px;
-	height: 900px;
-	border: 1px #db0047 solid;
+	width: 37.5rem;
+	height: 56.25rem;
+	border: 0.0625rem #db0047 solid;
 }
 
 .info-circle {
-	width: 500px;
-	height: 500px;
+	width: 31.25rem;
+	height: 31.25rem;
 	border-radius: 50%;
-	border: 2px solid #f28531;
+	border: 0.125rem solid #f28531;
 	position: relative;
 	left: 8%;
 	top: -19%;
@@ -392,7 +393,7 @@ footer {
 	margin-bottom: 20%;
 	color: #f28531;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 1.125rem;
 }
 span {
 	position: relative;
@@ -401,7 +402,7 @@ span {
 	position: relative;
 	top: 82%;
 	color: #f28531;
-	font-size: 18px;
+	font-size: 1.125rem;
 	font-style: italic;
 	font-weight: 500;
 }
@@ -414,16 +415,16 @@ span {
 
 /* Editing the links */
 .circle-link-img {
-	width: 160px;
-	height: 65px;
+	width: 10rem;
+	height: 4.0625rem;
 	position: relative;
-	right: -10px;
+	right: -0.625rem;
 }
 
 .div-circle-link {
-	width: 100px;
-	height: 100px;
-	border: 2px #db0047 solid;
+	width: 6.25rem;
+	height: 6.25rem;
+	border: 0.125rem #db0047 solid;
 	border-radius: 50%;
 	position: relative;
 	background-color: #fff0ed;
@@ -432,17 +433,17 @@ span {
 	right: 25%;
 }
 .circle-link {
-	height: 130px;
+	height: 8.125rem;
 }
 .circle-link:hover {
 	cursor: pointer;
 }
 .link-div-text {
 	position: relative;
-	top: -25px;
-	right: -10px;
+	top: -1.5625rem;
+	right: -0.625rem;
 	z-index: -1;
-	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 @keyframes circle-right {
@@ -472,18 +473,18 @@ span {
 /* The Image animation */
 @keyframes image-link-right {
 	0% {
-		right: 0px;
+		right: 0rem;
 	}
 	100% {
-		right: -10px;
+		right: -0.625rem;
 	}
 }
 @keyframes image-link-left {
 	0% {
-		right: -10px;
+		right: -0.625rem;
 	}
 	100% {
-		right: 0px;
+		right: 0rem;
 	}
 }
 .circle-link:hover .circle-link-img {
@@ -496,22 +497,22 @@ span {
 /* The text animation */
 @keyframes link-text-down {
 	0% {
-		top: -25px;
-		right: -10px;
+		top: -1.5625rem;
+		right: -0.625rem;
 	}
 	100% {
-		top: 0px;
-		right: 0px;
+		top: 0rem;
+		right: 0rem;
 	}
 }
 @keyframes link-text-up {
 	0% {
-		top: 0px;
-		right: 0px;
+		top: 0rem;
+		right: 0rem;
 	}
 	100% {
-		top: -25px;
-		right: -10px;
+		top: -1.5625rem;
+		right: -0.625rem;
 	}
 }
 .circle-link:hover .link-div-text {
@@ -529,24 +530,24 @@ span {
 }
 
 .section2-circle1 {
-	width: 400px;
-	height: 400px;
-	border: 2px #f28531 solid;
+	width: 25rem;
+	height: 25rem;
+	border: 0.125rem #f28531 solid;
 	border-radius: 50%;
-	margin-left: 50px;
+	margin-left: 3.125rem;
 	position: relative;
 	top: -60%;
 	display: grid;
 	justify-content: flex-end;
 	align-items: flex-end;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 40px;
+	grid-template-rows: 1fr 2.5rem;
 	justify-items: flex-end;
 }
 .section2-circle2 {
-	width: 400px;
-	height: 400px;
-	border: 2px #f28531 solid;
+	width: 25rem;
+	height: 25rem;
+	border: 0.125rem #f28531 solid;
 	border-radius: 50%;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -557,8 +558,8 @@ span {
 
 /* Editing inside circle 1 */
 .circle1-img {
-	width: 230px;
-	height: 270px;
+	width: 14.375rem;
+	height: 16.875rem;
 	margin-top: 33%;
 	position: relative;
 	left: 10%;
@@ -572,8 +573,8 @@ span {
 .circle2-img1 {
 	grid-row: 1/2;
 	grid-column: 1/2;
-	width: 210px;
-	height: 240px;
+	width: 13.125rem;
+	height: 15rem;
 	position: relative;
 	left: -30%;
 	top: -5%;
@@ -589,8 +590,8 @@ span {
 .circle2-img2 {
 	grid-row: 1/2;
 	grid-column: 2/3;
-	width: 280px;
-	height: 160px;
+	width: 17.5rem;
+	height: 10rem;
 	position: relative;
 	top: -5%;
 }
