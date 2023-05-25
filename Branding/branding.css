@@ -7,7 +7,7 @@
 html,
 body {
 	height: 100%;
-	/* overflow-y: hidden; */
+	overflow-y: hidden;
 }
 body {
 	background-color: #fff0ed;
@@ -354,6 +354,10 @@ footer {
 	border: 0.125rem solid #db0047;
 }
 
+.circles-cont {
+	display: inline-block;
+}
+
 /* Here we will design specifically section 1 Meaning the forst 3 circles */
 
 .white-circle1 {
@@ -437,6 +441,7 @@ main {
 	margin: 0;
 	padding: 0;
 	top: 1rem;
+	text-align: center;
 }
 .section2 {
 	position: relative;
@@ -446,6 +451,7 @@ main {
 	margin: 0;
 	padding: 0;
 	top: 1rem;
+	text-align: center;
 }
 .section3 {
 	/* position: relative; */
@@ -455,6 +461,7 @@ main {
 	margin: 0;
 	padding: 0;
 	top: 1rem;
+	text-align: center;
 }
 
 /* Now we will create the animations on hover */
@@ -816,14 +823,5 @@ main {
 @media (max-width: 58.5em) {
 	html {
 		font-size: 10px;
-	}
-	.section1 {
-		left: 10%;
-	}
-	.section2 {
-		left: 15%;
-	}
-	.section3 {
-		left: 20%;
 	}
 }

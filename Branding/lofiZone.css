@@ -6,7 +6,7 @@
 
 html,
 body {
-	height: 187.5rem;
+	height: fit-content;
 	width: 100%;
 }
 body {
@@ -16,7 +16,7 @@ body {
 	overflow-x: hidden;
 }
 main {
-	height: 187.5rem;
+	height: 95%;
 }
 p {
 	font-weight: 700;
@@ -575,23 +575,40 @@ footer {
 
 /* div 4 represents the Envelope and the div5 represents the Business cards */
 
+.flex45 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 .div4 {
-	display: inline;
+	display: inline-block;
+	width: fit-content;
+	height: fit-content;
+	margin: auto;
 }
 
 .envelope {
 	width: 31.25rem;
 	border: 0.125rem solid rgba(242, 133, 49, 0.4);
-	margin-top: 6.25rem;
-	margin-left: 6.25rem;
-	margin-right: 7.5rem;
 }
 
 .div5 {
-	display: flex;
 	position: relative;
-	left: 43.75rem;
-	top: -11.25rem;
+	display: inline-block;
+	margin: auto;
+}
+
+.div5-img1 {
+	width: 15.625rem;
+	display: inline-block;
+	margin: 2rem;
+}
+
+.div5-img2 {
+	width: 15.625rem;
+	display: inline-block;
+	margin: 2rem;
 }
 
 .cards1 {
@@ -599,8 +616,8 @@ footer {
 	height: 10.625rem;
 	border: 0.125rem solid rgba(242, 133, 49, 0.4);
 	position: relative;
-	top: -5rem;
-	left: 2.5rem;
+	/* top: -5rem;
+	left: 2.5rem; */
 }
 
 .cards2 {
@@ -608,42 +625,40 @@ footer {
 	height: 10.625rem;
 	border: 0.125rem solid rgba(242, 133, 49, 0.4);
 	position: relative;
-	top: 5.625rem;
-	right: 13.125rem;
+	/* top: 5.625rem;
+	right: 13.125rem; */
 }
 .cards3 {
 	width: 15.625rem;
 	height: 10.625rem;
 	border: 0.125rem solid rgba(242, 133, 49, 0.4);
 	position: relative;
-	top: -5rem;
-	right: 5.625rem;
+	/* top: -5rem;
+	right: 5.625rem; */
 }
 .cards4 {
 	width: 15.625rem;
 	height: 10.625rem;
 	border: 0.125rem solid rgba(242, 133, 49, 0.4);
 	position: relative;
-	top: 5.625rem;
-	right: 21.25rem;
+	/* top: 5.625rem;
+	right: 21.25rem; */
 }
 
 .envelope-text {
-	display: inline;
 	text-align: center;
 	position: relative;
-	top: -10rem;
-	left: 20rem;
 	font-size: 1.25rem;
 }
 
 .business-text {
-	display: inline;
 	text-align: center;
 	position: relative;
-	top: -3.75rem;
-	left: 56.25rem;
 	font-size: 1.25rem;
+}
+
+.div6 {
+	margin: auto;
 }
 
 .letterhead {
@@ -651,14 +666,11 @@ footer {
 	height: 40.625rem;
 	border: 0.125rem solid rgba(242, 133, 49, 0.4);
 	position: relative;
-	top: -6.25rem;
-	left: 6.25rem;
 }
 
 .letterhead-text {
 	position: relative;
-	left: 18.75rem;
-	top: -5rem;
+	text-align: center;
 	font-size: 1.25rem;
 }
 
@@ -670,15 +682,29 @@ footer {
 	border-radius: 50%;
 	border: 0.125rem solid #db0047;
 	position: relative;
-	top: -40.625rem;
-	left: 50rem;
+	margin: auto;
 }
-
+.animation-div1 {
+	display: inline-block;
+	width: 12.3125rem;
+	height: 12.3125rem;
+	position: relative;
+	top: 9.375rem;
+	left: 2.5rem;
+}
+.animation-div2 {
+	display: inline-block;
+	width: 12.3125rem;
+	height: 12.3125rem;
+	position: relative;
+	top: 9.375rem;
+	left: 5rem;
+}
 .checkout {
 	font-size: 2.875rem;
 	font-weight: 300;
 	position: relative;
-	left: 11.25rem;
+	text-align: center;
 	top: 5rem;
 }
 
@@ -688,8 +714,7 @@ footer {
 	border-radius: 50%;
 	border: 0.125rem solid #db0047;
 	position: relative;
-	left: 1.875rem;
-	top: 7.5rem;
+	left: 0.25rem;
 }
 
 .red-circle1 {
@@ -700,8 +725,7 @@ footer {
 	background-color: #db0047;
 	position: relative;
 	z-index: -1;
-	left: 1.625rem;
-	top: -4.6875rem;
+	top: -11.5625rem;
 }
 
 .white-circle2 {
@@ -711,8 +735,7 @@ footer {
 	border: 0.125rem solid #db0047;
 	background-color: white;
 	position: relative;
-	left: 18.4375rem;
-	top: -17.8125rem;
+	left: 0.25rem;
 }
 
 .red-circle2 {
@@ -722,8 +745,7 @@ footer {
 	border: 0.125rem solid #db0047;
 	background-color: #db0047;
 	position: relative;
-	top: -30rem;
-	left: 18.125rem;
+	top: -11.5625rem;
 	z-index: -1;
 }
 
@@ -738,107 +760,85 @@ footer {
 	height: 12.3125rem;
 }
 
-@keyframes white-circle-up1 {
+@keyframes white-circle-up {
 	0% {
-		top: 8.75rem;
+		top: 1.25rem;
 	}
 	100% {
-		top: 7.5rem;
+		top: 0;
 	}
 }
 
-@keyframes white-circle-down1 {
+@keyframes white-circle-down {
 	0% {
-		top: 7.5rem;
+		top: 0;
 	}
 	100% {
-		top: 8.75rem;
+		top: 1.25rem;
 	}
 }
 
-@keyframes white-circle-up2 {
+@keyframes red-circle-up {
 	0% {
-		top: -16.5625rem;
+		top: -11.5625rem;
 	}
 	100% {
-		top: -17.8125rem;
+		top: -13.75rem;
 	}
 }
 
-@keyframes white-circle-down2 {
+@keyframes red-circle-down {
 	0% {
-		top: -17.8125rem;
+		top: -13.75rem;
 	}
 	100% {
-		top: -16.5625rem;
+		top: -11.5625rem;
 	}
 }
-
-@keyframes red-circle-up1 {
-	0% {
-		top: -4.6875rem;
-	}
-	100% {
-		top: -6.875rem;
-	}
-}
-
-@keyframes red-circle-down1 {
-	0% {
-		top: -6.875rem;
-	}
-	100% {
-		top: -4.6875rem;
-	}
-}
-
-@keyframes red-circle-up2 {
-	0% {
-		top: -30rem;
-	}
-	100% {
-		top: -32.1875rem;
-	}
-}
-
-@keyframes red-circle-down2 {
-	0% {
-		top: -32.1875rem;
-	}
-	100% {
-		top: -30rem;
-	}
-}
-
 .animation-div1:hover .white-circle1 {
-	animation: white-circle-down1 0.2s ease-in forwards;
+	animation: white-circle-down 0.2s ease-in forwards;
 }
 
 .animation-div1:not(:hover) .white-circle1 {
-	animation: white-circle-up1 0.2s ease-in forwards;
+	animation: white-circle-up 0.2s ease-in forwards;
 }
 
 .animation-div2:hover .white-circle2 {
-	animation: white-circle-down2 0.2s ease-in forwards;
+	animation: white-circle-down 0.2s ease-in forwards;
 }
 
 .animation-div2:not(:hover) .white-circle2 {
-	animation: white-circle-up2 0.2s ease-in forwards;
+	animation: white-circle-up 0.2s ease-in forwards;
 }
 
 /* This part is for the red circes */
 .animation-div1:hover .red-circle1 {
-	animation: red-circle-up1 0.2s ease-in forwards;
+	animation: red-circle-up 0.2s ease-in forwards;
 }
 
 .animation-div1:not(:hover) .red-circle1 {
-	animation: red-circle-down1 0.2s ease-in forwards;
+	animation: red-circle-down 0.2s ease-in forwards;
 }
 
 .animation-div2:hover .red-circle2 {
-	animation: red-circle-up2 0.2s ease-in forwards;
+	animation: red-circle-up 0.2s ease-in forwards;
 }
 
 .animation-div2:not(:hover) .red-circle2 {
-	animation: red-circle-down2 0.2s ease-in forwards;
+	animation: red-circle-down 0.2s ease-in forwards;
+}
+
+@media (max-width: 70.625rem) {
+	.flex45 {
+		margin-top: 1.5rem;
+	}
+}
+
+@media (max-width: 65.625rem) {
+	.letterhead-text {
+		margin-bottom: 1.5rem;
+	}
+	.div1 {
+		margin-top: 9.375rem;
+	}
 }
