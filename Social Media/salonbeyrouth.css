@@ -641,7 +641,7 @@ h1 {
 	font-size: 2.125rem;
 	position: relative;
 	top: 4.375rem;
-	left: 11.25rem;
+	text-align: center;
 }
 
 .pic {
@@ -691,14 +691,14 @@ h1 {
 .small-circle-h3-1 {
 	position: relative;
 	top: -6.25rem;
-	left: 13.75rem;
+	text-align: center;
 	font-size: 1.3125rem;
 	transition: transform 0.15s ease;
 }
 .small-circle-h3-2 {
 	position: relative;
 	top: -6.25rem;
-	left: 11.875rem;
+	text-align: center;
 	font-size: 1.375rem;
 	transition: transform 0.15s ease;
 }
@@ -712,4 +712,10 @@ h1 {
 
 .big-circle:hover {
 	cursor: pointer;
+}
+
+@media (max-width: 50rem) {
+	html {
+		font-size: 14px;
+	}
 }

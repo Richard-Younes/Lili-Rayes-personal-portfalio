@@ -524,14 +524,14 @@ h2 {
 .small-circle-h3-1 {
 	position: relative;
 	top: -6.25rem;
-	left: 13.75rem;
+	text-align: center;
 	font-size: 1.3125rem;
 	transition: transform 0.2s ease-in-out;
 }
 .small-circle-h3-2 {
 	position: relative;
 	top: -6.25rem;
-	left: 11.875rem;
+	text-align: center;
 	font-size: 1.375rem;
 	transition: transform 0.2s ease-in-out;
 }
@@ -546,4 +546,9 @@ h2 {
 .last-p {
 	text-align: center;
 	font-size: 1.5rem;
+}
+@media (max-width: 50rem) {
+	html {
+		font-size: 14px;
+	}
 }

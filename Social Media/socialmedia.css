@@ -350,7 +350,7 @@ footer {
 main {
 	display: flex;
 	width: auto;
-	gap: 12.5rem;
+	gap: 15%;
 	justify-content: center;
 	align-items: center;
 }
@@ -529,4 +529,32 @@ main {
 
 .second:not(:hover) .salon-img {
 	animation: move-img-left 0.3s ease-in-out forwards;
+}
+@media (max-width: 75rem) {
+	main {
+		position: relative;
+		top: 4%;
+	}
+	.second {
+		position: relative;
+		left: 5%;
+	}
+}
+
+@media (max-width: 62.5rem) {
+	html {
+		font-size: 14px;
+	}
+}
+@media (max-width: 55.5rem) {
+	html {
+		font-size: 12px;
+	}
+	main {
+		gap: 5%;
+	}
+	.second {
+		position: relative;
+		left: 5%;
+	}
 }
