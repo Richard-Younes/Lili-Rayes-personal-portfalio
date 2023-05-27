@@ -269,7 +269,7 @@ a:link {
 
 footer {
 	position: relative;
-	bottom: 2rem;
+	bottom: 6rem;
 }
 .footer {
 	display: grid;
@@ -350,10 +350,11 @@ main {
 	display: flex;
 	justify-content: center;
 	gap: 8%;
+	margin-top: 3.125rem;
 }
 section {
 	width: 31.25rem;
-	height: 25.0rem;
+	height: 25rem;
 }
 
 section:hover {
@@ -368,8 +369,8 @@ section:hover {
 }
 
 .laptop-svg {
-	width: 30.0rem;
-	height: 30.0rem;
+	width: 30rem;
+	height: 30rem;
 	position: relative;
 	top: -100%;
 	left: 5%;
@@ -433,4 +434,33 @@ section:hover .text {
 
 section:not(:hover) .text {
 	animation: text-down 0.15s linear forwards;
+}
+
+/* Under 1000px */
+@media (max-width: 62.5rem) {
+	html {
+		font-size: 14px;
+	}
+	main {
+		gap: 5%;
+	}
+}
+
+/* Under 900px */
+@media (max-width: 56.25rem) {
+	html {
+		font-size: 12px;
+	}
+	main {
+		gap: 0%;
+		margin-top: 5rem;
+	}
+}
+
+/* Under 760px */
+
+@media (max-width: 47.5rem) {
+	html {
+		font-size: 11px;
+	}
 }
