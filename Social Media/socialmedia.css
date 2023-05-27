@@ -530,7 +530,7 @@ main {
 .second:not(:hover) .salon-img {
 	animation: move-img-left 0.3s ease-in-out forwards;
 }
-@media (max-width: 75rem) {
+@media (max-width: 75em) {
 	main {
 		position: relative;
 		top: 4%;
@@ -541,12 +541,12 @@ main {
 	}
 }
 
-@media (max-width: 62.5rem) {
+@media (max-width: 62.5em) {
 	html {
 		font-size: 14px;
 	}
 }
-@media (max-width: 55.5rem) {
+@media (max-width: 55.5em) {
 	html {
 		font-size: 12px;
 	}

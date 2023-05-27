@@ -437,7 +437,7 @@ section:not(:hover) .text {
 }
 
 /* Under 1000px */
-@media (max-width: 64rem) {
+@media (max-width: 64em) {
 	html {
 		font-size: 14px;
 	}
@@ -450,7 +450,7 @@ section:not(:hover) .text {
 }
 
 /* Under 900px */
-@media (max-width: 56.25rem) {
+@media (max-width: 56.25em) {
 	html {
 		font-size: 12px;
 	}
@@ -462,7 +462,7 @@ section:not(:hover) .text {
 
 /* Under 760px */
 
-@media (max-width: 47.5rem) {
+@media (max-width: 47.5em) {
 	html {
 		font-size: 11px;
 	}

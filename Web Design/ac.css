@@ -476,7 +476,7 @@ footer {
 }
 
 /* Under 1288px */
-@media (max-width: 80.5rem) {
+@media (max-width: 80.5em) {
 	html {
 		font-size: 14px;
 	}
@@ -497,7 +497,7 @@ footer {
 	}
 }
 /* Under 1100px */
-@media (max-width: 80.5rem) {
+@media (max-width: 80.5em) {
 	.section1 {
 		margin-top: 3.125rem;
 
@@ -505,14 +505,14 @@ footer {
 	}
 }
 /* Under 1000px */
-@media (max-width: 62.5rem) {
+@media (max-width: 62.5em) {
 	html {
 		font-size: 12px;
 	}
 }
 
 /* Under 850px */
-@media (max-width: 53rem) {
+@media (max-width: 53em) {
 	html {
 		font-size: 11px;
 	}

@@ -714,7 +714,7 @@ h1 {
 	cursor: pointer;
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 50em) {
 	html {
 		font-size: 14px;
 	}
