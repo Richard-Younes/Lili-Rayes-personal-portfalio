@@ -751,13 +751,13 @@ footer {
 	animation: red-circle-down 0.2s ease-in forwards;
 }
 
-@media (max-width: 65.3125rem) {
+@media (max-width: 65.3125em) {
 	html {
 		font-size: 14px;
 	}
 }
 
-@media (max-width: 63.0625rem) {
+@media (max-width: 63.0625em) {
 	.outlaws-color-palette {
 		justify-self: center;
 		top: -5rem;
@@ -783,7 +783,7 @@ footer {
 	}
 }
 
-@media (max-width: 56.25rem) {
+@media (max-width: 56.25em) {
 	.big-circle1 {
 		left: -10%;
 	}

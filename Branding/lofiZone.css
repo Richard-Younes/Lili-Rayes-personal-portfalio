@@ -828,13 +828,13 @@ footer {
 	animation: red-circle-down 0.2s ease-in forwards;
 }
 
-@media (max-width: 70.625rem) {
+@media (max-width: 70.625em) {
 	.flex45 {
 		margin-top: 1.5rem;
 	}
 }
 
-@media (max-width: 65.625rem) {
+@media (max-width: 65.625em) {
 	.letterhead-text {
 		margin-bottom: 1.5rem;
 	}

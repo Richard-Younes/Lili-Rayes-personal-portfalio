@@ -418,28 +418,28 @@ span {
 
 /* Media queries for responsiveness */
 /* BELOW 1152px */
-@media (max-width: 83rem) {
+@media (max-width: 83em) {
 	html {
 		font-size: 14px;
 	}
 }
 
 /* BELOW 944px */
-@media (max-width: 73rem) {
+@media (max-width: 73em) {
 	html {
 		font-size: 12px;
 	}
 }
 
 /* BELOW 640px */
-@media (max-width: 63rem) {
+@media (max-width: 63em) {
 	html {
 		font-size: 11px;
 	}
 }
 
 /* Below 916px */
-@media (max-width: 57.25rem) {
+@media (max-width: 57.25em) {
 	.about-text {
 		font-size: 3rem;
 		line-height: normal;
@@ -453,7 +453,7 @@ span {
 }
 
 /* Below 822px */
-@media (max-width: 51.375rem) {
+@media (max-width: 51.375em) {
 	.big-circle {
 		width: 28.25rem;
 		height: 28.25rem;
@@ -475,7 +475,7 @@ span {
 }
 
 /* Below 726 */
-@media (max-width: 45.375rem) {
+@media (max-width: 45.375em) {
 	.big-circle {
 		width: 28.25rem;
 		height: 28.25rem;

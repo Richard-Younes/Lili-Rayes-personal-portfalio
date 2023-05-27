@@ -600,21 +600,21 @@ h2 {
 /* Media queries for responsiveness */
 
 /* Below 1056px */
-@media (max-width: 66rem) {
+@media (max-width: 66em) {
 	html {
 		font-size: 14px;
 	}
 }
 
 /* Below 912px */
-@media (max-width: 57rem) {
+@media (max-width: 57em) {
 	html {
 		font-size: 12px;
 	}
 }
 
 /* Below 832px */
-@media (max-width: 52rem) {
+@media (max-width: 52em) {
 	html {
 		font-size: 11px;
 	}
@@ -625,7 +625,7 @@ h2 {
 }
 
 /* Below 600px */
-@media (max-width: 37.5rem) {
+@media (max-width: 37.5em) {
 	#message {
 		width: 9.375rem;
 		height: 9.375rem;
