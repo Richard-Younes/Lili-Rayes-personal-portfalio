@@ -349,7 +349,7 @@ footer {
 .section1 {
 	display: grid;
 	width: 95%;
-	height: 360px;
+	height: 22.5rem;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
 	position: relative;
@@ -428,4 +428,25 @@ footer {
 
 .grid:not(:hover) .circle1 {
 	animation: move-down 0.25s ease-in forwards;
+}
+/* Media queries for responsiveness */
+/* BELOW 1248px */
+@media (max-width: 78em) {
+	html {
+		font-size: 14px;
+	}
+}
+
+/* BELOW 1088px */
+@media (max-width: 68em) {
+	html {
+		font-size: 12px;
+	}
+}
+
+/* BELOW 936px */
+@media (max-width: 58.5em) {
+	html {
+		font-size: 11px;
+	}
 }

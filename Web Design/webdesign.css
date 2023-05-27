@@ -269,7 +269,7 @@ a:link {
 
 footer {
 	position: relative;
-	bottom: 6rem;
+	bottom: 8rem;
 }
 .footer {
 	display: grid;
@@ -437,12 +437,15 @@ section:not(:hover) .text {
 }
 
 /* Under 1000px */
-@media (max-width: 62.5rem) {
+@media (max-width: 64rem) {
 	html {
 		font-size: 14px;
 	}
 	main {
 		gap: 5%;
+	}
+	footer {
+		bottom: 7rem;
 	}
 }
 

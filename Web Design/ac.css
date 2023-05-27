@@ -499,7 +499,7 @@ footer {
 /* Under 1100px */
 @media (max-width: 80.5rem) {
 	.section1 {
-		margin-top: 7.125rem;
+		margin-top: 3.125rem;
 
 		margin-right: 100px;
 	}
