@@ -637,7 +637,7 @@ footer {
 .mobile-container {
 	display: none;
 }
-@media (max-width: 43.75em) {
+@media (max-width: 41em) {
 	html,
 	body {
 		overflow: auto;
@@ -683,7 +683,7 @@ footer {
 		z-index: 1;
 		grid-row: 1/2;
 		grid-column: 2/3;
-		justify-self: flex-end;
+		justify-self: center;
 		position: relative;
 		top: 5%;
 		font-weight: 700;
@@ -881,9 +881,12 @@ footer {
 		color: #f28531;
 		font-size: 1.2rem;
 	}
+	a:link {
+		font-size: 1.5rem;
+	}
 }
 
-@media (max-width: 23.125em) {
+@media (max-width: 28em) {
 	.mobile-about {
 		justify-self: center;
 	}
@@ -892,6 +895,14 @@ footer {
 	}
 	.links-text {
 		top: 17.5rem;
-		left: -7.5rem;
+		left: -7.4rem;
+	}
+	a:link {
+		font-size: 1.4rem;
+	}
+}
+@media (max-width: 21.25em) {
+	.mobile-about {
+		justify-self: baseline;
 	}
 }

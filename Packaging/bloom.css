@@ -510,19 +510,318 @@ h1 {
 /* BELOW 944px */
 @media (max-width: 59em) {
 	html {
-		font-size: 12px;
+		font-size: 11px;
 	}
 	.perfume {
 		height: 60rem;
 	}
 }
 
-/* BELOW 640px */
-@media (max-width: 40em) {
+/***************************************************************************************************************************************/
+/**************************************************************************************************************************************/
+/**********************************************     Mobile version under 700px     ***************************************************/
+.mobile-top {
+	display: none;
+}
+.mobile-container {
+	display: none;
+}
+.div1-dot {
+	display: none;
+}
+.cortas-header {
+	display: none;
+}
+.mobile-flex {
+	display: none;
+}
+.mobile-flex-img1 {
+	display: none;
+}
+.back-color {
+	display: none;
+}
+
+@media (max-width: 43.75em) {
+	html,
+	body {
+		overflow: auto;
+		overflow-y: scroll;
+	}
+	main {
+		height: 165rem;
+		position: relative;
+		top: -39rem;
+	}
+	.mobile-container {
+		display: inline-block;
+	}
+	.container {
+		display: none; /* This is to remvove the navbar used for the normal application */
+	}
+	.container1 {
+		flex-wrap: wrap;
+	}
+	.logo {
+		width: 15.625rem;
+		height: 15.625rem;
+		grid-row: 1/2;
+		grid-column: 1/2;
+		align-self: flex-start;
+		position: relative;
+		top: -35%;
+		left: 5%;
+	}
+	.logo-txt {
+		position: relative;
+		justify-self: center;
+		font-size: 1.25rem;
+		letter-spacing: 0.18rem;
+		color: #db0047;
+		grid-row: 2/3;
+		grid-column: 1/2;
+		justify-self: baseline;
+		position: relative;
+		left: 10%;
+		top: -145%;
+	}
+	.about:visited {
+		color: #db0047;
+	}
+	.mobile-about {
+		color: #db0047;
+		z-index: 1;
+		grid-row: 1/2;
+		grid-column: 2/3;
+		justify-self: center;
+		position: relative;
+		top: 5%;
+		font-weight: 700;
+		font-size: 2rem;
+	}
+	.contact {
+		color: #e12c65;
+		grid-row: 1/2;
+		grid-column: 3/4;
+		justify-self: flex-end;
+		position: relative;
+		top: 5%;
+		font-weight: 700;
+		font-size: 2rem;
+	}
+	.contact:visited {
+		color: #e12c65;
+	}
+
+	.mobile-top {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+		grid-template-rows: 2fr 1fr;
+	}
+	.footer {
+		bottom: 0;
+	}
+
+	/* Sidebar */
+	.mobile-container {
+		position: relative;
+		top: -15rem;
+	}
+	.sidebar {
+		width: 200px;
+		background-color: #fff0ed;
+		padding: 10px;
+		height: 300px;
+		overflow: hidden;
+	}
+
+	.dots1 {
+		display: flex;
+		justify-content: center;
+		z-index: 3;
+		width: 60px;
+		height: 60px;
+		position: relative;
+	}
+
+	.dot {
+		width: 10px;
+		height: 10px;
+		background-color: #db0047;
+		border-radius: 50%;
+		margin: 0 2px;
+		cursor: pointer;
+		position: relative;
+		top: 50%;
+	}
+
+	.links {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		position: relative;
+		left: 1rem;
+	}
+
+	.links a {
+		display: flex;
+		align-items: center;
+	}
+
+	.links img {
+		width: 40px;
+		height: 40px;
+	}
+	.dot {
+		/* ... existing styles ... */
+		transition: transform 0.3s ease;
+	}
+
+	.rotate {
+		transform: rotate(90deg);
+	}
+
+	.links {
+		/* ... existing styles ... */
+		transition: transform 0.3s ease;
+	}
+
+	.hide {
+		transform: translateY(-130%);
+	}
+
+	.links-text {
+		transform: rotate(90deg);
+		position: relative;
+		top: 16.5rem;
+		left: -6.8rem;
+		color: #f28531;
+		font-size: 1.2rem;
+	}
+	a:link {
+		font-size: 1.5rem;
+	}
+	/* All the above css can be used for the new outline of the mobile version */
+
+	.div1-dot {
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		background-color: #db0047;
+		border-radius: 50%;
+		margin: 0 2px;
+		cursor: pointer;
+	}
+	.div1-dot2 {
+		background-color: #f28531;
+	}
+	.cortas-header {
+		display: inline-block;
+		font-weight: 700;
+		font-size: 2rem;
+		position: relative;
+		left: 1rem;
+		top: -4rem;
+	}
+	.endless-bloom-header {
+		font-weight: 700;
+		font-size: 2rem;
+		position: relative;
+		top: -3.5rem;
+		color: #f28531;
+		left: 3rem;
+	}
+	.underline-header {
+		border-bottom: 3px solid #f28531;
+	}
+	.big-circle {
+		display: none;
+	}
+	.mobile-flex {
+		display: flex;
+		gap: 20%;
+		margin-bottom: 150px;
+	}
+	.mobile-flex-img {
+		width: 100px;
+		height: auto;
+	}
+	.perfume {
+		width: 100%;
+		height: 100%;
+	}
+	.mobile-flex-img1 {
+		width: 250px;
+		height: auto;
+		margin-bottom: 50px;
+		display: inline-block;
+	}
+	.section2:hover .empty-circle {
+		animation: none;
+	}
+	.section2:not(:hover) .empty-circle {
+		animation: none;
+	}
+	.section2:hover .filled-circle {
+		animation: none;
+	}
+	.section2:not(:hover) .filled-circle {
+		animation: none;
+	}
+
+	.circle3 {
+		border-radius: 0%;
+		width: 100vw;
+		border: 2px #db0047 solid;
+	}
+	.perfume-img {
+		border: 2px #db0047 solid;
+	}
+	.back-color {
+		display: grid;
+		background-color: aliceblue;
+		width: 100%;
+		justify-content: center;
+		padding-bottom: 100px;
+		padding-top: 100px;
+		position: relative;
+		top: -120px;
+	}
+	.section2 {
+		position: relative;
+		top: -300px;
+	}
+}
+
+/* For smaller mobile */
+@media (max-width: 28em) {
+	.mobile-about {
+		justify-self: center;
+	}
 	html {
 		font-size: 10px;
 	}
-	.perfume {
-		height: 50rem;
+	.links-text {
+		top: 17.5rem;
+		left: -7.5rem;
+	}
+	a:link {
+		font-size: 1.4rem;
+	}
+	.cortas-header {
+		font-size: 1.5rem;
+	}
+	.endless-bloom-header {
+		font-size: 1.5rem;
+	}
+	.div1-dot {
+		width: 10px;
+		height: 10px;
+	}
+}
+
+@media (max-width: 21.25em) {
+	.mobile-about {
+		justify-self: baseline;
 	}
 }
