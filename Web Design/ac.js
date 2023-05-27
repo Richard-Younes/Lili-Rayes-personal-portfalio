@@ -28,6 +28,9 @@ let ci2 = '../Images/cil website pics/cil2.jpg';
 let ci3 = '../Images/cil website pics/cil3.jpg';
 let ci4 = '../Images/cil website pics/cil4.jpg';
 
+let cil = 'CIL';
+let ac = 'Arts & Culture';
+let linkText = document.querySelector('.cil-text');
 // The function that add and remove the class of circle and text for the animation
 function handleClick(event) {
 	// removing the circle class
@@ -89,10 +92,12 @@ let product = 'Products';
 let artist = 'Artists';
 
 function switchToCil() {
-	container.style.gridTemplateColumns = '200px 200px 200px 200px';
+	container.style.gridTemplateColumns = '12.5rem 12.5rem 12.5rem 12.5rem';
 	text2.textContent = product;
 	smallImg.src = ac1;
 	text4.textContent = 'Contact';
+
+	linkText.textContent = ac;
 
 	pic1 = ci1;
 	pic2 = ci2;
@@ -105,7 +110,9 @@ function switchToAC() {
 	text2.textContent = artist;
 	smallImg.src = '../Images/cil website pics/CIL.jpg';
 	text4.textContent = '';
-	container.style.gridTemplateColumns = '200px 200px 200px';
+	container.style.gridTemplateColumns = '12.5rem 12.5rem 12.5rem';
+	linkText.textContent = cil;
+
 	pic1 = ac1;
 	pic2 = ac2;
 	pic3 = ac3;
