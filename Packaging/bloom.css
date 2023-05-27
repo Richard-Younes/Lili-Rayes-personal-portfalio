@@ -549,7 +549,7 @@ h1 {
 		overflow-y: scroll;
 	}
 	main {
-		height: 165rem;
+		height: 170rem;
 		position: relative;
 		top: -39rem;
 	}
@@ -661,6 +661,7 @@ h1 {
 		gap: 5px;
 		position: relative;
 		left: 1rem;
+		z-index: 2;
 	}
 
 	.links a {
