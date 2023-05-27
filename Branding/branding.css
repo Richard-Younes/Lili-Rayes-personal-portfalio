@@ -456,6 +456,7 @@ main {
 .section3 {
 	/* position: relative; */
 	display: inline-block;
+	position: relative;
 	height: 18.75rem;
 	width: 18.75rem;
 	margin: 0;
@@ -822,6 +823,6 @@ main {
 /* BELOW 936px */
 @media (max-width: 58.5em) {
 	html {
-		font-size: 10px;
+		font-size: 11px;
 	}
 }

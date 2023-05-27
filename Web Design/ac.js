@@ -14,19 +14,19 @@ let bigImg = document.querySelector('.big-img');
 let smallImg = document.querySelector('.small-image');
 // Image urls into variables
 
-let ac1 = '../wetransfer_website-portfolio-for-release_2023-02-09_1913/Website portfolio for release/A&C website/a&c-02 cropped.jpg';
-let ac2 = '../wetransfer_website-portfolio-for-release_2023-02-09_1913/Website portfolio for release/A&C website/a&c-01 cropped.jpg';
-let ac3 = '../wetransfer_website-portfolio-for-release_2023-02-09_1913/Website portfolio for release/A&C website/A&C about cropped.png';
+let ac1 = '../Images/A&C website/a&c-02 cropped.jpg';
+let ac2 = '../Images/A&C website/a&c-01 cropped.jpg';
+let ac3 = '../Images/A&C website/A&C about cropped.png';
 
 let pic1 = ac1;
 let pic2 = ac2;
 let pic3 = ac3;
 let pic4;
 
-let ci1 = '../wetransfer_website-portfolio-for-release_2023-02-09_1913/Website portfolio for release/cil website pics/cil 1.jpg';
-let ci2 = '../wetransfer_website-portfolio-for-release_2023-02-09_1913/Website portfolio for release/cil website pics/cil2.jpg';
-let ci3 = '../wetransfer_website-portfolio-for-release_2023-02-09_1913/Website portfolio for release/cil website pics/cil3.jpg';
-let ci4 = '../wetransfer_website-portfolio-for-release_2023-02-09_1913/Website portfolio for release/cil website pics/cil4.jpg';
+let ci1 = '../Images/cil website pics/cil 1.jpg';
+let ci2 = '../Images/cil website pics/cil2.jpg';
+let ci3 = '../Images/cil website pics/cil3.jpg';
+let ci4 = '../Images/cil website pics/cil4.jpg';
 
 // The function that add and remove the class of circle and text for the animation
 function handleClick(event) {
@@ -103,7 +103,7 @@ function switchToCil() {
 }
 function switchToAC() {
 	text2.textContent = artist;
-	smallImg.src = '../wetransfer_website-portfolio-for-release_2023-02-09_1913/Website portfolio for release/cil website pics/CIL.jpg';
+	smallImg.src = '../Images/cil website pics/CIL.jpg';
 	text4.textContent = '';
 	container.style.gridTemplateColumns = '200px 200px 200px';
 	pic1 = ac1;

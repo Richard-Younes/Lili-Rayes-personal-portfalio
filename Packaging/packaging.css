@@ -615,16 +615,16 @@ footer {
 /* BELOW 900px */
 @media (max-width: 56.25em) {
 	html {
-		font-size: 10px;
+		font-size: 11px;
 	}
 }
 
 /* BELOW 720px */
-@media (max-width: 56.25em) {
+@media (max-width: 58.25em) {
 	html {
-		font-size: 8px;
+		font-size: 11px;
 	}
 	.container1 {
-		gap: 10%;
+		gap: 5%;
 	}
 }
