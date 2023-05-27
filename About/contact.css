@@ -616,7 +616,7 @@ h2 {
 /* Below 832px */
 @media (max-width: 52rem) {
 	html {
-		font-size: 10px;
+		font-size: 11px;
 	}
 	#message {
 		width: 12.5rem;

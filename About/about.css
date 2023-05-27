@@ -418,22 +418,95 @@ span {
 
 /* Media queries for responsiveness */
 /* BELOW 1152px */
-@media (max-width: 72em) {
+@media (max-width: 83rem) {
 	html {
 		font-size: 14px;
 	}
 }
 
 /* BELOW 944px */
-@media (max-width: 59em) {
+@media (max-width: 73rem) {
 	html {
 		font-size: 12px;
 	}
 }
 
 /* BELOW 640px */
-@media (max-width: 40em) {
+@media (max-width: 63rem) {
 	html {
-		font-size: 10px;
+		font-size: 11px;
+	}
+}
+
+/* Below 916px */
+@media (max-width: 57.25rem) {
+	.about-text {
+		font-size: 3rem;
+		line-height: normal;
+	}
+	.hi-span {
+		font-size: 3.625rem;
+	}
+	span {
+		font-size: 3.375rem;
+	}
+}
+
+/* Below 822px */
+@media (max-width: 51.375rem) {
+	.big-circle {
+		width: 28.25rem;
+		height: 28.25rem;
+	}
+	.lili-pic {
+		width: 28.25rem;
+		height: 28.25rem;
+	}
+	.about-text {
+		font-size: 2.5rem;
+		line-height: 1.3;
+	}
+	.hi-span {
+		font-size: 3.125rem;
+	}
+	span {
+		font-size: 2.875rem;
+	}
+}
+
+/* Below 726 */
+@media (max-width: 45.375rem) {
+	.big-circle {
+		width: 28.25rem;
+		height: 28.25rem;
+	}
+	.lili-pic {
+		width: 28.25rem;
+		height: 28.25rem;
+	}
+	.about-text {
+		font-size: 2.2rem;
+		line-height: 1.4;
+	}
+	.hi-span {
+		font-size: 2.825rem;
+	}
+	span {
+		font-size: 2.575rem;
+	}
+	.line5 {
+		left: 0;
+	}
+	.line6 {
+		left: -0.4375rem;
+	}
+	.line7 {
+		left: -1.5rem;
+	}
+	.line8 {
+		left: -3.5rem;
+	}
+	.line9 {
+		left: -7rem;
 	}
 }
