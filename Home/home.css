@@ -21,7 +21,7 @@ p {
 }
 .container {
 	width: 85.375rem;
-	height: 48.0rem;
+	height: 48rem;
 	margin-left: 6.25rem;
 	margin-right: 15.3125rem;
 	position: absolute;
@@ -38,7 +38,7 @@ p {
 	top: -0.9375rem;
 }
 .cam-svg:hover {
-	filter: drop-shadow(0.0rem 0.0rem 0.0rem #00000029);
+	filter: drop-shadow(0rem 0rem 0rem #00000029);
 }
 
 .p {
@@ -55,14 +55,14 @@ p {
 	z-index: 1;
 }
 .o-svg:hover {
-	filter: drop-shadow(0.0rem 0.0rem 0.0rem #00000029);
+	filter: drop-shadow(0rem 0rem 0rem #00000029);
 }
 .box-svg {
-	left: 50.0rem;
+	left: 50rem;
 	top: -1.25rem;
 }
 .box-svg:hover {
-	filter: drop-shadow(0.0rem 0.0rem 0.0rem #00000029);
+	filter: drop-shadow(0rem 0rem 0rem #00000029);
 }
 
 .lilia-svg {
@@ -71,7 +71,7 @@ p {
 	top: -1.875rem;
 	position: absolute;
 
-	filter: drop-shadow(0.0rem 0.0rem 0.0rem #00000029);
+	filter: drop-shadow(0rem 0rem 0rem #00000029);
 }
 
 .gr {
@@ -83,17 +83,38 @@ p {
 	top: 21.875rem;
 }
 .arrow-svg:hover {
-	filter: drop-shadow(0.0rem 0.0rem 0.0rem #00000029);
+	filter: drop-shadow(0rem 0rem 0rem #00000029);
 }
 .d {
 	padding-right: 7.1875rem;
 }
 
 .shelve-svg {
-	left: 5.0rem;
+	left: 5rem;
 	top: 33.125rem;
 }
 
 .shelve-svg:hover {
-	filter: drop-shadow(0.0rem 0.0rem 0.0rem #00000029);
+	filter: drop-shadow(0rem 0rem 0rem #00000029);
+}
+/* Media queries for responsiveness */
+/* BELOW 1248px */
+@media (max-width: 78em) {
+	html {
+		font-size: 14px;
+	}
+}
+
+/* BELOW 1088px */
+@media (max-width: 68em) {
+	html {
+		font-size: 12px;
+	}
+}
+
+/* BELOW 936px */
+@media (max-width: 58.5em) {
+	html {
+		font-size: 11px;
+	}
 }
