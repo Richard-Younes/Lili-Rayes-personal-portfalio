@@ -782,3 +782,9 @@ footer {
 		font-size: 12px;
 	}
 }
+
+@media (max-width: 56.25rem) {
+	.big-circle1 {
+		left: -10%;
+	}
+}
