@@ -743,7 +743,7 @@ footer {
 		top: -15%;
 		left: -40%;
 		font-weight: 700;
-		font-size: 1.35rem;
+		font-size: 1.15rem;
 	}
 	.container1 {
 		justify-content: flex-end;
@@ -900,9 +900,23 @@ footer {
 	a:link {
 		font-size: 1.4rem;
 	}
+	.right-dot {
+		left: 5.4rem;
+		top: 0.1rem;
+	}
+	.left-dot {
+		left: -5.4rem;
+		top: 0rem;
+	}
 }
 @media (max-width: 21.25em) {
+	html {
+		font-size: 9px;
+	}
 	.mobile-about {
 		justify-self: baseline;
+	}
+	.animated-text {
+		font-size: 1.1rem;
 	}
 }
