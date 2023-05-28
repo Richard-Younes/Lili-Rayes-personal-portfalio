@@ -764,6 +764,7 @@ h1 {
 		left: 13rem;
 		top: -4rem;
 		color: #f28531;
+		z-index: 3;
 	}
 	.endless-bloom-header {
 		font-weight: 700;
@@ -771,6 +772,7 @@ h1 {
 		position: relative;
 		top: -2rem;
 		left: 13.5rem;
+		z-index: 3;
 	}
 	.underline-header {
 		border-bottom: 3px solid #f28531;

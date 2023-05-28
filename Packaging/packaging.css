@@ -919,4 +919,8 @@ footer {
 	.animated-text {
 		font-size: 1.1rem;
 	}
+	.links-text {
+		top: 19rem;
+		left: -8.2rem;
+	}
 }
