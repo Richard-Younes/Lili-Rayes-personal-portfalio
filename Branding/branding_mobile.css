@@ -1,0 +1,472 @@
+/***************************************************************************************************************************************/
+/**************************************************************************************************************************************/
+/**********************************************     Mobile version under 700px     ***************************************************/
+.mobile-top {
+	display: none;
+}
+.mobile-container {
+	display: none;
+}
+@media (max-width: 41em) {
+	html,
+	body {
+		overflow: auto;
+		overflow-y: scroll;
+	}
+	.mobile-container {
+		display: inline-block;
+	}
+	.container {
+		display: none; /* This is to remvove the navbar used for the normal application */
+	}
+	.container1 {
+		flex-wrap: wrap;
+	}
+	.logo {
+		width: 15.625rem;
+		height: 15.625rem;
+		grid-row: 1/2;
+		grid-column: 1/2;
+		align-self: flex-start;
+		position: relative;
+		top: -35%;
+		left: 5%;
+	}
+	.logo-txt {
+		position: relative;
+		justify-self: center;
+		font-size: 1.25rem;
+		letter-spacing: 0.18rem;
+		color: #db0047;
+		grid-row: 2/3;
+		grid-column: 1/2;
+		justify-self: baseline;
+		position: relative;
+		left: 10%;
+		top: -145%;
+	}
+	.about:visited {
+		color: #db0047;
+	}
+	.mobile-about {
+		color: #db0047;
+		z-index: 1;
+		grid-row: 1/2;
+		grid-column: 2/3;
+		justify-self: center;
+		position: relative;
+		top: 5%;
+		font-weight: 700;
+		font-size: 2rem;
+	}
+	.contact {
+		color: #e12c65;
+		grid-row: 1/2;
+		grid-column: 3/4;
+		justify-self: flex-end;
+		position: relative;
+		top: 5%;
+		font-weight: 700;
+		font-size: 2rem;
+	}
+	.contact:visited {
+		color: #e12c65;
+	}
+
+	.mobile-top {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+		grid-template-rows: 2fr 1fr;
+	}
+	.footer {
+		bottom: 0;
+	}
+
+	main {
+		height: 10rem;
+		position: relative;
+		top: -25rem;
+	}
+
+	/* Sidebar */
+	.mobile-container {
+		position: relative;
+		top: -15rem;
+	}
+	.sidebar {
+		width: 200px;
+		background-color: #fff0ed;
+		padding: 10px;
+		height: 300px;
+		overflow: hidden;
+	}
+
+	.dots1 {
+		display: flex;
+		justify-content: center;
+		z-index: 3;
+		width: 60px;
+		height: 60px;
+		position: relative;
+	}
+
+	.dot {
+		width: 10px;
+		height: 10px;
+		background-color: #db0047;
+		border-radius: 50%;
+		margin: 0 2px;
+		cursor: pointer;
+		position: relative;
+		top: 50%;
+	}
+
+	.links {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		position: relative;
+		left: 1rem;
+	}
+
+	.links a {
+		display: flex;
+		align-items: center;
+		z-index: 3;
+	}
+
+	.links img {
+		width: 40px;
+		height: 40px;
+	}
+	.dot {
+		/* ... existing styles ... */
+		transition: transform 0.3s ease;
+	}
+
+	.rotate {
+		transform: rotate(90deg);
+	}
+
+	.links {
+		/* ... existing styles ... */
+		transition: transform 0.3s ease;
+	}
+
+	.hide {
+		transform: translateY(-130%);
+	}
+
+	.links-text {
+		transform: rotate(90deg);
+		position: relative;
+		top: 16rem;
+		left: -6.8rem;
+		color: #f28531;
+		font-size: 1.2rem;
+	}
+	a:link {
+		font-size: 1.5rem;
+	}
+
+	/* Removing all Animations */
+	.section1:hover .white-circle1 {
+		animation: none;
+	}
+
+	.section1:not(:hover) .white-circle1 {
+		animation: none;
+	}
+	.section1:hover .empty-circle1 {
+		animation: none;
+	}
+
+	.section1:not(:hover) .empty-circle1 {
+		animation: none;
+	}
+	.section1:hover .filled-circle1 {
+		animation: none;
+	}
+
+	.section1:not(:hover) .filled-circle1 {
+		animation: none;
+	}
+	.section2:hover .white-circle2 {
+		animation: none;
+	}
+
+	.section2:not(:hover) .white-circle2 {
+		animation: none;
+	}
+	.section2:hover .empty-circle2 {
+		animation: none;
+	}
+
+	.section2:not(:hover) .empty-circle2 {
+		animation: none;
+	}
+	.section2:hover .filled-circle2 {
+		animation: none;
+	}
+
+	.section2:not(:hover) .filled-circle2 {
+		animation: none;
+	}
+	.section3:hover .white-circle3 {
+		animation: none;
+	}
+
+	.section3:not(:hover) .white-circle3 {
+		animation: none;
+	}
+	.section3:hover .empty-circle3 {
+		animation: none;
+	}
+
+	.section3:not(:hover) .empty-circle3 {
+		animation: none;
+	}
+	.section3:hover .filled-circle3 {
+		animation: none;
+	}
+
+	.section3:not(:hover) .filled-circle3 {
+		animation: none;
+	}
+	.section1:hover .empty-circle1 .text1 {
+		animation: none;
+	}
+
+	.section2:hover .empty-circle2 .text2 {
+		animation: none;
+	}
+	.section3:hover .empty-circle3 .text3 {
+		animation: none;
+	}
+	.section1:not(:hover) .empty-circle1 .text1 {
+		animation: none;
+	}
+
+	.section2:not(:hover) .empty-circle2 .text2 {
+		animation: none;
+	}
+	.section3:not(:hover) .empty-circle3 .text3 {
+		animation: none;
+	}
+	/* All animations above became none */
+	main {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 220px 220px 220px;
+		gap: 0;
+
+		justify-items: center;
+		position: relative;
+		top: -400px;
+	}
+	.section1 {
+		z-index: 3;
+		left: 7.5rem;
+	}
+	.section2 {
+		z-index: 3;
+		left: 2rem;
+		top: -5.5rem;
+	}
+	.section3 {
+		z-index: 3;
+		left: 9rem;
+		top: -11rem;
+	}
+	/* Editing the white and red circles position */
+	.empty-circle1 {
+		display: none;
+	}
+	.empty-circle2 {
+		display: none;
+	}
+	.empty-circle3 {
+		display: none;
+	}
+	.white-circle1 {
+		position: relative;
+	}
+	.white-circle2 {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.white-circle3 {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.filled-circle1 {
+		position: relative;
+		left: -1rem;
+		top: -16rem;
+	}
+	.filled-circle2 {
+		position: relative;
+		top: -16rem;
+		left: 3rem;
+	}
+	.filled-circle3 {
+		position: relative;
+		top: -15.5rem;
+		left: -3rem;
+	}
+	.footer {
+		position: relative;
+		top: -5rem;
+	}
+}
+
+@media (max-width: 28em) {
+	.mobile-about {
+		justify-self: center;
+	}
+	html {
+		font-size: 10px;
+	}
+	.links-text {
+		top: 17.5rem;
+		left: -7.4rem;
+	}
+	a:link {
+		font-size: 1.4rem;
+	}
+	.right-dot {
+		left: 5.4rem;
+		top: 0.1rem;
+	}
+	.left-dot {
+		left: -5.4rem;
+		top: 0rem;
+	}
+	/* Editing the circles position for smaller screens */
+	.section1 {
+		z-index: 3;
+		left: 7.5rem;
+	}
+	.section2 {
+		z-index: 3;
+		left: 2rem;
+		top: -7rem;
+	}
+	.section3 {
+		z-index: 3;
+		left: 10rem;
+		top: -14.4rem;
+	}
+	/* Editing the white and red circles position */
+	.empty-circle1 {
+		display: none;
+	}
+	.empty-circle2 {
+		display: none;
+	}
+	.empty-circle3 {
+		display: none;
+	}
+	.white-circle1 {
+		position: relative;
+	}
+	.white-circle2 {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.white-circle3 {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.filled-circle1 {
+		position: relative;
+		left: -1rem;
+		top: -16rem;
+	}
+	.filled-circle2 {
+		position: relative;
+		top: -16rem;
+		left: 3rem;
+	}
+	.filled-circle3 {
+		position: relative;
+		top: -15.5rem;
+		left: -3rem;
+	}
+}
+@media (max-width: 21.25em) {
+	html {
+		font-size: 9px;
+	}
+	.mobile-about {
+		justify-self: baseline;
+	}
+	.animated-text {
+		font-size: 1.1rem;
+	}
+
+	/* Editing the circles position for smaller screens */
+	.section1 {
+		z-index: 3;
+		left: 7.5rem;
+	}
+	.section2 {
+		z-index: 3;
+		left: 2rem;
+		top: -9rem;
+	}
+	.section3 {
+		z-index: 3;
+		left: 10rem;
+		top: -18.8rem;
+	}
+	/* Editing the white and red circles position */
+	.empty-circle1 {
+		display: none;
+	}
+	.empty-circle2 {
+		display: none;
+	}
+	.empty-circle3 {
+		display: none;
+	}
+	.white-circle1 {
+		position: relative;
+	}
+	.white-circle2 {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.white-circle3 {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.filled-circle1 {
+		position: relative;
+		left: -1rem;
+		top: -16rem;
+	}
+	.filled-circle2 {
+		position: relative;
+		top: -16rem;
+		left: 3rem;
+	}
+	.filled-circle3 {
+		position: relative;
+		top: -15.5rem;
+		left: -3rem;
+	}
+	.footer {
+		top: -10rem;
+	}
+	.links-text {
+		top: 19rem;
+		left: -8.2rem;
+	}
+}
