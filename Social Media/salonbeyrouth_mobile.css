@@ -1,0 +1,642 @@
+/***************************************************************************************************************************************/
+/**************************************************************************************************************************************/
+/**********************************************     Mobile version under 700px     ***************************************************/
+.mobile-top {
+	display: none;
+}
+.mobile-container {
+	display: none;
+}
+.mob-grid {
+	display: none;
+}
+.mob-big-circle {
+	display: none;
+}
+.mob-footer {
+	display: none;
+}
+.mob-link-div {
+	display: none;
+}
+.mob-flex {
+	display: none;
+}
+
+@media (max-width: 41em) {
+	html,
+	body {
+		overflow: auto;
+		overflow-y: scroll;
+	}
+	.mobile-container {
+		display: inline-block;
+	}
+	.mob-h2-link-text {
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		font-size: 1.8rem;
+	}
+	.container {
+		display: none; /* This is to remvove the navbar used for the normal application */
+	}
+	.container1 {
+		flex-wrap: wrap;
+	}
+	.logo {
+		width: 15.625rem;
+		height: 15.625rem;
+		grid-row: 1/2;
+		grid-column: 1/2;
+		align-self: flex-start;
+		position: relative;
+		top: -35%;
+		left: 5%;
+	}
+	.logo-txt {
+		position: relative;
+		justify-self: center;
+		font-size: 1.25rem;
+		letter-spacing: 0.18rem;
+		color: #db0047;
+		grid-row: 2/3;
+		grid-column: 1/2;
+		justify-self: baseline;
+		position: relative;
+		left: 10%;
+		top: -145%;
+	}
+	.about:visited {
+		color: #db0047;
+	}
+	.mobile-about {
+		color: #db0047;
+		z-index: 1;
+		grid-row: 1/2;
+		grid-column: 2/3;
+		justify-self: center;
+		position: relative;
+		top: 5%;
+		font-weight: 700;
+		font-size: 2rem;
+	}
+	.contact {
+		color: #e12c65;
+		grid-row: 1/2;
+		grid-column: 3/4;
+		justify-self: flex-end;
+		position: relative;
+		top: 5%;
+		font-weight: 700;
+		font-size: 2rem;
+	}
+	.contact:visited {
+		color: #e12c65;
+	}
+
+	.mobile-top {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+		grid-template-rows: 2fr 1fr;
+	}
+	.footer {
+		bottom: 0;
+		position: relative;
+	}
+
+	main {
+		height: fit-content;
+		position: relative;
+		top: -25rem;
+	}
+
+	/* Sidebar */
+	.mobile-container {
+		position: relative;
+		top: -15rem;
+	}
+	.sidebar {
+		width: 200px;
+		background-color: #fff0ed;
+		padding: 10px;
+		height: 300px;
+		overflow: hidden;
+	}
+
+	.dots1 {
+		display: flex;
+		justify-content: center;
+		z-index: 3;
+		width: 60px;
+		height: 60px;
+		position: relative;
+	}
+
+	.dot {
+		width: 10px;
+		height: 10px;
+		background-color: #db0047;
+		border-radius: 50%;
+		margin: 0 2px;
+		cursor: pointer;
+		position: relative;
+		top: 50%;
+	}
+
+	.links {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		position: relative;
+		left: 0.5rem;
+	}
+
+	.links a {
+		display: flex;
+		align-items: center;
+		z-index: 3;
+	}
+
+	.links img {
+		width: 40px;
+		height: 40px;
+	}
+	.dot {
+		/* ... existing styles ... */
+		transition: transform 0.3s ease;
+	}
+
+	.rotate {
+		transform: rotate(90deg);
+	}
+
+	.links {
+		/* ... existing styles ... */
+		transition: transform 0.3s ease;
+	}
+
+	.hide {
+		transform: translateY(-130%);
+	}
+
+	.links-text {
+		transform: rotate(90deg);
+		position: relative;
+		top: 13rem;
+		left: -5.1rem;
+		color: #f28531;
+		font-size: 1.2rem;
+	}
+	a:link {
+		font-size: 1.5rem;
+	}
+
+	/* Removing all Animations */
+	.calender {
+		display: none;
+	}
+	.insta-story {
+		display: none;
+	}
+	.pictures {
+		display: none;
+	}
+	.last-p {
+		display: none;
+	}
+	.big-circle {
+		display: none;
+	}
+	.big-circle:hover .small-circle {
+		transform: none;
+		background-color: #fff0ed;
+	}
+	/* All animations above became none */
+
+	/* Editing the link div at the top right corner */
+	.mob-link-div {
+		display: flex;
+		position: absolute;
+		right: 0;
+		top: -5%;
+		width: 6.5rem;
+		flex-direction: column;
+		z-index: 1;
+		overflow: hidden;
+	}
+	.mob-empty-circle-link {
+		border: 2px #db0047 solid;
+		border-radius: 50%;
+		width: 6.5rem;
+		height: 6.5rem;
+		background-color: #db0047;
+		position: relative;
+		left: 30%;
+	}
+	.mob-link-img1 {
+		width: 70%;
+		position: relative;
+		left: 25%;
+		top: 10%;
+	}
+	.mob-filled-circle-link {
+		border: 2px #db0047 solid;
+		border-radius: 50%;
+		width: 6.5rem;
+		height: 6.5rem;
+		position: relative;
+		top: -1rem;
+	}
+	.mob-link-img2 {
+		width: 80%;
+		position: relative;
+		left: 35%;
+		top: -5%;
+	}
+	/* Editing the mob flex */
+	.mob-flex {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		position: relative;
+		top: -10rem;
+		gap: 1rem;
+	}
+	h1 {
+		top: 0;
+	}
+	/* Adding the first swiper */
+	.mob-monthly-div {
+		display: flex;
+	}
+	.mob-monthly-img1 {
+		position: relative;
+		width: 75%;
+		left: 15%;
+		z-index: 1;
+		border: 2px #db0047 solid;
+	}
+	.mob-monthly-img2 {
+		position: relative;
+		width: 75%;
+		left: -50%;
+		border: 2px #db0047 solid;
+	}
+
+	.mob-monthly-dots-div {
+		display: flex;
+		align-self: center;
+		gap: 10px;
+	}
+	.swip-dot {
+		border-radius: 50%;
+		background-color: #db0047;
+		width: 10px;
+		height: 10px;
+	}
+	.swip-dot1 {
+		background-color: #f28531;
+	}
+
+	.mob-insta-div {
+		display: flex;
+		overflow: hidden;
+	}
+
+	.mob-monthly-img3 {
+		width: 70%;
+		border: 2px #db0047 solid;
+		position: relative;
+	}
+	.mob-monthly-img4 {
+		width: 70%;
+		border: 2px #db0047 solid;
+		position: relative;
+		left: -60%;
+		z-index: -1;
+	}
+	.mob-monthly-img5 {
+		width: 70%;
+		border: 2px #db0047 solid;
+		position: relative;
+		left: -120%;
+		z-index: -2;
+	}
+	.mob-monthly-img6 {
+		width: 70%;
+		border: 2px #db0047 solid;
+		position: relative;
+		left: -180%;
+		z-index: -3;
+	}
+	.mob-monthly-img7 {
+		width: 70%;
+		border: 2px #db0047 solid;
+		position: relative;
+		left: -240%;
+		z-index: -4;
+	}
+	.mob-monthly-img8 {
+		width: 70%;
+		border: 2px #db0047 solid;
+		position: relative;
+		left: -300%;
+		z-index: -5;
+	}
+	.mob-monthly-img9 {
+		width: 70%;
+		border: 2px #db0047 solid;
+		position: relative;
+		left: -360%;
+		z-index: -6;
+	}
+	.mob-monthly-img10 {
+		width: 70%;
+		border: 2px #db0047 solid;
+		position: relative;
+		left: -420%;
+		z-index: -7;
+	}
+	.swip-dot3 {
+		background-color: #f28531;
+	}
+	/* Editing the thrid swipe facebook section */
+	.mob-facebook-div {
+		display: flex;
+		overflow: hidden;
+	}
+	.mob-facebook-div img {
+		width: 90%;
+		border: 2px #db0047 solid;
+		position: relative;
+	}
+
+	.mob-fb-img2 {
+		left: -80%;
+		z-index: -1;
+	}
+	.mob-fb-img3 {
+		left: -160%;
+		z-index: -2;
+	}
+	.mob-fb-img4 {
+		left: -240%;
+		z-index: -3;
+	}
+	.mob-fb-img5 {
+		left: -320%;
+		z-index: -4;
+	}
+	.mob-fb-img6 {
+		left: -400%;
+		z-index: -5;
+	}
+	.mob-fb-img7 {
+		left: -480%;
+		z-index: -6;
+	}
+	.mob-fb-img8 {
+		left: -560%;
+		z-index: -7;
+	}
+	.fb-dot3 {
+		background-color: #f28531;
+	}
+
+	/* Editing the insta POST swipe */
+	.mob-post-div {
+		display: flex;
+		overflow: hidden;
+	}
+	.mob-post-div img {
+		width: 70%;
+		border: 2px #db0047 solid;
+		position: relative;
+	}
+
+	.mob-post-img1 {
+		border: 2px #db0047 solid;
+		position: relative;
+	}
+	.mob-post-img2 {
+		border: 2px #db0047 solid;
+		position: relative;
+		left: -60%;
+		z-index: -1;
+	}
+	.mob-post-img3 {
+		border: 2px #db0047 solid;
+		position: relative;
+		left: -120%;
+		z-index: -2;
+	}
+	.mob-post-img4 {
+		border: 2px #db0047 solid;
+		position: relative;
+		left: -180%;
+		z-index: -3;
+	}
+	.mob-post-img5 {
+		border: 2px #db0047 solid;
+		position: relative;
+		left: -240%;
+		z-index: -4;
+	}
+	.mob-post-img6 {
+		border: 2px #db0047 solid;
+		position: relative;
+		left: -300%;
+		z-index: -5;
+	}
+	.mob-post-img7 {
+		border: 2px #db0047 solid;
+		position: relative;
+		left: -360%;
+		z-index: -6;
+	}
+	.mob-post-img8 {
+		border: 2px #db0047 solid;
+		position: relative;
+		left: -420%;
+		z-index: -7;
+	}
+	.post-dot3 {
+		background-color: #f28531;
+	}
+
+	.show {
+		z-index: 10;
+	}
+	.swipe {
+		z-index: -1;
+	}
+
+	/* Editing the positioning and the texts */
+	.mob-flex-h1 {
+		font-size: 2rem;
+	}
+	.mob-flex-h2-1 {
+		font-size: 2rem;
+		font-weight: 500;
+		margin-bottom: 10px;
+		position: relative;
+		top: -10px;
+	}
+	.mob-flex-h2-2 {
+		font-size: 1.8rem;
+		font-weight: 500;
+		font-style: italic;
+	}
+	.mob-flex-h2-3 {
+		font-size: 1.8rem;
+		font-weight: 700;
+		margin-top: 10px;
+		position: relative;
+		top: 10px;
+	}
+	.mob-flex-h3-1 {
+		font-size: 1.8rem;
+		font-weight: 500;
+		font-style: italic;
+	}
+	.mob-flex-h3-2 {
+		font-size: 1.8rem;
+		font-weight: 700;
+		position: relative;
+		top: -10px;
+	}
+	.mob-monthly-dots-div {
+		margin-bottom: 20px;
+	}
+	.mob-monthly-dots-div {
+		margin-bottom: 20px;
+	}
+	.mob-monthly-dots-div {
+		margin-bottom: 20px;
+	}
+	/* Editing the last link box or circle div */
+	.mob-big-circ {
+		border: 2px #db0047 solid;
+		width: 100%;
+		height: 35rem;
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
+	}
+	.mob-check-out {
+		font-size: 1.8rem;
+		margin-top: 10%;
+	}
+	.mob-big-circ-h3 {
+		margin-top: 5%;
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
+	.mob-grid-circle {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		height: 100%;
+	}
+	.mob-img-links {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		width: 50%;
+		height: fit-content;
+		position: relative;
+		left: 25%;
+	}
+	.mob-circ-img1 {
+		width: 100%;
+		grid-row: 1/2;
+		grid-column: 1/2;
+	}
+	.mob-circ-img2 {
+		width: 100%;
+		grid-row: 1/2;
+		grid-column: 2/3;
+	}
+	.mob-circ-img3 {
+		width: 100%;
+		grid-row: 2/3;
+		grid-column: 1/2;
+	}
+	.mob-circ-img4 {
+		width: 100%;
+		grid-row: 2/3;
+		grid-column: 2/3;
+	}
+	.mob-small-circle {
+		border: 2px #db0047 solid;
+		width: 50%;
+		padding-bottom: 50%;
+		border-radius: 50%;
+		background-color: white;
+		opacity: 0.3;
+		position: relative;
+	}
+	footer {
+		display: none;
+	}
+	.mob-footer {
+		display: grid;
+		position: relative;
+		top: -60px;
+	}
+}
+
+@media (max-width: 34.375em) {
+	.mob-footer {
+		top: -40px;
+	}
+}
+@media (max-width: 28em) {
+	.mobile-about {
+		justify-self: center;
+	}
+	html {
+		font-size: 10px;
+	}
+	.links-text {
+		top: 17rem;
+		left: -6.9rem;
+	}
+	a:link {
+		font-size: 1.4rem;
+	}
+	.right-dot {
+		left: 5.4rem;
+		top: 0.1rem;
+	}
+	.left-dot {
+		left: -5.4rem;
+		top: 0rem;
+	}
+	.mob-link-div {
+		top: -9%;
+	}
+	.mob-flex {
+		top: -20rem;
+	}
+}
+@media (max-width: 21.25em) {
+	html {
+		font-size: 9px;
+	}
+	.mobile-about {
+		justify-self: baseline;
+	}
+	.animated-text {
+		font-size: 1.1rem;
+	}
+	.links-text {
+		top: 19rem;
+		left: -7.7rem;
+	}
+	.mob-link-div {
+		top: -9.5%;
+	}
+}
