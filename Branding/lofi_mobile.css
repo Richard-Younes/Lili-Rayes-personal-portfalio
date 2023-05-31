@@ -157,7 +157,7 @@
 		flex-direction: column;
 		gap: 5px;
 		position: relative;
-		left: 1rem;
+		left: 0.5rem;
 	}
 
 	.links a {
@@ -192,7 +192,7 @@
 		transform: rotate(90deg);
 		position: relative;
 		top: 16rem;
-		left: -6.8rem;
+		left: -6.3rem;
 		color: #f28531;
 		font-size: 1.2rem;
 	}
@@ -415,7 +415,7 @@
 	}
 	.links-text {
 		top: 17.5rem;
-		left: -7.4rem;
+		left: -6.85rem;
 	}
 	a:link {
 		font-size: 1.4rem;
@@ -449,7 +449,7 @@
 	}
 	.links-text {
 		top: 19rem;
-		left: -8.2rem;
+		left: -7.7rem;
 	}
 	.mob-h1 {
 		left: 0rem;
