@@ -843,12 +843,13 @@ footer {
 		flex-direction: column;
 		gap: 5px;
 		position: relative;
-		left: 1rem;
+		left: 0.5rem;
 	}
 
 	.links a {
 		display: flex;
 		align-items: center;
+		width: fit-content;
 	}
 
 	.links img {
@@ -877,7 +878,7 @@ footer {
 		transform: rotate(90deg);
 		position: relative;
 		top: 16rem;
-		left: -6.8rem;
+		left: -6.4rem;
 		color: #f28531;
 		font-size: 1.2rem;
 	}
@@ -895,7 +896,7 @@ footer {
 	}
 	.links-text {
 		top: 17.5rem;
-		left: -7.4rem;
+		left: -7rem;
 	}
 	a:link {
 		font-size: 1.4rem;
@@ -921,6 +922,6 @@ footer {
 	}
 	.links-text {
 		top: 19rem;
-		left: -8.2rem;
+		left: -7.7rem;
 	}
 }

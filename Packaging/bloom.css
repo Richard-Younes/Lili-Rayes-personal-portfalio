@@ -660,13 +660,14 @@ h1 {
 		flex-direction: column;
 		gap: 5px;
 		position: relative;
-		left: 1rem;
+		left: 0.5rem;
 		z-index: 2;
 	}
 
 	.links a {
 		display: flex;
 		align-items: center;
+		width: fit-content;
 	}
 
 	.links img {
@@ -695,7 +696,7 @@ h1 {
 		transform: rotate(90deg);
 		position: relative;
 		top: 16.5rem;
-		left: -6.8rem;
+		left: -6.4rem;
 		color: #f28531;
 		font-size: 1.2rem;
 	}
@@ -739,6 +740,7 @@ h1 {
 		color: #f28531;
 		left: 2.6rem;
 		z-index: 3;
+		width: fit-content;
 	}
 	.underline-header {
 		border-bottom: 3px solid #f28531;
@@ -831,7 +833,7 @@ h1 {
 	}
 	.links-text {
 		top: 17.5rem;
-		left: -7.5rem;
+		left: -7rem;
 	}
 	a:link {
 		font-size: 1.4rem;
@@ -873,6 +875,6 @@ h1 {
 	}
 	.links-text {
 		top: 19rem;
-		left: -8.2rem;
+		left: -7.7rem;
 	}
 }

@@ -561,7 +561,7 @@ h1 {
 .div1-dot {
 	display: none;
 }
-.cortas-header {
+.endless-bloom-header {
 	display: none;
 }
 .mobile-flex {
@@ -586,6 +586,9 @@ h1 {
 		height: 160rem;
 		position: relative;
 		top: -39rem;
+	}
+	.endless-bloom-header {
+		display: block;
 	}
 	.mobile-container {
 		display: inline-block;
@@ -694,13 +697,14 @@ h1 {
 		flex-direction: column;
 		gap: 5px;
 		position: relative;
-		left: 1rem;
+		left: 0.5rem;
 		z-index: 2;
 	}
 
 	.links a {
 		display: flex;
 		align-items: center;
+		width: fit-content;
 	}
 
 	.links img {
@@ -729,7 +733,7 @@ h1 {
 		transform: rotate(90deg);
 		position: relative;
 		top: 16.5rem;
-		left: -6.8rem;
+		left: -6.4rem;
 		color: #f28531;
 		font-size: 1.2rem;
 	}
@@ -966,7 +970,7 @@ h1 {
 	}
 	.links-text {
 		top: 17.5rem;
-		left: -7.5rem;
+		left: -7rem;
 	}
 	a:link {
 		font-size: 1.4rem;

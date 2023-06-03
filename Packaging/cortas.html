@@ -79,11 +79,11 @@
 			</nav>
 		</header>
 		<main>
-			<h1 class="cortas-header" onclick="window.location.href='../packaging/cortas.html'">
+			<h1 class="cortas-header" onclick="myfunction1()">
 				<div class="div1-dot div1-dot1"></div>
 				<span class="underline-header"> CORTAS REPACKAGING</span>
 			</h1>
-			<h1 class="endless-bloom-header" onclick="window.location.href='../packaging/bloom.html'">
+			<h1 class="endless-bloom-header" onclick="myfunction2()">
 				<div class="div1-dot div1-dot2"></div>
 				ENDLESS BLOOM PERFUME
 			</h1>
@@ -153,6 +153,16 @@
 						isHidden = true;
 					}
 				});
+				function myfunction1() {
+					if (window.innerWidth < 700) {
+						window.location.href = '../Packaging/cortas.html';
+					}
+				}
+				function myfunction2() {
+					if (window.innerWidth < 700) {
+						window.location.href = '../Packaging/bloom.html';
+					}
+				}
 			</script>
 		</main>
 		<footer>

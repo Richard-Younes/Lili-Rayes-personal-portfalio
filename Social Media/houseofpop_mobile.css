@@ -153,6 +153,7 @@
 		display: flex;
 		align-items: center;
 		z-index: 3;
+		width: fit-content;
 	}
 
 	.links img {
