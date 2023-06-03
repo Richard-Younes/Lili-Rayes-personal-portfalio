@@ -12,6 +12,7 @@ body {
 	background-color: #fff0ed;
 	font-family: 'Barlow', sans-serif;
 	color: #db0047;
+	overflow-x: hidden;
 }
 main {
 	height: 100%;
@@ -98,12 +99,27 @@ a:link {
 .cam {
 	position: relative;
 	top: -0.3125rem;
+	z-index: 2;
 }
 .box {
 	position: absolute;
 	left: 0.3125rem;
+	z-index: 2;
 }
+.sheets {
+	position: relative;
 
+	z-index: 2;
+}
+.o {
+	position: relative;
+
+	z-index: 2 !important;
+}
+.arrow {
+	position: relative;
+	z-index: 2;
+}
 .box:hover {
 	cursor: pointer;
 
@@ -346,321 +362,76 @@ footer {
 	left: 5rem;
 }
 
-/* Section 1 */
+/* Editing section1 first flex div */
 
 .section1 {
-	display: grid;
-	grid-template-rows: 100%;
-	grid-template-columns: 1fr 15.625rem;
+	display: flex;
+	width: 100%;
+	height: fit-content;
 	position: relative;
-	top: -7%;
-	overflow-x: hidden;
+	top: -5rem;
 }
 
-.infographic-poster {
-	grid-row: 1/2;
-	justify-self: center;
-	margin-left: 12.5rem;
-	height: 75rem;
-}
-.link-div {
-	grid-row: 1/2;
-	justify-self: flex-end;
-	margin-top: 100%;
+.flex1 {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	height: fit-content;
 }
 
-.infographic-img {
-	width: 37.5rem;
-	height: 56.25rem;
-	border: 0.0625rem #db0047 solid;
-}
-
-.info-circle {
-	width: 31.25rem;
-	height: 31.25rem;
+.big-circle1 {
 	border-radius: 50%;
-	border: 0.125rem solid #f28531;
+	border: 5px #f28531 solid;
 	position: relative;
-	left: 8%;
-	top: -19%;
-	z-index: -1;
-	display: grid;
-	align-items: end;
-	justify-items: center;
-}
-
-.info-text {
-	margin-bottom: 20%;
-	color: #f28531;
-	font-weight: 500;
-	font-size: 1.125rem;
-}
-span {
-	position: relative;
-}
-.info-text-line1 {
-	position: relative;
-	top: 82%;
-	color: #f28531;
-	font-size: 1.125rem;
-	font-style: italic;
-	font-weight: 500;
-}
-.info-text-line3 {
+	text-align: center;
+	width: 600px;
+	height: 600px;
 	left: 5%;
 }
-.info-text-line5 {
-	left: 10%;
-}
-
-/* Editing the links */
-.circle-link-img {
-	width: 10rem;
-	height: 4.0625rem;
+.h2-1 {
+	color: #f28531;
+	font-weight: 300;
+	font-size: 60px;
 	position: relative;
-	right: -0.625rem;
+	top: 20%;
+	left: 5%;
+}
+.img1 {
+	width: 40%;
+	position: relative;
+	left: -45%;
+	top: 0;
+}
+.img2 {
+	width: 80%;
+	position: relative;
+	top: -46%;
+	left: 25%;
 }
 
-.div-circle-link {
-	width: 6.25rem;
-	height: 6.25rem;
-	border: 0.125rem #db0047 solid;
+.small-circle {
 	border-radius: 50%;
+	border: 5px #db0047 solid;
+	width: 300px;
+	height: 300px;
+	z-index: 2;
 	position: relative;
+	left: 3%;
 	background-color: #fff0ed;
-	opacity: 73%;
-	bottom: 80%;
-	right: 25%;
+	opacity: 70%;
 }
-.circle-link {
-	height: 8.125rem;
-}
-.circle-link:hover {
-	cursor: pointer;
-}
-.link-div-text {
+.h2-2 {
+	color: #db0047;
+	font-weight: 300;
+	font-size: 26px;
 	position: relative;
-	top: -1.5625rem;
-	right: -0.625rem;
+	left: -15%;
+	top: -2rem;
+}
+.img3 {
+	width: 12%;
+	height: fit-content;
 	z-index: -1;
-	font-size: 0.875rem;
-}
-
-@keyframes circle-right {
-	0% {
-		right: 25%;
-	}
-	100% {
-		right: -100%;
-	}
-}
-@keyframes circle-left {
-	0% {
-		right: -100%;
-	}
-	100% {
-		right: 25%;
-	}
-}
-
-.circle-link:hover .div-circle-link {
-	animation: circle-right 0.2s linear forwards;
-}
-.circle-link:not(:hover) .div-circle-link {
-	animation: circle-left 0.2s linear forwards;
-}
-
-/* The Image animation */
-@keyframes image-link-right {
-	0% {
-		right: 0rem;
-	}
-	100% {
-		right: -0.625rem;
-	}
-}
-@keyframes image-link-left {
-	0% {
-		right: -0.625rem;
-	}
-	100% {
-		right: 0rem;
-	}
-}
-.circle-link:hover .circle-link-img {
-	animation: image-link-left 0.2s linear forwards;
-}
-.circle-link:not(:hover) .circle-link-img {
-	animation: image-link-right 0.2s linear forwards;
-}
-
-/* The text animation */
-@keyframes link-text-down {
-	0% {
-		top: -1.5625rem;
-		right: -0.625rem;
-	}
-	100% {
-		top: 0rem;
-		right: 0rem;
-	}
-}
-@keyframes link-text-up {
-	0% {
-		top: 0rem;
-		right: 0rem;
-	}
-	100% {
-		top: -1.5625rem;
-		right: -0.625rem;
-	}
-}
-.circle-link:hover .link-div-text {
-	animation: link-text-down 0.2s ease-in forwards;
-}
-.circle-link:not(:hover) .link-div-text {
-	animation: link-text-up 0.2s ease-in forwards;
-}
-
-/* Section 2 */
-.section2 {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;
-}
-
-.section2-circle1 {
-	width: 25rem;
-	height: 25rem;
-	border: 0.125rem #f28531 solid;
-	border-radius: 50%;
-	margin-left: 3.125rem;
 	position: relative;
-	top: -60%;
-	display: grid;
-	justify-content: flex-end;
-	align-items: flex-end;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 2.5rem;
-	justify-items: flex-end;
-}
-.section2-circle2 {
-	width: 25rem;
-	height: 25rem;
-	border: 0.125rem #f28531 solid;
-	border-radius: 50%;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	position: relative;
-	top: -15%;
-}
-
-/* Editing inside circle 1 */
-.circle1-img {
-	width: 14.375rem;
-	height: 16.875rem;
-	margin-top: 33%;
-	position: relative;
-	left: 10%;
-}
-.circl1-text-div {
-	position: relative;
-	left: 12%;
-}
-
-/* Editing Circle 2 */
-.circle2-img1 {
-	grid-row: 1/2;
-	grid-column: 1/2;
-	width: 13.125rem;
-	height: 15rem;
-	position: relative;
-	left: -30%;
-	top: -5%;
-}
-.circle2-text1 {
-	grid-row: 2/3;
-	grid-column: 1/2;
-	position: relative;
-	left: -30%;
-	top: -5%;
-}
-
-.circle2-img2 {
-	grid-row: 1/2;
-	grid-column: 2/3;
-	width: 17.5rem;
-	height: 10rem;
-	position: relative;
-	top: -5%;
-}
-.circle2-text2 {
-	grid-row: 2/3;
-	grid-column: 2/3;
-	position: relative;
-	top: -52%;
-}
-.section1 {
-	overflow: hidden;
-}
-@media (max-width: 82.6em) {
-	html {
-		font-size: 15px;
-	}
-}
-
-@media (max-width: 78.125em) {
-	html {
-		font-size: 14px;
-	}
-}
-@media (max-width: 72em) {
-	html {
-		font-size: 13px;
-	}
-}
-@media (max-width: 63.625em) {
-	.infographic-img {
-		position: relative;
-		top: 5%;
-		width: 34rem;
-		height: 50rem;
-	}
-	.infographic-poster {
-		position: relative;
-		top: 5%;
-	}
-}
-@media (max-width: 67em) {
-	.section2-circle1 {
-		top: -40%;
-	}
-}
-
-@media (max-width: 59em) {
-	.section2-circle1 {
-		justify-items: center;
-	}
-}
-@media (max-width: 54em) {
-	.section2-circle1 {
-		top: -20%;
-	}
-}
-@media (max-width: 52.1875em) {
-	html {
-		font-size: 12px;
-	}
-}
-
-@media (max-width: 48.8em) {
-	.section2-circle1 {
-		margin: 0;
-	}
-}
-@media (max-width: 44.8em) {
-	html {
-		font-size: 11px;
-	}
+	left: -26.5%;
 }
