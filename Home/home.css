@@ -1,3 +1,7 @@
+html {
+	height: 100%;
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -7,23 +11,22 @@
 body {
 	background-color: #fff0ed;
 	font-family: 'Barlow', sans-serif;
-	font-weight: light;
+	font-weight: 300;
 	font-size: 11.25rem;
 	color: #db0047;
 	text-transform: uppercase;
 	line-height: 1;
 	overflow: hidden;
+	height: 100%;
 }
 
 p {
 	display: inline;
 	position: relative;
+	color: #db0047;
 }
 .container {
-	width: 85.375rem;
-	height: 48rem;
-	margin-left: 6.25rem;
-	margin-right: 15.3125rem;
+	margin-left: 5rem;
 	position: absolute;
 }
 .svg {
@@ -97,6 +100,106 @@ p {
 .shelve-svg:hover {
 	filter: drop-shadow(0rem 0rem 0rem #00000029);
 }
+
+.container-mob {
+	display: none;
+	margin: 0;
+}
+
+.row {
+	height: 12rem;
+}
+
+.top-row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.rayes {
+	overflow: hidden;
+	width: 27rem;
+	height: 10rem;
+}
+
+.rayes-img {
+	width: 27rem;
+	height: auto;
+	margin: auto;
+	display: inline-block;
+	filter: drop-shadow(0rem 0rem 0rem #00000029);
+}
+
+.abt {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	font-size: 2rem;
+	font-weight: bold;
+	height: fit-content;
+}
+
+.info {
+	font-weight: bolder;
+	color: #db0047;
+}
+
+.row-2 {
+	display: flex;
+}
+
+.row-4 {
+	display: flex;
+}
+
+.row-5 {
+	display: flex;
+}
+
+.img-cont {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	width: 10rem;
+}
+
+.cont0 {
+	width: 8.2rem;
+}
+
+.cont1 {
+	width: 6.2rem;
+}
+
+.cont2 {
+	width: 7rem;
+}
+
+.cont3 {
+	width: 8.2rem;
+}
+
+.svg-mob {
+	position: relative;
+}
+
+.im0 {
+	top: 0px;
+}
+
+.im1 {
+	top: 0px;
+}
+
+.im2 {
+	top: -2px;
+}
+
+.im3 {
+	top: 0px;
+}
+
 /* Media queries for responsiveness */
 /* BELOW 1248px */
 @media (max-width: 78em) {

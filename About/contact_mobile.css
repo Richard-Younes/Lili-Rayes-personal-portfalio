@@ -7,18 +7,11 @@
 .mobile-container {
 	display: none;
 }
-.section5 {
-	display: none;
-}
-.mob-link-sec {
-	display: none;
-}
 @media (max-width: 41em) {
 	html,
 	body {
 		overflow: auto;
 		overflow-y: scroll;
-		font-size: 11px;
 	}
 	.mobile-container {
 		display: inline-block;
@@ -67,7 +60,7 @@
 		font-size: 2rem;
 	}
 	.contact {
-		color: #e12c65;
+		color: #f28531;
 		grid-row: 1/2;
 		grid-column: 3/4;
 		justify-self: flex-end;
@@ -77,7 +70,7 @@
 		font-size: 2rem;
 	}
 	.contact:visited {
-		color: #e12c65;
+		color: #f28531;
 	}
 
 	.mobile-top {
@@ -87,12 +80,6 @@
 	}
 	.footer {
 		bottom: 0;
-	}
-
-	main {
-		height: 100%;
-		position: relative;
-		top: -40rem;
 	}
 
 	/* Sidebar */
@@ -168,7 +155,7 @@
 	.links-text {
 		transform: rotate(90deg);
 		position: relative;
-		top: 16rem;
+		top: 12rem;
 		left: -6.3rem;
 		color: #f28531;
 		font-size: 1.2rem;
@@ -176,193 +163,104 @@
 	a:link {
 		font-size: 1.5rem;
 	}
-	/* removing the first three sections */
-	.section1 {
-		display: none;
-	}
-	.section2 {
-		display: none;
-	}
-	.section3 {
-		display: none;
-	}
-	/* Editing the section5 newly created for mobile which containes all the elements */
-	.section5 {
+
+	/* Removing all Animations */
+	/* All animations above became none */
+	main {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		justify-items: center;
 		align-items: center;
-	}
-	.mob-h1 {
-		color: #f28531;
-		font-size: 2rem;
+		align-content: center;
 		position: relative;
-		left: 7%;
-		margin-bottom: 10px;
+		top: -380px;
 	}
-	.mob-img1 {
-		width: 60%;
-		position: relative;
-		height: auto;
-		border: 1px #f28531 solid;
+	h2 {
+		animation: none;
+		font-size: 8rem;
 	}
-	.mob-text-div {
-		width: 60%;
-		font-size: 1.8rem;
-		margin-top: 2rem;
-		height: auto;
-		color: #f28531;
-		margin-bottom: 50px;
-	}
-	.mob-text-p {
-		font-weight: 500;
-	}
-	.mob-text-h2 {
-		font-size: 2rem;
-		color: #f28531;
-		margin-bottom: 20px;
-	}
-	.mob-img2 {
+	.section1 {
+		animation: none;
 		width: 100%;
-		height: auto;
 	}
-	.mob-img2-1 {
-		margin-bottom: 50px;
+	.h2 {
+		left: 10%;
+		margin-left: 10%;
+		animation: colorchange 1s ease-in-out infinite;
 	}
-	.section4 {
-		grid-template-columns: 1fr;
+	h1 {
+		font-size: 2.8rem;
 	}
-	.checkout {
+	.section2 {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	form {
+		width: 50%;
+		margin-left: 10%;
+	}
+	#name {
+		width: 100%;
+	}
+	#email {
+		width: 100%;
+	}
+	#message {
+		width: 100%;
+		padding-bottom: 70%;
+	}
+	label {
+		color: #db0047;
+	}
+	.send {
+		left: 70%;
+	}
+	.send-msg-text {
+		left: 10%;
+		margin-left: 10%;
+	}
+	.section3 {
+		display: flex;
+		gap: 30px;
+	}
+	.grid-text {
+		display: none;
+	}
+	.grid-img {
+		margin: 0;
+		padding: 0;
+	}
+	.grid-cam {
 		left: 0;
-		font-weight: 700;
-	}
-	.big-circle {
-		border-radius: 0%;
-		width: 100%;
-		text-align: center;
-		border-width: 3px;
-	}
-	.animation-div1 {
-		position: relative;
-		left: -2.5%;
-	}
-	.animation-div2 {
-		position: relative;
-		left: 2.5%;
-	}
-
-	.animation-div1:hover .white-circle1 {
-		animation: none;
-	}
-
-	.animation-div1:not(:hover) .white-circle1 {
-		animation: none;
-	}
-
-	.animation-div2:hover .white-circle2 {
-		animation: none;
-	}
-
-	.animation-div2:not(:hover) .white-circle2 {
-		animation: none;
-	}
-
-	/* This part is for the red circes */
-	.animation-div1:hover .red-circle1 {
-		animation: none;
-	}
-
-	.animation-div1:not(:hover) .red-circle1 {
-		animation: none;
-	}
-
-	.animation-div2:hover .red-circle2 {
-		animation: none;
-	}
-
-	.animation-div2:not(:hover) .red-circle2 {
-		animation: none;
-	}
-	.footer {
-		position: relative;
-		top: -40rem;
-	}
-	.mob-link-sec {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
-		position: absolute;
 		right: 0;
-		top: -2%;
+		top: 0;
+		bottom: 0;
 	}
-	.mob-circ-div1 {
-		position: relative;
-		left: 8%;
-		z-index: 2;
+	.grid-be {
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
 	}
-	.mob-circ-div2 {
-		position: relative;
-		left: 8%;
-		top: -48%;
-		z-index: 3;
+	.grid-mail {
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
 	}
-	.mob-circ-div3 {
-		position: relative;
-		left: 8%;
-		top: -98%;
-		z-index: 4;
+	.grid-phone {
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
 	}
-	.mob-white-circ1 {
-		border: 1px #f28531 solid;
-		border-radius: 50%;
-		background-color: white;
-	}
-	.mob-white-circ2 {
-		border: 1px #db0047 solid;
-		border-radius: 50%;
-		background-color: white;
-	}
-	.mob-white-circ3 {
-		border: 1px #db0047 solid;
-		border-radius: 50%;
-		background-color: white;
-	}
-	.mob-red-circ1 {
-		border: 1px #f28531 solid;
-		border-radius: 50%;
-		background-color: #f28531;
-		width: 62.5px;
-		height: 62.5px;
-		position: relative;
-		top: -40%;
-		left: -3%;
-		z-index: -1;
-	}
-	.mob-red-circ2 {
-		border: 1px #db0047 solid;
-		border-radius: 50%;
-		background-color: #db0047;
-		width: 62.5px;
-		height: 62.5px;
-		position: relative;
-		top: -40%;
-		left: -3%;
-		z-index: -1;
-	}
-	.mob-red-circ3 {
-		border: 1px #db0047 solid;
-		border-radius: 50%;
-		background-color: #db0047;
-		width: 62.5px;
-		height: 62.5px;
-		position: relative;
-		top: -40%;
-		left: -3%;
-		z-index: -1;
-	}
-	.mob-link-img {
-		border-radius: 50%;
+	.links-text-h2 {
+		color: #f28531;
+		font-size: 1.5em;
+		font-weight: 700;
+		top: 0;
 	}
 }
 
@@ -374,7 +272,7 @@
 		font-size: 10px;
 	}
 	.links-text {
-		top: 17.5rem;
+		top: 13rem;
 		left: -6.85rem;
 	}
 	a:link {
@@ -396,22 +294,14 @@
 	.mobile-about {
 		justify-self: baseline;
 	}
-	.right-dot {
-		left: 5.9rem;
-		top: 0.1rem;
+	.animated-text {
+		font-size: 1.1rem;
 	}
-	.left-dot {
-		left: -5.9rem;
-		top: 0rem;
-	}
-	.mob-h1 {
-		left: 2%;
+	.footer {
+		top: -10rem;
 	}
 	.links-text {
-		top: 19rem;
+		top: 14rem;
 		left: -7.7rem;
-	}
-	.mob-h1 {
-		left: 0rem;
 	}
 }

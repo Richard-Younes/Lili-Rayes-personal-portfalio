@@ -9,6 +9,8 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;500;700&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="./about.css" />
+		<link rel="stylesheet" href="./about_mobile.css" />
+
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +18,12 @@
 	</head>
 	<body>
 		<header>
+			<div class="mobile-top">
+				<img class="logo" src="../SVG/Lilis portfolio-icons[55]-1.svg" alt="logo" onclick="window.location.href='../Home/home.html'" />
+				<p class="logo-txt">GRAPHIC DESIGNER</p>
+				<a href="#" class="mobile-about" onclick="window.location.href='../About/about.html'">ABOUT</a>
+				<a href="#" class="contact" onclick="window.location.href='../About/contact.html'">CONTACT</a>
+			</div>
 			<nav class="container">
 				<div class="box-container">
 					<img class="box" src="../SVG/Lilis portfolio-icons[55]-10.svg" alt="box Image" onclick="window.location.href='../Packaging/packaging.html'" />
@@ -52,6 +60,25 @@
 				<a href="#" class="about" onclick="window.location.href='../About/about.html'">ABOUT</a>
 				<a href="#" class="contact" onclick="window.location.href='../About/contact.html'">CONTACT</a>
 			</nav>
+			<nav class="mobile-container">
+				<div class="sidebar">
+					<div class="dots1">
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+					</div>
+					<div class="links">
+						<a href="../Packaging/packaging.html"><img src="../SVG/box.png" alt="Link 1" /></a>
+						<a href="../Branding/branding.html"><img src="../SVG/O.png" /></a>
+						<a href="../Social Media/socialmedia.html"><img src="../SVG/Cam.png" alt="Link 3" /></a>
+						<a href="../Web Design/webdesign.html"><img src="../SVG/Arrow.png" alt="Link 4" /></a>
+						<a href="../Creativities/creativities.html"><img src="../SVG/sheets.png" alt="Link 5" /></a>
+						<div class="links-text">
+							<h2 class="links-text-h2">ABOUT</h2>
+						</div>
+					</div>
+				</div>
+			</nav>
 		</header>
 		<main>
 			<section class="section">
@@ -67,7 +94,46 @@
 				<p class="about-text line7">with designs that target</p>
 				<p class="about-text line8">your market and strengthen</p>
 				<p class="about-text line9">your brand position.</p>
+				<div class="mobile-text-bot">
+					<p class="about-text">
+						<span class="hi-span">Hi!</span> I'm Lili Rayes, a graphic designer. I'm into <span>branding</span> <span>web design,</span> and in making <span>social media content.</span> I
+						can make your business stand out by meeting your goals with designs that target your market and strengthen your brand position.
+					</p>
+				</div>
 			</section>
+			<script>
+				function openEmailApp() {
+					// Define the recipient's email address
+					const email = 'lilielrayes@gmail.com';
+
+					// Define the subject of the email
+					const subject = 'Hello';
+
+					// Define the body of the email
+					const body = 'Hi, I hope you are doing well.';
+
+					// Generate the mailto URL
+					const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+					// Open the email app with the pre-filled email
+					window.location.href = mailtoUrl;
+				}
+				const dots = document.querySelector('.dots1');
+				const links = document.querySelector('.links');
+
+				let isHidden = false;
+
+				dots.addEventListener('click', function () {
+					dots.classList.toggle('rotate');
+					if (isHidden) {
+						links.classList.remove('hide');
+						isHidden = false;
+					} else {
+						links.classList.add('hide');
+						isHidden = true;
+					}
+				});
+			</script>
 		</main>
 	</body>
 </html>
