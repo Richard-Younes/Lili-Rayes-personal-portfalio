@@ -100,13 +100,15 @@ a:link {
 }
 .box {
 	position: absolute;
-	left: 0.3125rem;
+	left: 2rem;
+	top: 1.5rem;
+	width: 2.25rem;
 }
 
 .box:hover {
 	cursor: pointer;
 
-	content: url('../SVG/Lilis\ portfolio-icons[55]-28.svg');
+	content: url('../SVG/box-clicked.png');
 }
 .o:hover {
 	cursor: pointer;
