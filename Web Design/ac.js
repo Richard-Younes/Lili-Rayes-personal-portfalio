@@ -11,22 +11,32 @@ let text3 = document.querySelector('.text3');
 let text4 = document.querySelector('.text4');
 
 let bigImg = document.querySelector('.big-img');
-let smallImg = document.querySelector('.small-image');
 // Image urls into variables
 
 let ac1 = '../Images/A&C website/a&c-02 cropped.jpg';
 let ac2 = '../Images/A&C website/a&c-01 cropped.jpg';
 let ac3 = '../Images/A&C website/A&C about cropped.png';
-
-let pic1 = ac1;
-let pic2 = ac2;
-let pic3 = ac3;
+let pic1;
+let pic2;
+let pic3;
 let pic4;
+if (page === 'ac') {
+	pic1 = ac1;
+	pic2 = ac2;
+	pic3 = ac3;
+	pic4;
+}
 
 let ci1 = '../Images/cil website pics/cil 1.jpg';
 let ci2 = '../Images/cil website pics/cil2.jpg';
 let ci3 = '../Images/cil website pics/cil3.jpg';
 let ci4 = '../Images/cil website pics/cil4.jpg';
+if (page === 'cil') {
+	pic1 = ci1;
+	pic2 = ci2;
+	pic3 = ci3;
+	pic4 = ci4;
+}
 
 let cil = 'CIL';
 let ac = 'Arts & Culture';
@@ -79,60 +89,4 @@ circle3.addEventListener('click', function () {
 
 circle4.addEventListener('click', function () {
 	handleClick(circle4);
-});
-// This part will be related to he link div which is the div at the righ corner
-
-let x = 0;
-
-let container = document.querySelector('.section1');
-
-let linkDiv = document.querySelector('.link-div');
-
-let product = 'Products';
-let artist = 'Artists';
-
-function switchToCil() {
-	container.style.gridTemplateColumns = '12.5rem 12.5rem 12.5rem 12.5rem';
-	text2.textContent = product;
-	smallImg.src = ac1;
-	text4.textContent = 'Contact';
-
-	linkText.textContent = ac;
-
-	pic1 = ci1;
-	pic2 = ci2;
-	pic3 = ci3;
-	pic4 = ci4;
-	bigImg.src = ci1;
-	handleClick(circle1);
-}
-function switchToAC() {
-	text2.textContent = artist;
-	smallImg.src = '../Images/cil website pics/CIL.jpg';
-	text4.textContent = '';
-	container.style.gridTemplateColumns = '12.5rem 12.5rem 12.5rem';
-	linkText.textContent = cil;
-
-	pic1 = ac1;
-	pic2 = ac2;
-	pic3 = ac3;
-	pic4 = ci4;
-	bigImg.src = ac1;
-	handleClick(circle1);
-}
-if (page === 'cil') {
-	switchToCil();
-	console.log(x);
-	x = 1;
-}
-linkDiv.addEventListener('click', function () {
-	if (x === 0) {
-		switchToCil();
-		console.log(x);
-		x = 1;
-	} else {
-		switchToAC();
-		console.log(x);
-		x = 0;
-	}
 });

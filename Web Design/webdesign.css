@@ -6,7 +6,7 @@
 
 html,
 body {
-	min-height: 100vh;
+	min-height: fit-content;
 	overflow-y: hidden;
 }
 body {
@@ -15,7 +15,7 @@ body {
 	color: #db0047;
 }
 main {
-	height: 0%;
+	height: 100%;
 }
 p {
 	font-weight: 700;
@@ -102,13 +102,15 @@ a:link {
 }
 .box {
 	position: absolute;
-	left: 0.3125rem;
+	left: 2rem;
+	top: 1.5rem;
+	width: 2.25rem;
 }
 
 .box:hover {
 	cursor: pointer;
 
-	content: url('../SVG/Lilis\ portfolio-icons[55]-28.svg');
+	content: url('../SVG/box-clicked.png');
 }
 .o:hover {
 	cursor: pointer;
@@ -269,7 +271,7 @@ a:link {
 
 footer {
 	position: relative;
-	bottom: 8rem;
+	bottom: 6rem;
 }
 .footer {
 	display: grid;
@@ -346,58 +348,102 @@ footer {
 	left: 5.3125rem;
 }
 /*  The above css is the template for all pages on this website */
-main {
+
+.section1 {
 	display: flex;
-	justify-content: center;
-	gap: 8%;
-	margin-top: 3.125rem;
-}
-section {
-	width: 31.25rem;
-	height: 25rem;
+	width: 100%;
+	height: fit-content;
 }
 
-section:hover {
+/* Editing the first circle */
+.circle1 {
+	width: 26rem;
+	height: 26rem;
+	border-radius: 50%;
+	border: 2px #db0047 solid;
+	position: relative;
+	left: 10%;
+	top: 4rem;
+	z-index: 1;
+}
+.img1 {
+	width: 120%;
+	position: relative;
+	left: -25%;
+	top: -5%;
+}
+
+.p1 {
+	font-size: 1.2rem;
+	position: relative;
+	left: 50%;
+	top: -5%;
+}
+
+/* Editing the second part */
+
+.circle2 {
+	width: 26rem;
+	height: 26rem;
+	border-radius: 50%;
+	border: 2px #db0047 solid;
+	position: relative;
+	left: 10%;
+	top: 2rem;
+	margin-top: -10%;
+	z-index: 1;
+}
+.img2 {
+	width: 40%;
+	position: relative;
+	left: 30%;
+	top: -5%;
+}
+.p2 {
+	font-size: 1.2rem;
+	position: relative;
+	left: 37%;
+	top: -2%;
+}
+
+/* Editing the Third part */
+
+.circle3 {
+	width: 26rem;
+	height: 26rem;
+	border-radius: 50%;
+	border: 2px #db0047 solid;
+	position: relative;
+	left: 10%;
+	top: 4rem;
+	z-index: 1;
+}
+.img3 {
+	width: 120%;
+	position: relative;
+	left: 5%;
+	top: -5%;
+}
+.p3 {
+	font-size: 1.2rem;
+	position: relative;
+	left: 37%;
+	top: -2%;
+}
+
+/* Now for the hovering effects */
+.circle1:hover {
+	animation: fill-circle 0.15s ease-in forwards;
 	cursor: pointer;
 }
-
-.circle1 {
-	width: 23rem;
-	height: 23rem;
-	border-radius: 50%;
-	border: 0.125rem solid #db0047;
+.circle2:hover {
+	animation: fill-circle 0.15s ease-in forwards;
+	cursor: pointer;
 }
-
-.laptop-svg {
-	width: 30rem;
-	height: 30rem;
-	position: relative;
-	top: -100%;
-	left: 5%;
-	z-index: -1;
+.circle3:hover {
+	animation: fill-circle 0.15s ease-in forwards;
+	cursor: pointer;
 }
-
-.img1 {
-	z-index: 1;
-	width: 23.75rem;
-	height: 11.875rem;
-	position: relative;
-	top: -9%;
-	left: 18.5%;
-	border-radius: 0.625rem;
-}
-
-.text {
-	position: relative;
-	top: -132%;
-	left: 50%;
-	font-weight: 700;
-	font-size: 1.145rem;
-}
-.text1 {
-	left: 20%;
-}
-
 @keyframes fill-circle {
 	0% {
 		background-color: #fff0ed;
@@ -407,63 +453,245 @@ section:hover {
 	}
 }
 
-@keyframes text-rise {
+/* The text animations */
+
+@keyframes text-up {
 	0% {
-		top: -132%;
+		top: -2%;
 	}
 	100% {
-		top: -205%;
+		top: -66%;
 	}
 }
+
 @keyframes text-down {
 	0% {
-		top: -205%;
+		top: -66%;
 	}
 	100% {
-		top: -132%;
+		top: -2%;
+	}
+}
+@keyframes text-up2 {
+	0% {
+		top: -5%;
+	}
+	100% {
+		top: -95%;
 	}
 }
 
-section:hover .circle1 {
-	animation: fill-circle 0.15s linear forwards;
+@keyframes text-down2 {
+	0% {
+		top: -95%;
+	}
+	100% {
+		top: -5%;
+	}
+}
+.circle1:hover .p1 {
+	animation: text-up 0.15s ease-in forwards;
+}
+.circle2:hover .p2 {
+	animation: text-up2 0.15s ease-in forwards;
+}
+.circle3:hover .p3 {
+	animation: text-up 0.15s ease-in forwards;
 }
 
-section:hover .text {
-	animation: text-rise 0.15s linear forwards;
+.circle1 .p1 {
+	animation: text-down 0.15s ease-in forwards;
+}
+.circle2 .p2 {
+	animation: text-down2 0.15s ease-in forwards;
+}
+.circle3 .p3 {
+	animation: text-down 0.15s ease-in forwards;
 }
 
-section:not(:hover) .text {
-	animation: text-down 0.15s linear forwards;
+/* Editing the responsiveness */
+@media (max-width: 91em) {
+	.circle1 {
+		left: 5%;
+	}
+	.circle2 {
+		left: 5%;
+	}
+	.circle3 {
+		left: 5%;
+	}
 }
 
-/* Under 1000px */
-@media (max-width: 64em) {
+@media (max-width: 86.5em) {
+	.circle1 {
+		width: 24rem;
+		height: 24rem;
+	}
+	.circle2 {
+		width: 24rem;
+		height: 24rem;
+	}
+	.circle3 {
+		width: 24rem;
+		height: 24rem;
+	}
+}
+
+@media (max-width: 81.5em) {
+	html {
+		font-size: 15px;
+	}
+	.circle1 {
+		width: 24rem;
+		height: 24rem;
+	}
+	.circle2 {
+		width: 24rem;
+		height: 24rem;
+	}
+	.circle3 {
+		width: 24rem;
+		height: 24rem;
+	}
+}
+
+@media (max-width: 75em) {
 	html {
 		font-size: 14px;
 	}
-	main {
-		gap: 5%;
+	.circle1 {
+		width: 24rem;
+		height: 24rem;
 	}
-	footer {
-		bottom: 7rem;
+	.circle2 {
+		width: 24rem;
+		height: 24rem;
+	}
+	.circle3 {
+		width: 24rem;
+		height: 24rem;
 	}
 }
 
-/* Under 900px */
-@media (max-width: 56.25em) {
+@media (max-width: 70.6em) {
+	html {
+		font-size: 14px;
+	}
+	.circle1 {
+		width: 22rem;
+		height: 22rem;
+	}
+	.circle2 {
+		width: 22rem;
+		height: 22rem;
+	}
+	.circle3 {
+		width: 22rem;
+		height: 22rem;
+	}
+}
+
+@media (max-width: 66.25em) {
+	html {
+		font-size: 14px;
+	}
+	.circle1 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.circle2 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.circle3 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.p3 {
+		left: 20%;
+	}
+}
+
+@media (max-width: 60em) {
+	html {
+		font-size: 13px;
+	}
+	.circle1 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.circle2 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.circle3 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.p3 {
+		left: 20%;
+	}
+}
+
+@media (max-width: 55em) {
 	html {
 		font-size: 12px;
 	}
-	main {
-		gap: 0%;
-		margin-top: 5rem;
+	.circle1 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.circle2 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.circle3 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.p3 {
+		left: 20%;
 	}
 }
 
-/* Under 760px */
-
-@media (max-width: 47.5em) {
+@media (max-width: 51em) {
 	html {
 		font-size: 11px;
+	}
+	.circle1 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.circle2 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.circle3 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.p3 {
+		left: 20%;
+	}
+}
+
+@media (max-width: 47em) {
+	html {
+		font-size: 11px;
+	}
+	.circle1 {
+		width: 18rem;
+		height: 18rem;
+	}
+	.circle2 {
+		width: 18rem;
+		height: 18rem;
+	}
+	.circle3 {
+		width: 18rem;
+		height: 18rem;
+	}
+	.p3 {
+		left: 20%;
 	}
 }

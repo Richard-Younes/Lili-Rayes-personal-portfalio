@@ -369,7 +369,7 @@ footer {
 
 .section1 {
 	display: grid;
-	grid-template-columns: 12.5rem 12.5rem 12.5rem 12.5rem;
+	grid-template-columns: 12.5rem 12.5rem 12.5rem 12.5rem 12.5rem;
 	grid-template-rows: 12.5rem 1fr;
 	justify-content: center;
 	align-items: center;
@@ -417,6 +417,10 @@ footer {
 	grid-row: 1/2;
 	grid-column: 3/4;
 }
+.circle4 {
+	grid-row: 1/2;
+	grid-column: 4/5;
+}
 /* Editing the big laptop */
 .main-div {
 	grid-row: 2/3;
@@ -424,7 +428,7 @@ footer {
 	position: relative;
 	top: -22rem;
 	z-index: -2;
-	left: -15%;
+	left: -10%;
 	width: fit-content;
 	height: fit-content;
 }
@@ -467,23 +471,14 @@ footer {
 	justify-self: baseline;
 	align-self: baseline;
 	gap: 2.5%;
-	left: 2rem;
-	top: 8%;
+	left: 8rem;
+	top: 13%;
 }
 
 .link-div:hover {
 	cursor: pointer;
 }
 .link-text-div1 {
-	align-self: flex-end;
-}
-.link-text1 {
-	font-size: 1.25rem;
-	position: relative;
-	left: 40%;
-}
-
-.link-text-div2 {
 	width: 10rem;
 	height: 10rem;
 	border-radius: 50%;
@@ -492,31 +487,39 @@ footer {
 	justify-content: center;
 	align-items: center;
 }
-.link-text-div2:before {
+.link-text1 {
+	font-size: 1.25rem;
+	position: relative;
+	left: 40%;
+	color: #f28531;
+}
+
+.link-text-div2 {
+	align-self: baseline;
+}
+.link-text-div1:before {
 	content: '';
 	position: absolute;
-	top: 5rem;
-	left: -1rem;
-	width: 40%;
-	height: 50%;
-	background-color: #2a1124;
+	top: 0;
+	left: -1.2rem;
+	width: 45%;
+	height: 35%;
+	background-color: white;
 	transform-origin: top right;
 	transform: skewY(0deg);
 }
-.change-bg:before {
-	background-color: red;
-}
+
 .link-text2 {
 	font-size: 1.25rem;
-	color: #f28531;
 	position: relative;
-	left: 40%;
+	left: 43%;
 }
 
 .link-text3 {
 	font-size: 1.25rem;
 	position: relative;
-	left: 40%;
+	left: 43%;
+	margin-top: -30%;
 }
 
 /* Under 1288px */
@@ -542,10 +545,11 @@ footer {
 }
 /* Under 1100px */
 @media (max-width: 80.5em) {
+	html {
+		font-size: 13px;
+	}
 	.section1 {
 		margin-top: 3.125rem;
-
-		margin-right: 100px;
 	}
 }
 /* Under 1000px */
@@ -559,5 +563,13 @@ footer {
 @media (max-width: 54em) {
 	html {
 		font-size: 11px;
+	}
+}
+
+/* Under 800px */
+@media (max-width: 50em) {
+	.section1 {
+		margin-top: 8.125rem;
+		left: 8%;
 	}
 }

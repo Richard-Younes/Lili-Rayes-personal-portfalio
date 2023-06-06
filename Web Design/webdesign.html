@@ -9,6 +9,8 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;500;700&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="./webdesign.css" />
+		<link rel="stylesheet" href="./webdesign_mobile.css" />
+
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,9 +18,15 @@
 	</head>
 	<body>
 		<header>
+			<div class="mobile-top">
+				<img class="logo" src="../SVG/Lilis portfolio-icons[55]-1.svg" alt="logo" onclick="window.location.href='../Home/home.html'" />
+				<p class="logo-txt">GRAPHIC DESIGNER</p>
+				<a href="#" class="mobile-about" onclick="window.location.href='../About/about.html'">ABOUT</a>
+				<a href="#" class="contact" onclick="window.location.href='../About/contact.html'">CONTACT</a>
+			</div>
 			<nav class="container">
 				<div class="box-container">
-					<img class="box" src="../SVG/Lilis portfolio-icons[55]-10.svg" alt="box Image" onclick="window.location.href='../Packaging/packaging.html'" />
+					<img class="box" src="../SVG/box.png" alt="box Image" onclick="window.location.href='../Packaging/packaging.html'" />
 					<div class="box-text image-text">
 						<p class="logos-text">PACKAGING</p>
 					</div>
@@ -52,20 +60,61 @@
 				<a href="#" class="about" onclick="window.location.href='../About/about.html'">ABOUT</a>
 				<a href="#" class="contact" onclick="window.location.href='../About/contact.html'">CONTACT</a>
 			</nav>
+			<nav class="mobile-container">
+				<div class="sidebar">
+					<div class="dots1">
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+					</div>
+					<div class="links">
+						<a href="../Packaging/packaging.html"><img src="../SVG/box.png" alt="Link 1" /></a>
+						<a href="../Branding/branding.html"><img src="../SVG/O.png" /></a>
+						<a href="../Social Media/socialmedia.html"><img src="../SVG/Cam.png" alt="Link 3" /></a>
+						<a href="../Web Design/webdesign.html"><img src="../SVG/Arrow-clicked.png" alt="Link 4" /></a>
+						<a href="../Creativities/creativities.html"><img src="../SVG/sheets.png" alt="Link 5" /></a>
+						<div class="links-text">
+							<h2>Web Design</h2>
+						</div>
+					</div>
+				</div>
+			</nav>
 		</header>
 		<main>
-			<section class="section1" onclick="window.location.href='../Web Design/ac.html'">
-				<div class="circle1">
-					<img src="../Images/A&C website/a&c-01 cropped.jpg" alt="" class="img1" />
-					<img src="../SVG/laptop.svg" alt="" class="laptop-svg" />
-					<p class="text">ARTS & CULTURE</p>
+			<section class="section1">
+				<div class="circle1" onclick="window.location.href='../Web Design/ac.html'">
+					<img class="img1" src="../Images/A&C website/Creativities A&C.png" alt="" />
+					<p class="p1">Arts & Culture</p>
+				</div>
+				<div class="circle2" onclick="window.location.href='../Web Design/ac.html'">
+					<img class="img2" src="../Eklektik app part 2/mobile phone.png" alt="" />
+					<p class="p2">Eklektik app</p>
+				</div>
+				<div class="circle3" onclick="window.location.href='../Web Design/cil.html'">
+					<img class="img3" src="../Images/cil website pics/Creativities cil.png" alt="" />
+					<p class="p3">Charafeddine Industrial Laboratories</p>
 				</div>
 			</section>
-			<section class="section2" onclick="window.location.href='../Web Design/cil.html'">
-				<div class="circle1">
-					<img src="../Images/cil website pics/about page-01 cropped.jpg" alt="" class="img1" />
-					<img src="../SVG/laptop.svg" alt="" class="laptop-svg" />
-					<p class="text text1">CHARAFEDDINE INDUSTRIAL LABORATOIRES</p>
+			<section class="mob-flex">
+				<div class="mob-circle1" onclick="window.location.href='../Web Design/ac.html'">
+					<img class="mob-img1" src="../Eklektik app part 2/mobile phone.png" alt="" />
+					<p class="mob-p1">Eklektik app</p>
+				</div>
+				<div class="mob-circle2" onclick="window.location.href='../Web Design/cil.html'">
+					<img class="mob-img2" src="../Images/cil website pics/Creativities cil.png" alt="" />
+					<p class="mob-p2">Charafeddine Industrial Laboratories</p>
+				</div>
+				<div class="mob-circle2" onclick="window.location.href='../Web Design/ac.html'">
+					<img class="mob-img2" src="../Images/A&C website/Creativities A&C.png" alt="" />
+					<p class="mob-p2">Arts & Culture</p>
+				</div>
+				<div class="footer">
+					<span class="dots left-dot"></span>
+					<p class="footer-text"><span class="uppercase">L</span>ili <span class="uppercase">R</span>ayes's portfolio</p>
+					<span class="dots right-dot"></span>
+					<img src="../SVG/Lilis portfolio-icons[55]-16.svg" alt="" class="insta" onclick="window.location.href='https://instagram.com/lili_thedesigner?igshid=YmMyMTA2M2Y='" />
+					<img src="../SVG/Lilis portfolio-icons[55]-17.svg" alt="" class="be" onclick="window.location.href='https://www.behance.net/lilielrayes'" />
+					<img src="../SVG/Lilis portfolio-icons[55]-15.svg" alt="" class="mail" onclick="openEmailApp()" />
 				</div>
 			</section>
 		</main>

@@ -18,7 +18,7 @@
 		<header>
 			<nav class="container">
 				<div class="box-container">
-					<img class="box" src="../SVG/Lilis portfolio-icons[55]-10.svg" alt="box Image" onclick="window.location.href='../Packaging/packaging.html'" />
+					<img class="box" src="../SVG/box.png" alt="box Image" onclick="window.location.href='../Packaging/packaging.html'" />
 					<div class="box-text image-text">
 						<p class="logos-text">PACKAGING</p>
 					</div>
@@ -57,7 +57,7 @@
 			<section class="section1">
 				<div class="circle1 circle click"><p class="text1 text circle-text">Home</p></div>
 				<div class="circle2 click"><p class="text2 text">Artists</p></div>
-				<div class="circle3 click"><p class="text3 text">About</p></div>
+				<div class="circle3 click"><p class="text3 text" id="About">About</p></div>
 				<div class="circle4 click"><p class="text4 text"></p></div>
 				<div class="main-div">
 					<img class="big-laptop" src="../SVG/laptop.svg" alt="" />
@@ -65,14 +65,12 @@
 						<img class="big-img" src="../Images/A&C website/a&c-02 cropped.jpg" alt="" />
 					</div>
 				</div>
-			</section>
-			<div class="link-div">
-				<p class="cil-text">CIL</p>
-				<div class="cil-laptop">
-					<img class="small-laptop" src="../SVG/laptop.svg" alt="" />
-					<img class="small-image" src="../Images/cil website pics/CIL.jpg" alt="" />
+				<div class="link-div">
+					<div class="link-text-div1"><p class="link-text1" onclick="window.location.href='../Web Design/cil.html'">CIL WEBSITE</p></div>
+					<div class="link-text-div2" onclick="window.location.href='../Web Design/ac.html'"><p class="link-text2">Arts & Culture Website</p></div>
+					<div class="link-text-div3"><p class="link-text3" onclick="window.location.href='../Web Design/ac.html'">EKLEKTIK App</p></div>
 				</div>
-			</div>
+			</section>
 		</main>
 		<footer>
 			<div class="footer">
@@ -103,14 +101,6 @@
 			</script>
 		</footer>
 		<script>
-			window.addEventListener('scroll', function () {
-				var maxScroll = document.documentElement.scrollHeight - window.innerHeight; // Calculate the maximum scrollable distance
-				var maxAllowedScroll = 0.1 * maxScroll; // Set the maximum allowed scroll to 10% of the total scrollable distance
-
-				if (window.scrollY > maxAllowedScroll) {
-					window.scrollTo(0, maxAllowedScroll); // Limit the scrollY value to the maximum allowed scroll
-				}
-			});
 			let page = 'ac';
 		</script>
 		<script type="module" src="./ac.js"></script>
