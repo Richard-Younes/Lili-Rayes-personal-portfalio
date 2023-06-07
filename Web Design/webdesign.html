@@ -117,6 +117,25 @@
 					<img src="../SVG/Lilis portfolio-icons[55]-15.svg" alt="" class="mail" onclick="openEmailApp()" />
 				</div>
 			</section>
+			<script>
+				document.addEventListener('DOMContentLoaded', function () {
+					const dots = document.querySelector('.dots1');
+					const links = document.querySelector('.links');
+
+					let isHidden = false;
+
+					dots.addEventListener('click', function () {
+						dots.classList.toggle('rotate');
+						if (isHidden) {
+							links.classList.remove('hide');
+							isHidden = false;
+						} else {
+							links.classList.add('hide');
+							isHidden = true;
+						}
+					});
+				});
+			</script>
 		</main>
 		<footer>
 			<div class="footer">
@@ -146,6 +165,5 @@
 				}
 			</script>
 		</footer>
-		<script type="module" src="./webdesign.js"></script>
 	</body>
 </html>
