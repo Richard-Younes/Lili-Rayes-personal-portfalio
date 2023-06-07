@@ -355,7 +355,7 @@ footer {
 	grid-template-rows: 100%;
 	grid-template-columns: 1fr 15.625rem;
 	position: relative;
-	top: -7%;
+	top: -15%;
 	overflow-x: hidden;
 }
 
@@ -368,7 +368,7 @@ footer {
 .link-div {
 	grid-row: 1/2;
 	justify-self: flex-end;
-	margin-top: 100%;
+	margin-top: 40%;
 }
 
 .infographic-img {
