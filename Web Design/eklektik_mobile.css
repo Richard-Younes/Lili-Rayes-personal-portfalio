@@ -21,7 +21,7 @@
 	html,
 	body {
 		overflow: auto;
-		overflow-y: scroll;
+		overflow-x: hidden;
 		font-size: 11px;
 	}
 	.mobile-container {
@@ -138,6 +138,8 @@
 		gap: 5px;
 		position: relative;
 		left: 0.5rem;
+		width: fit-content;
+		z-index: 20;
 	}
 
 	.links a {
@@ -242,37 +244,152 @@
 		font-weight: 700;
 	}
 
-	.mob-grid {
-		display: grid;
-		grid-template-rows: 1fr;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+	footer {
+		display: none;
+	}
+	.footer {
+		top: 0;
+	}
+	/* Editing the mob-flex which is the mobile version of this page */
+	.div1 {
+		display: flex;
 		justify-content: center;
 		justify-items: center;
 		align-items: center;
 		align-content: center;
-		margin-top: 20px;
-		gap: 15%;
+		z-index: 12;
 	}
-	.mob-circle {
-		width: 9rem;
-		height: 9rem;
-		border: 2px #f28531 solid;
-		border-radius: 50%;
+	.phone-img {
+		left: 15%;
+		z-index: 12;
+		width: 30.3%;
+	}
+	.video1 {
+		left: -14.7%;
+		z-index: 12;
+	}
+	.p1 {
+		margin-bottom: 2%;
+		font-size: 1.5rem;
+	}
+	.mob-p-div {
+		width: 50%;
 		text-align: center;
+		margin-bottom: 5%;
+	}
+	.p2 {
+		font-size: 1.5rem;
+	}
+	.p5 {
+		font-size: 1.5rem;
+	}
+	.video2 {
+		width: 60%;
+		margin-bottom: 5%;
+	}
+	.p6 {
+		width: 70%;
+		font-size: 1.5rem;
+		margin-bottom: 5%;
+		text-align: center;
+		margin-top: 1%;
+	}
+	.video3 {
+		width: 60%;
+		margin-bottom: 5%;
+	}
+	.video4 {
+		width: 60%;
+		margin-bottom: 5%;
+	}
+	.video5 {
+		width: 60%;
+		margin-bottom: 5%;
+	}
+	.video6 {
+		width: 60%;
+		margin-bottom: 5%;
+	}
+	.mob-p-div2 {
+		width: 60%;
+		text-align: center;
+		margin-bottom: 5%;
+	}
+
+	/* Editing the part with the hard animation of the three videos */
+	.mob-div {
 		display: grid;
-		align-content: center;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 0.1fr;
 	}
-	.mob-h2-1 {
-		font-size: 2rem;
-		font-weight: 700;
+	.video7 {
+		width: 200%;
+		z-index: 2;
+	}
+	.video8 {
+		width: 192%;
+		z-index: 1;
+		position: relative;
+		left: -40%;
+	}
+	.video9 {
+		width: 198%;
+		position: relative;
+		left: -98%;
+		z-index: 0;
 	}
 
-	.mob-img {
-		width: 100%;
-		margin-top: -4%;
-		margin-bottom: 10%;
+	.mob-circ1 {
+		justify-self: flex-end;
+		align-self: center;
+		width: 50%;
+		text-align: center;
+		position: relative;
+		left: 40%;
 	}
-
+	.mob-circ2 {
+		justify-self: flex-end;
+		align-self: center;
+	}
+	.mob-circ3 {
+		justify-self: flex-end;
+		align-self: center;
+	}
+	.p3 {
+		font-size: 1.8rem;
+		position: relative;
+	}
+	.p31 {
+		width: 50%;
+		top: 20%;
+		text-align: center;
+	}
+	.p32 {
+		position: relative;
+		top: 2rem;
+	}
+	.p33 {
+		position: relative;
+		left: -50%;
+		top: 2rem;
+	}
+	.orange-p {
+		color: #f28531;
+	}
+	.mob-circ {
+		width: 15rem;
+		height: 15rem;
+		border-radius: 50%;
+		border: 0.125rem solid #f28531;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.mob-div-circ {
+		position: relative;
+		top: -40%;
+		align-items: center;
+	}
 	.mob-grid2 {
 		display: grid;
 		grid-template-rows: 1fr 0.1fr;
@@ -320,35 +437,18 @@
 		left: -25%;
 		top: 35%;
 	}
-
-	footer {
-		display: none;
-	}
-	.footer {
-		top: 0;
+	.mob-flex {
+		margin-top: 0;
 	}
 }
 
-@media (max-width: 32.5em) {
-	.mob-grid {
-		gap: 10%;
-	}
-}
-@media (max-width: 28.5em) {
-	.mob-grid {
-		gap: 5%;
-	}
-}
-@media (max-width: 24.25em) {
-	.mob-grid {
-		gap: 0%;
-	}
-}
-@media (max-width: 26.5em) {
-	.mob-p {
+@media (max-width: 31em) {
+	.p3 {
 		font-size: 1.5rem;
-		font-weight: 500;
-		color: #f28531;
+	}
+	.mob-circ {
+		width: 10rem;
+		height: 10rem;
 	}
 }
 
@@ -409,6 +509,37 @@
 	.mob-h1 {
 		left: 0rem;
 	}
+	.mob-h2-1 {
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+	.mob-h2-2 {
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+}
+
+@media (max-width: 32.5em) {
+	.mob-grid {
+		gap: 10%;
+	}
+}
+@media (max-width: 28.5em) {
+	.mob-grid {
+		gap: 5%;
+	}
+}
+@media (max-width: 24.25em) {
+	.mob-grid {
+		gap: 0%;
+	}
+}
+@media (max-width: 26.5em) {
+	.mob-p {
+		font-size: 1.5rem;
+		font-weight: 500;
+		color: #f28531;
+	}
 }
 
 @media (max-width: 23.5em) {
@@ -444,5 +575,21 @@
 	}
 	.mob-p {
 		margin-left: 5%;
+	}
+}
+
+@media (max-width: 30.5em) {
+	.mob-laptop {
+		width: 140%;
+	}
+}
+
+@media (max-width: 26.2em) {
+	.mob-laptop {
+		width: 150%;
+	}
+	.circle1 {
+		width: 12rem;
+		height: 12rem;
 	}
 }

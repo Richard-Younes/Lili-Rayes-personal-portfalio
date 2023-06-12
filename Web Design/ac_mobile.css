@@ -281,6 +281,7 @@
 	.circle2 {
 		grid-row: 1/2;
 		grid-column: 1/2;
+		z-index: 0;
 	}
 	.circle3 {
 		grid-row: 1/2;
@@ -291,6 +292,14 @@
 		position: relative;
 		left: 25%;
 		top: 10%;
+	}
+	.mob-phone-img {
+		width: 44%;
+		border-radius: 10%;
+		position: relative;
+		left: -21.2%;
+		z-index: -1;
+		top: 9%;
 	}
 	.mob-laptop {
 		width: 150%;

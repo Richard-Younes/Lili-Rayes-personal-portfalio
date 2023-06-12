@@ -213,10 +213,17 @@
 		align-content: center;
 		align-items: center;
 		flex-direction: column;
+		z-index: 0;
 	}
 	.mob-img1 {
 		width: 40%;
 		margin-top: -5%;
+	}
+	.mob-circ1-img2 {
+		width: 39.1%;
+		border-radius: 10%;
+		margin-top: -81.5%;
+		z-index: -1;
 	}
 
 	.mob-p1 {
