@@ -116,12 +116,15 @@
 					><img class="grid-img grid-mail" src="../SVG/mail.png" alt="" />
 					<p class="grid-text">lilielrayes@gmail.com</p>
 				</a>
-				<a class="grid" href=""
+				<a class="grid" href="#" onclick="callPhoneNumber('+96170810526')"
 					><img class="grid-img grid-phone" src="../SVG/phone-removebg-preview.png" alt="" />
 					<p class="grid-text">+961 70 810 526</p>
 				</a>
 			</section>
 			<script>
+				function callPhoneNumber(phoneNumber) {
+					window.location.href = 'tel:' + phoneNumber;
+				}
 				function openEmailApp() {
 					// Define the recipient's email address
 					const email = 'lilielrayes@gmail.com';
