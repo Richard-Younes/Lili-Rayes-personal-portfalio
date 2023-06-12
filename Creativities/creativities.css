@@ -45,14 +45,13 @@ img {
 	grid-column: -1;
 	grid-row: 2;
 	justify-self: center;
-	font-size: 1.25rem;
-	letter-spacing: 0.3125rem;
+	font-size: 1.2rem;
+	letter-spacing: 0.19rem;
 	margin-right: 1.875rem;
 	margin-bottom: 1.25rem;
 	top: -0.9375rem;
 	color: #db0047;
 }
-
 a:link {
 	color: #db0047;
 	font-family: 'Barlow', sans-serif;

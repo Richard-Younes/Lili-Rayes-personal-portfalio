@@ -41,6 +41,7 @@
 		position: relative;
 		top: -35%;
 		left: 5%;
+		z-index: 2;
 	}
 	.logo-txt {
 		position: relative;
