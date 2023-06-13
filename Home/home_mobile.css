@@ -31,7 +31,7 @@
 			left: 30%;
 		}
 		30% {
-			top: 15%;
+			top: 12%;
 
 			left: 30%;
 		}
@@ -40,7 +40,7 @@
 			top: 0;
 		}
 		60% {
-			top: 15%;
+			top: 12%;
 			left: 30%;
 		}
 		90% {
@@ -108,19 +108,19 @@
 	}
 
 	.im0 {
-		animation: cam 1s linear forwards;
+		animation: cam 2s linear forwards;
 	}
 	.im1 {
-		animation: o 1s linear forwards;
+		animation: o 2s linear forwards;
 	}
 	.im2 {
-		animation: box 1s linear forwards;
+		animation: box 2s linear forwards;
 	}
 	.im3 {
-		animation: arrow 1s linear forwards;
+		animation: arrow 2s linear forwards;
 	}
 	.im4 {
-		animation: sheets 1s linear forwards;
+		animation: sheets 2s linear forwards;
 	}
 
 	@keyframes info {
@@ -136,7 +136,7 @@
 	}
 	.info {
 		opacity: 0;
-		animation: info 0.5s ease-in 1.2s forwards;
+		animation: info 0.5s ease-in 1.7s forwards;
 	}
 }
 
