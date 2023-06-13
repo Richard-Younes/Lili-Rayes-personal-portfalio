@@ -440,6 +440,13 @@
 	.mob-flex {
 		margin-top: 0;
 	}
+	.dots1 {
+		z-index: 30;
+	}
+	.links-text {
+		left: -2.8rem;
+		top: 12rem;
+	}
 }
 
 @media (max-width: 31em) {
@@ -460,8 +467,8 @@
 		font-size: 10px;
 	}
 	.links-text {
-		top: 17.5rem;
-		left: -6.85rem;
+		top: 14rem;
+		left: -2.5rem;
 	}
 	a:link {
 		font-size: 1.4rem;
@@ -483,8 +490,8 @@
 		font-size: 9px;
 	}
 	.links-text {
-		top: 19rem;
-		left: -7.7rem;
+		top: 14rem;
+		left: -2.2rem;
 	}
 }
 @media (max-width: 21.25em) {
@@ -503,8 +510,8 @@
 		left: 2%;
 	}
 	.links-text {
-		top: 19rem;
-		left: -7.7rem;
+		top: 14rem;
+		left: -2.3rem;
 	}
 	.mob-h1 {
 		left: 0rem;
