@@ -386,6 +386,28 @@ footer {
 .text:hover {
 	cursor: pointer;
 }
+
+.circle-text {
+	position: relative;
+	top: -15%;
+	color: #f28531;
+}
+.circle1 {
+	grid-row: 1/2;
+
+	grid-column: 1/2;
+	z-index: 2;
+}
+.circle2 {
+	grid-row: 1/2;
+	grid-column: 2/3;
+	z-index: 2;
+}
+.circle3 {
+	grid-row: 1/2;
+	grid-column: 3/4;
+	z-index: 2;
+}
 .circle {
 	width: 10rem;
 	height: 10rem;
@@ -399,31 +421,13 @@ footer {
 	z-index: -2;
 }
 
-.circle-text {
-	position: relative;
-	top: -15%;
-	color: #f28531;
-}
-.circle1 {
-	grid-row: 1/2;
-
-	grid-column: 1/2;
-}
-.circle2 {
-	grid-row: 1/2;
-	grid-column: 2/3;
-}
-.circle3 {
-	grid-row: 1/2;
-	grid-column: 3/4;
-}
 /* Editing the big laptop */
 .main-div {
 	grid-row: 2/3;
 	grid-column: 1/-1;
 	position: relative;
 	top: -22rem;
-	z-index: -2;
+	z-index: 0;
 	left: -15%;
 	width: fit-content;
 	height: fit-content;
@@ -432,10 +436,11 @@ footer {
 .big-laptop {
 	width: 62.55rem;
 	height: 62.5rem;
+	position: relative;
 	z-index: -2;
 }
 .big-img {
-	width: 50rem;
+	width: 100%;
 	height: auto;
 	border-radius: 1.25rem;
 	position: relative;
@@ -448,7 +453,10 @@ footer {
 	top: -45rem;
 	left: 10%;
 	border-radius: 1.25rem;
-	overflow: hidden;
+	overflow-y: scroll;
+}
+.big-img-div::-webkit-scrollbar {
+	display: none;
 }
 
 /*  link div */

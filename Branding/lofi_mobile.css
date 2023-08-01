@@ -150,6 +150,8 @@
 		cursor: pointer;
 		position: relative;
 		top: 50%;
+		position: relative;
+		left: -5%;
 	}
 
 	.links {
@@ -158,6 +160,7 @@
 		gap: 5px;
 		position: relative;
 		left: 0.5rem;
+		top: -2%;
 	}
 
 	.links a {
@@ -169,6 +172,10 @@
 
 	.links img {
 		width: 40px;
+		height: 40px;
+	}
+	#mob-header-arrow {
+		width: 36px;
 		height: 40px;
 	}
 	.dot {
@@ -232,7 +239,7 @@
 		width: 60%;
 		position: relative;
 		height: auto;
-		border: 1px #f28531 solid;
+		border: 0.125rem #f28531 solid;
 	}
 	.mob-text-div {
 		width: 60%;
@@ -253,7 +260,7 @@
 	.mob-img2 {
 		width: 100%;
 		height: auto;
-		border: 2px #f28531 solid;
+		border: 0.125rem #f28531 solid;
 	}
 	.mob-img2-1 {
 		margin-bottom: 50px;
@@ -282,7 +289,7 @@
 		border-radius: 0%;
 		width: 100%;
 		text-align: center;
-		border-width: 3px;
+		border-width: 0.125rem;
 	}
 	.animation-div1 {
 		position: relative;
@@ -355,22 +362,22 @@
 		z-index: 4;
 	}
 	.mob-white-circ1 {
-		border: 1px #f28531 solid;
+		border: 0.125rem #f28531 solid;
 		border-radius: 50%;
 		background-color: white;
 	}
 	.mob-white-circ2 {
-		border: 1px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		border-radius: 50%;
 		background-color: white;
 	}
 	.mob-white-circ3 {
-		border: 1px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		border-radius: 50%;
 		background-color: white;
 	}
 	.mob-red-circ1 {
-		border: 1px #f28531 solid;
+		border: 0.125rem #f28531 solid;
 		border-radius: 50%;
 		background-color: #f28531;
 		width: 62.5px;
@@ -381,7 +388,7 @@
 		z-index: -1;
 	}
 	.mob-red-circ2 {
-		border: 1px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		border-radius: 50%;
 		background-color: #db0047;
 		width: 62.5px;
@@ -392,7 +399,7 @@
 		z-index: -1;
 	}
 	.mob-red-circ3 {
-		border: 1px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		border-radius: 50%;
 		background-color: #db0047;
 		width: 62.5px;

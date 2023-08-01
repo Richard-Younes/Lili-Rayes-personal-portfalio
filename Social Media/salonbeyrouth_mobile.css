@@ -133,7 +133,6 @@
 		height: 60px;
 		position: relative;
 	}
-
 	.dot {
 		width: 10px;
 		height: 10px;
@@ -143,6 +142,9 @@
 		cursor: pointer;
 		position: relative;
 		top: 50%;
+		position: relative;
+		left: -5%;
+		z-index: 20;
 	}
 
 	.links {
@@ -151,6 +153,8 @@
 		gap: 5px;
 		position: relative;
 		left: 0.5rem;
+		top: -2%;
+		z-index: 20;
 	}
 
 	.links a {
@@ -167,6 +171,10 @@
 	.dot {
 		/* ... existing styles ... */
 		transition: transform 0.3s ease;
+	}
+	#mob-header-arrow {
+		width: 36px;
+		height: 40px;
 	}
 
 	.rotate {
@@ -228,7 +236,7 @@
 		overflow: hidden;
 	}
 	.mob-empty-circle-link {
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		border-radius: 50%;
 		width: 6.5rem;
 		height: 6.5rem;
@@ -243,7 +251,7 @@
 		top: 10%;
 	}
 	.mob-filled-circle-link {
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		border-radius: 50%;
 		width: 6.5rem;
 		height: 6.5rem;
@@ -277,13 +285,13 @@
 		width: 75%;
 		left: 15%;
 		z-index: 1;
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 	}
 	.mob-monthly-img2 {
 		position: relative;
 		width: 75%;
 		left: -50%;
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 	}
 
 	.mob-monthly-dots-div {
@@ -308,54 +316,54 @@
 
 	.mob-monthly-img3 {
 		width: 70%;
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		position: relative;
 	}
 	.mob-monthly-img4 {
 		width: 70%;
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		position: relative;
 		left: -60%;
 		z-index: -1;
 	}
 	.mob-monthly-img5 {
 		width: 70%;
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		position: relative;
 		left: -120%;
 		z-index: -2;
 	}
 	.mob-monthly-img6 {
 		width: 70%;
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		position: relative;
 		left: -180%;
 		z-index: -3;
 	}
 	.mob-monthly-img7 {
 		width: 70%;
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		position: relative;
 		left: -240%;
 		z-index: -4;
 	}
 	.mob-monthly-img8 {
 		width: 70%;
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		position: relative;
 		left: -300%;
 		z-index: -5;
 	}
 	.mob-monthly-img9 {
 		width: 70%;
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		position: relative;
 		left: -360%;
 		z-index: -6;
 	}
 	.mob-monthly-img10 {
 		width: 70%;
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		position: relative;
 		left: -420%;
 		z-index: -7;
@@ -370,7 +378,7 @@
 	}
 	.mob-facebook-div img {
 		width: 90%;
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		position: relative;
 	}
 
@@ -413,52 +421,52 @@
 	}
 	.mob-post-div img {
 		width: 70%;
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		position: relative;
 	}
 
 	.mob-post-img1 {
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		position: relative;
 	}
 	.mob-post-img2 {
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		position: relative;
 		left: -60%;
 		z-index: -1;
 	}
 	.mob-post-img3 {
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		position: relative;
 		left: -120%;
 		z-index: -2;
 	}
 	.mob-post-img4 {
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		position: relative;
 		left: -180%;
 		z-index: -3;
 	}
 	.mob-post-img5 {
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		position: relative;
 		left: -240%;
 		z-index: -4;
 	}
 	.mob-post-img6 {
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		position: relative;
 		left: -300%;
 		z-index: -5;
 	}
 	.mob-post-img7 {
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		position: relative;
 		left: -360%;
 		z-index: -6;
 	}
 	.mob-post-img8 {
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		position: relative;
 		left: -420%;
 		z-index: -7;
@@ -519,7 +527,7 @@
 	}
 	/* Editing the last link box or circle div */
 	.mob-big-circ {
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		width: 100%;
 		height: 35rem;
 		display: flex;
@@ -571,7 +579,7 @@
 		grid-column: 2/3;
 	}
 	.mob-small-circle {
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		width: 50%;
 		padding-bottom: 50%;
 		border-radius: 50%;

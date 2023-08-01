@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	let bigImg = document.querySelector('.big-img');
 	// Image urls into variables
 
-	let ac1 = '../Images/A&C website/a&c-02 cropped.jpg';
-	let ac2 = '../Images/A&C website/a&c-01 cropped.jpg';
-	let ac3 = '../Images/A&C website/A&C about cropped.png';
+	let ac1 = '../Images/A&C website/a&c-02.jpg';
+	let ac2 = '../Images/A&C website/a&c-01.jpg';
+	let ac3 = '../Images/A&C website/A&C about.png';
 	let pic1;
 	let pic2;
 	let pic3;
@@ -30,10 +30,10 @@ document.addEventListener('DOMContentLoaded', function () {
 		pic4;
 	}
 
-	let ci1 = '../Images/cil website pics/cil 1.jpg';
-	let ci2 = '../Images/cil website pics/cil2.jpg';
-	let ci3 = '../Images/cil website pics/cil3.jpg';
-	let ci4 = '../Images/cil website pics/cil4.jpg';
+	let ci1 = '../Images/cil website pics/cil homepage-01.jpg';
+	let ci2 = '../Images/cil website pics/soap page-01.jpg';
+	let ci3 = '../Images/cil website pics/about page-01.jpg';
+	let ci4 = '../Images/cil website pics/contact page-01.jpg';
 	if (page === 'cil') {
 		pic1 = ci1;
 		pic2 = ci2;

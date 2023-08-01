@@ -7,6 +7,10 @@
 .mobile-container {
 	display: none;
 }
+textarea {
+	padding-left: 10px;
+	padding-top: 10px;
+}
 @media (max-width: 41em) {
 	html,
 	body {
@@ -113,6 +117,8 @@
 		cursor: pointer;
 		position: relative;
 		top: 50%;
+		position: relative;
+		left: -5%;
 	}
 
 	.links {
@@ -121,6 +127,7 @@
 		gap: 5px;
 		position: relative;
 		left: 0.5rem;
+		top: -2%;
 	}
 
 	.links a {
@@ -163,6 +170,10 @@
 	a:link {
 		font-size: 1.5rem;
 	}
+	#mob-header-arrow {
+		width: 36px;
+		height: 40px;
+	}
 
 	/* Removing all Animations */
 	/* All animations above became none */
@@ -198,7 +209,7 @@
 		flex-direction: column;
 	}
 	form {
-		width: 50%;
+		width: 27rem;
 		margin-left: 10%;
 	}
 	#name {
@@ -214,8 +225,12 @@
 	label {
 		color: #db0047;
 	}
+	label {
+		font-size: 1.5rem;
+	}
 	.send {
 		left: 70%;
+		font-size: 1.5rem;
 	}
 	.send-msg-text {
 		left: 10%;

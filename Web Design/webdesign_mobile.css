@@ -127,6 +127,9 @@
 		cursor: pointer;
 		position: relative;
 		top: 50%;
+		position: relative;
+		left: -5%;
+		z-index: 20;
 	}
 
 	.links {
@@ -135,6 +138,8 @@
 		gap: 5px;
 		position: relative;
 		left: 0.5rem;
+		top: -2%;
+		z-index: 20;
 	}
 
 	.links a {
@@ -177,7 +182,10 @@
 	a:link {
 		font-size: 1.5rem;
 	}
-
+	#mob-header-arrow {
+		width: 36px;
+		height: 40px;
+	}
 	.footer {
 		position: relative;
 		top: -5rem;
@@ -205,7 +213,7 @@
 		width: 35rem;
 		height: 35rem;
 		border-radius: 50%;
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		margin-top: -20%;
 		position: relative;
 		left: 5%;
@@ -227,14 +235,15 @@
 	}
 
 	.mob-p1 {
-		font-size: 2.4rem;
+		margin-top: 10px;
+		font-size: 1.5rem;
 	}
 	/* Part 2 */
 	.mob-circle2 {
 		width: 35rem;
 		height: 35rem;
 		border-radius: 50%;
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		position: relative;
 		margin-top: 10%;
 		display: flex;
@@ -248,8 +257,10 @@
 	}
 
 	.mob-p2 {
-		font-size: 2.4rem;
+		margin-top: 10px;
+		font-size: 1.3rem;
 		white-space: nowrap;
+		text-transform: uppercase;
 	}
 }
 @media (max-width: 29em) {
@@ -300,12 +311,6 @@
 		width: 25rem;
 		height: 25rem;
 	}
-	.mob-p1 {
-		font-size: 2rem;
-	}
-	.mob-p2 {
-		font-size: 2rem;
-	}
 }
 @media (max-width: 20.5em) {
 	.mob-circle1 {
@@ -316,11 +321,5 @@
 	.mob-circle2 {
 		width: 20rem;
 		height: 20rem;
-	}
-	.mob-p1 {
-		font-size: 1.6rem;
-	}
-	.mob-p2 {
-		font-size: 1.6rem;
 	}
 }

@@ -382,6 +382,8 @@ footer {
 	width: 100%;
 	justify-content: center;
 	height: fit-content;
+	position: relative;
+	left: -10%;
 }
 
 .big-circle1 {
@@ -424,21 +426,23 @@ footer {
 	left: 3%;
 	background-color: #fff0ed;
 	opacity: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 .h2-2 {
-	color: #db0047;
-	font-weight: 300;
+	color: #e50149;
+	font-weight: 500;
 	font-size: 1.625rem;
-	position: relative;
-	left: -16%;
-	top: -2rem;
 }
 .img3 {
-	width: 12%;
-	height: fit-content;
 	z-index: -1;
+	width: 65%;
+	height: auto;
+	margin-top: 15%;
 	position: relative;
-	left: -26.5%;
+	top: -10%;
 }
 
 /* Editing the grid */
@@ -503,7 +507,7 @@ footer {
 	flex-direction: column;
 	position: absolute;
 	right: -1rem;
-	top: 40%;
+	top: 20rem;
 	height: fit-content;
 }
 
@@ -627,13 +631,6 @@ footer {
 	}
 	.link-div {
 		top: 40%;
-	}
-	.img3 {
-		left: -35%;
-	}
-	.h2-2 {
-		left: -23%;
-		white-space: nowrap;
 	}
 }
 @media (max-width: 70.5em) {

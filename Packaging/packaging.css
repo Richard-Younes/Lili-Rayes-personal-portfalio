@@ -644,6 +644,7 @@ footer {
 		overflow: auto;
 		overflow-y: scroll;
 	}
+
 	.mobile-container {
 		display: inline-block;
 	}
@@ -712,7 +713,10 @@ footer {
 	.footer {
 		bottom: 0;
 	}
-
+	#mob-header-arrow {
+		width: 36px;
+		height: 40px;
+	}
 	main {
 		height: 10rem;
 		position: relative;
@@ -742,12 +746,13 @@ footer {
 	.animated-text {
 		opacity: 1;
 		top: -15%;
-		left: -40%;
+		left: -45%;
 		font-weight: 700;
-		font-size: 1.15rem;
+		font-size: 13.5px;
+		white-space: nowrap;
 	}
 	.container1 {
-		justify-content: flex-end;
+		justify-content: center;
 	}
 	.animation-conatiner1 {
 		position: relative;
@@ -807,6 +812,7 @@ footer {
 	}
 
 	/* Sidebar */
+
 	.mobile-container {
 		position: relative;
 		top: -15rem;
@@ -827,7 +833,6 @@ footer {
 		height: 60px;
 		position: relative;
 	}
-
 	.dot {
 		width: 10px;
 		height: 10px;
@@ -837,6 +842,8 @@ footer {
 		cursor: pointer;
 		position: relative;
 		top: 50%;
+		position: relative;
+		left: -5%;
 	}
 
 	.links {
@@ -845,6 +852,7 @@ footer {
 		gap: 5px;
 		position: relative;
 		left: 0.5rem;
+		top: -2%;
 	}
 
 	.links a {

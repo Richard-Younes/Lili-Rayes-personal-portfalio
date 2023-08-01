@@ -120,7 +120,6 @@
 		height: 60px;
 		position: relative;
 	}
-
 	.dot {
 		width: 10px;
 		height: 10px;
@@ -130,6 +129,9 @@
 		cursor: pointer;
 		position: relative;
 		top: 50%;
+		position: relative;
+		left: -5%;
+		z-index: 20;
 	}
 
 	.links {
@@ -138,6 +140,8 @@
 		gap: 5px;
 		position: relative;
 		left: 0.5rem;
+		top: -2%;
+		z-index: 20;
 	}
 
 	.links a {
@@ -256,7 +260,7 @@
 	.mob-circle {
 		width: 9rem;
 		height: 9rem;
-		border: 2px #f28531 solid;
+		border: 0.125rem #f28531 solid;
 		border-radius: 50%;
 		text-align: center;
 		display: grid;
@@ -288,7 +292,7 @@
 	.circle1 {
 		width: 15rem;
 		height: 15rem;
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		border-radius: 50%;
 	}
 	.circle2 {
@@ -326,6 +330,10 @@
 	}
 	.footer {
 		top: 0;
+	}
+	#mob-header-arrow {
+		width: 36px;
+		height: 40px;
 	}
 }
 

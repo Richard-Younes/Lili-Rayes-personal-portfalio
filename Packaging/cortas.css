@@ -692,6 +692,9 @@ h1 {
 		cursor: pointer;
 		position: relative;
 		top: 50%;
+		position: relative;
+		left: -5%;
+		z-index: 20;
 	}
 
 	.links {
@@ -700,7 +703,8 @@ h1 {
 		gap: 5px;
 		position: relative;
 		left: 0.5rem;
-		z-index: 2;
+		top: -2%;
+		z-index: 20;
 	}
 
 	.links a {
@@ -746,7 +750,12 @@ h1 {
 		display: none;
 	}
 	.check {
+		margin-bottom: 10px;
 		font-weight: 700;
+	}
+	#mob-header-arrow {
+		width: 36px;
+		height: 40px;
 	}
 	/* All the above css can be used for the new outline of the mobile version */
 
@@ -821,10 +830,10 @@ h1 {
 	.circle3 {
 		border-radius: 0%;
 		width: 100vw;
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 	}
 	.perfume-img {
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 	}
 	.back-color {
 		display: grid;

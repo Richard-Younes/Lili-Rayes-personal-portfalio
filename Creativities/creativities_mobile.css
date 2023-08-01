@@ -127,6 +127,8 @@
 		cursor: pointer;
 		position: relative;
 		top: 50%;
+		position: relative;
+		left: -5%;
 	}
 
 	.links {
@@ -135,6 +137,7 @@
 		gap: 5px;
 		position: relative;
 		left: 0.5rem;
+		top: -2%;
 	}
 
 	.links a {
@@ -146,6 +149,10 @@
 
 	.links img {
 		width: 40px;
+		height: 40px;
+	}
+	#mob-header-arrow {
+		width: 36px;
 		height: 40px;
 	}
 	.dot {
@@ -185,7 +192,7 @@
 	.mob-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 1fr;
+		grid-template-rows: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.5fr;
 		position: relative;
 		top: -150px;
 	}
@@ -205,7 +212,7 @@
 		position: relative;
 
 		justify-self: flex-end;
-		right: 25%;
+		right: 10%;
 	}
 	.mob-h2-3 {
 		grid-row: 5/6;
@@ -213,7 +220,7 @@
 		font-size: 2rem;
 		font-weight: 700;
 		position: relative;
-		left: 30%;
+		left: 20%;
 	}
 	.mob-h2-4 {
 		grid-row: 7/8;
@@ -222,16 +229,17 @@
 		font-size: 2rem;
 		position: relative;
 		justify-self: flex-end;
-		right: 30%;
+		right: 20%;
 	}
 	.mob-img1 {
 		grid-row: 2/3;
 		grid-column: 1/-1;
 		width: 80%;
+		height: auto;
 		justify-self: flex-end;
-		border: 4px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		position: relative;
-		left: 10%;
+		left: -5%;
 		margin-bottom: 100px;
 		z-index: 10;
 	}
@@ -239,9 +247,11 @@
 		grid-row: 4/5;
 		grid-column: 1/-1;
 		width: 80%;
-		border: 4px #db0047 solid;
+		height: auto;
+
+		border: 0.125rem #db0047 solid;
 		position: relative;
-		left: -5%;
+		left: 15%;
 		margin-bottom: 100px;
 		z-index: 10;
 	}
@@ -249,10 +259,12 @@
 		grid-row: 6/7;
 		grid-column: 1/-1;
 		width: 80%;
+		height: auto;
+
 		justify-self: flex-end;
-		border: 4px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		position: relative;
-		left: 10%;
+		left: -5%;
 		margin-bottom: 100px;
 		z-index: 10;
 	}
@@ -260,9 +272,11 @@
 		grid-row: 8/9;
 		grid-column: 1/-1;
 		width: 80%;
-		border: 4px #db0047 solid;
+		height: auto;
+
+		border: 0.125rem #db0047 solid;
 		position: relative;
-		left: -10%;
+		left: 15%;
 		margin-bottom: 100px;
 		z-index: 10;
 	}
@@ -377,8 +391,8 @@
 	}
 
 	.links-text {
-		top: 19rem;
-		left: -7rem;
+		top: 17.5rem;
+		left: -6.85rem;
 	}
 }
 
@@ -408,5 +422,20 @@
 	}
 	.mob-h2-4 {
 		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 23.75em) {
+	.mob-img1 {
+		width: 75%;
+	}
+	.mob-img2 {
+		width: 75%;
+	}
+	.mob-img3 {
+		width: 75%;
+	}
+	.mob-img4 {
+		width: 75%;
 	}
 }

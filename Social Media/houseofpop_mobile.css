@@ -139,6 +139,9 @@
 		cursor: pointer;
 		position: relative;
 		top: 50%;
+		position: relative;
+		left: -5%;
+		z-index: 20;
 	}
 
 	.links {
@@ -147,6 +150,8 @@
 		gap: 5px;
 		position: relative;
 		left: 0.5rem;
+		top: -2%;
+		z-index: 20;
 	}
 
 	.links a {
@@ -158,6 +163,10 @@
 
 	.links img {
 		width: 40px;
+		height: 40px;
+	}
+	#mob-header-arrow {
+		width: 36px;
 		height: 40px;
 	}
 	.dot {
@@ -384,7 +393,7 @@
 	/* Editing the link div at the bottom of the page */
 	.big-circle {
 		border-radius: 0;
-		border-width: 2px;
+		border-width: 0.125rem;
 		display: none;
 		position: relative;
 
@@ -486,7 +495,7 @@
 		z-index: 1;
 	}
 	.mob-empty-circle-link {
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		border-radius: 50%;
 		width: 6.5rem;
 		height: 6.5rem;
@@ -498,7 +507,7 @@
 		top: 10%;
 	}
 	.mob-filled-circle-link {
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		border-radius: 50%;
 		width: 6.5rem;
 		height: 6.5rem;

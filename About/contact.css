@@ -60,7 +60,10 @@ a:link {
 	font-size: 1.0625rem;
 	text-decoration: none;
 }
-
+input {
+	z-index: 10;
+	padding-left: 10px;
+}
 .about:visited {
 	color: #db0047;
 }
@@ -383,6 +386,9 @@ label {
 	background-color: #fff0ed;
 	border-radius: 1.0625rem;
 	border: 0.0625rem #db0047 solid;
+	color: #db0047;
+	font-size: 1.2rem;
+	font-weight: 600;
 }
 
 #email {
@@ -391,11 +397,17 @@ label {
 	background-color: #fff0ed;
 	border-radius: 1.0625rem;
 	border: 0.0625rem #db0047 solid;
+	color: #db0047;
+	font-size: 1.2rem;
+	font-weight: 600;
 }
 #message {
 	background-color: #fff0ed;
 	border-radius: 1.5625rem;
 	border: 0.0625rem #db0047 solid;
+	color: #db0047;
+	font-size: 1.2rem;
+	font-weight: 600;
 }
 
 form {

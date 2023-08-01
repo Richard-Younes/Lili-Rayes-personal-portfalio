@@ -130,6 +130,9 @@
 		cursor: pointer;
 		position: relative;
 		top: 50%;
+		position: relative;
+		left: -5%;
+		z-index: 20;
 	}
 
 	.links {
@@ -138,7 +141,7 @@
 		gap: 5px;
 		position: relative;
 		left: 0.5rem;
-		width: fit-content;
+		top: -2%;
 		z-index: 20;
 	}
 
@@ -405,7 +408,7 @@
 	.circle1 {
 		width: 15rem;
 		height: 15rem;
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 		border-radius: 50%;
 	}
 	.circle2 {
@@ -446,6 +449,10 @@
 	.links-text {
 		left: -2.8rem;
 		top: 12rem;
+	}
+	#mob-header-arrow {
+		width: 36px;
+		height: 40px;
 	}
 }
 

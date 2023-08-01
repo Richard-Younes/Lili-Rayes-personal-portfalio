@@ -22,6 +22,7 @@
 		overflow: auto;
 		overflow-y: scroll;
 		font-size: 11px;
+		height: 100%;
 	}
 	.mobile-container {
 		display: inline-block;
@@ -130,6 +131,8 @@
 		cursor: pointer;
 		position: relative;
 		top: 50%;
+		position: relative;
+		left: -5%;
 	}
 
 	.links {
@@ -138,6 +141,7 @@
 		gap: 5px;
 		position: relative;
 		left: 0.5rem;
+		top: -2%;
 	}
 
 	.links a {
@@ -149,6 +153,10 @@
 
 	.links img {
 		width: 40px;
+		height: 40px;
+	}
+	#mob-header-arrow {
+		width: 36px;
 		height: 40px;
 	}
 	.dot {
@@ -205,7 +213,7 @@
 	.mob-creativities-link {
 		display: flex;
 		flex-direction: column;
-		border: 2px solid #db0047;
+		border: 0.125rem solid #db0047;
 		width: 100%;
 		justify-content: center;
 		align-items: center;
@@ -222,6 +230,7 @@
 	}
 	.mob-create-img {
 		width: 60%;
+		height: 110px;
 		position: relative;
 		left: 15%;
 	}
@@ -230,9 +239,9 @@
 		font-size: 1.5rem;
 	}
 	.mob-create-circ1 {
-		border: #db0047 2px solid;
-		width: 30%;
-		padding-bottom: 30%;
+		border: #db0047 0.125rem solid;
+		width: 110px;
+		padding-bottom: 23%;
 		border-radius: 50%;
 		position: relative;
 		left: -5%;
@@ -298,7 +307,7 @@
 		left: 7.5%;
 	}
 	.mob-img {
-		border: 4px #f28531 solid;
+		border: 0.125rem #f28531 solid;
 	}
 
 	.mob-header1 {

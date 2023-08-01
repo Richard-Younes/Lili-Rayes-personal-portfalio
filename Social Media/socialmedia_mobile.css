@@ -109,7 +109,6 @@
 		height: 60px;
 		position: relative;
 	}
-
 	.dot {
 		width: 10px;
 		height: 10px;
@@ -119,6 +118,9 @@
 		cursor: pointer;
 		position: relative;
 		top: 50%;
+		position: relative;
+		left: -5%;
+		z-index: 20;
 	}
 
 	.links {
@@ -127,6 +129,8 @@
 		gap: 5px;
 		position: relative;
 		left: 0.5rem;
+		top: -2%;
+		z-index: 20;
 	}
 
 	.links a {
@@ -156,6 +160,10 @@
 
 	.hide {
 		transform: translateY(-130%);
+	}
+	#mob-header-arrow {
+		width: 36px;
+		height: 40px;
 	}
 
 	.links-text {
@@ -299,7 +307,7 @@
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr;
 		gap: 0;
-		justify-items: flex-end;
+		justify-items: center;
 		position: relative;
 		top: -450px;
 	}
@@ -361,19 +369,29 @@
 	}
 	/* Editing the contents */
 	.first {
-		left: 0;
+		position: relative;
+		left: 50px;
 		top: 0;
 		right: 0;
 		bottom: 0;
 	}
 	.second {
-		left: 0;
+		position: relative;
+		left: 50px;
 		top: 0;
 		right: 0;
 		bottom: 0;
 	}
 	main {
 		height: 150px;
+	}
+	.circle1-text {
+		font-size: 1.2rem;
+		left: 24%;
+	}
+	.circle2-text {
+		font-size: 1.2rem;
+		left: 24%;
 	}
 }
 

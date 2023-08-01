@@ -614,7 +614,10 @@ h1 {
 	.contact:visited {
 		color: #e12c65;
 	}
-
+	#mob-header-arrow {
+		width: 36px;
+		height: 40px;
+	}
 	.mobile-top {
 		display: grid;
 		grid-template-columns: 2fr 1fr 1fr;
@@ -645,7 +648,6 @@ h1 {
 		height: 60px;
 		position: relative;
 	}
-
 	.dot {
 		width: 10px;
 		height: 10px;
@@ -655,6 +657,9 @@ h1 {
 		cursor: pointer;
 		position: relative;
 		top: 50%;
+		position: relative;
+		left: -5%;
+		z-index: 20;
 	}
 
 	.links {
@@ -663,9 +668,9 @@ h1 {
 		gap: 5px;
 		position: relative;
 		left: 0.5rem;
-		z-index: 2;
+		top: -2%;
+		z-index: 20;
 	}
-
 	.links a {
 		display: flex;
 		align-items: center;
@@ -785,10 +790,10 @@ h1 {
 	.circle3 {
 		border-radius: 0%;
 		width: 100vw;
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 	}
 	.perfume-img {
-		border: 2px #db0047 solid;
+		border: 0.125rem #db0047 solid;
 	}
 	.back-color {
 		display: grid;
